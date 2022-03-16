@@ -1,5 +1,54 @@
 # Handbook-Doc-CN-po
 
+>基本提取流程
+>
+>**注意:编译出来有乱码和方块是正常的，不影响翻译。**
+
+## 安装软件
+```
+#pkg install textproc/po4a poedit git docproj
+#git clone https://github.com/freebsd/freebsd-doc
+```
+## git代理设置
+```
+#git config --global http.proxy 'socks5://192.168.184.1:7890'
+#git config --global https.proxy 'socks5://192.168.184.1:7890'
+```
+```
+cd cd freebsd-doc/documentation/
+cp content/en/books/handbook/_index.adoc content/zh-cn/books/handbook/
+```
+## 从英文提取 po 文档来翻译
+```
+po4a-gettextize \
+   --format asciidoc \
+   --option compat=asciidoctor \
+   --option yfm_keys=title,part,description \
+   --master "content/en/books/handbook/_index.adoc" \
+   --master-charset "UTF-8" \
+   --copyright-holder "The FreeBSD Project" \
+   --package-name "FreeBSD Documentation" \
+   --po "content/zh-cn/books/handbook/_index.po"
+```
+## 删除旧的翻译文件
+```
+#rm content/zh-cn/books/handbook/_index.adoc
+```
+
+## 还原翻译为 adoc 格式
+```
+po4a-translate \
+  --format asciidoc \
+  --option compat=asciidoctor \
+  --option yfm_keys=title,part,description \
+  --master "content/en/books/handbook/_index.adoc" \
+  --master-charset "UTF-8" \
+  --po "content/zh-cn/books/handbook/_index.po" \
+  --localized "content/zh-cn/books/handbook/_index.adoc" \
+  --localized-charset "UTF-8" \
+  --keep 0
+```  
+
 ## 构建测试：
 
 ```
