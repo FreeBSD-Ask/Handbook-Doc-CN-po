@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreeBSD Documentation VERSION\n"
 "POT-Creation-Date: 2022-03-11 20:54+0800\n"
-"PO-Revision-Date: 2022-03-16 22:55+0800\n"
+"PO-Revision-Date: 2022-03-17 03:27+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -21,609 +21,666 @@ msgstr ""
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1
 #, no-wrap
 msgid "Guide about how to install FreeBSD, the minimum hardware requirements and supported architectures, how to create the installation media, etc"
-msgstr ""
+msgstr "关于如何安装FreeBSD，最低硬件要求和支持的架构，如何创建安装介质等的指南。"
 
 #. type: YAML Front Matter: part
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1
 #, no-wrap
 msgid "Part I. Getting Started"
-msgstr ""
+msgstr "第一部分：快速开始"
 
 #. type: YAML Front Matter: title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1
 #, no-wrap
 msgid "Chapter 2. Installing FreeBSD"
-msgstr ""
+msgstr "第二章 安装 FreeBSD"
 
 #. type: Title =
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:14
 #, no-wrap
 msgid "Installing FreeBSD"
-msgstr ""
+msgstr "安装 FreeBSD"
 
 #. type: Title ==
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:52
 #, no-wrap
 msgid "Synopsis"
-msgstr ""
+msgstr "概述"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:56
 msgid "There are several different ways of getting FreeBSD to run, depending on the environment.  Those are:"
-msgstr ""
+msgstr "根据环境的不同，有几种不同的方法可以让 FreeBSD 运行。这些方法是："
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:58
 msgid ""
-"Virtual Machine images, to download and import on a virtual environment of choice. These can be downloaded from the https://www."
-"freebsd.org/where/[Download FreeBSD] page. There are images for KVM (\"qcow2\"), VMWare (\"vmdk\"), Hyper-V (\"vhd\"), and raw "
-"device images that are universally supported. These are not installation images, but rather the preconfigured (\"already installed"
-"\") instances, ready to run and perform post-installation tasks."
+"Virtual Machine images, to download and import on a virtual environment of choice. These can be downloaded from the https://www.freebsd.org/where/"
+"[Download FreeBSD] page. There are images for KVM (\"qcow2\"), VMWare (\"vmdk\"), Hyper-V (\"vhd\"), and raw device images that are universally "
+"supported. These are not installation images, but rather the preconfigured (\"already installed\") instances, ready to run and perform post-"
+"installation tasks."
 msgstr ""
+"虚拟机镜像，下载并导入所选择的虚拟环境中。这些可以从 https://www.freebsd.org/where/[Download FreeBSD] 页面下载。这里有针对 KVM (“qcow2”), VMWare "
+"(“vmdk”), Hyper-V (“vhd”) 的镜像，以及普遍支持的原始设备镜像。这些不是安装镜像，而是预先配置好的（“已经安装好的”）实例，可以随时运行并执行安装后的"
+"任务。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:59
 msgid ""
-"Virtual Machine images available at Amazon's https://aws.amazon.com/marketplace/pp/prodview-ukzmy5dzc6nbq[AWS Marketplace], "
-"https://azuremarketplace.microsoft.com/en-US/marketplace/apps/thefreebsdfoundation.freebsd-13_0[Microsoft Azure Marketplace], and "
-"https://console.cloud.google.com/marketplace/product/freebsd-cloud/freebsd-13[Google Cloud Platform], to run on their respective "
-"hosting services. For more information on deploying FreeBSD on Azure please consult the relevant chapter in the https://docs."
-"microsoft.com/en-us/azure/virtual-machines/linux/freebsd-intro-on-azure[Azure Documentation]."
+"Virtual Machine images available at Amazon's https://aws.amazon.com/marketplace/pp/prodview-ukzmy5dzc6nbq[AWS Marketplace], https://"
+"azuremarketplace.microsoft.com/en-US/marketplace/apps/thefreebsdfoundation.freebsd-13_0[Microsoft Azure Marketplace], and https://console.cloud."
+"google.com/marketplace/product/freebsd-cloud/freebsd-13[Google Cloud Platform], to run on their respective hosting services. For more information "
+"on deploying FreeBSD on Azure please consult the relevant chapter in the https://docs.microsoft.com/en-us/azure/virtual-machines/linux/freebsd-"
+"intro-on-azure[Azure Documentation]."
 msgstr ""
+"在 Amazon 的 https://aws.amazon.com/marketplace/pp/prodview-ukzmy5dzc6nbq[AWS Marketplace]、https://azuremarketplace.microsoft.com/en-US/"
+"marketplace/apps/thefreebsdfoundation.freebsd-13_0[Microsoft Azure Marketplace] 和 https://console.cloud.google.com/marketplace/product/freebsd-"
+"cloud/freebsd-13[Google Cloud Platform] 提供的虚拟机图像，可以在它们各自的托管服务上运行。关于在 Azure 上部署 FreeBSD 的更多信息，请参考 https://"
+"docs.microsoft.com/en-us/azure/virtual-machines/linux/freebsd-intro-on-azure[Azure 文档]中的相关章节。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:60
 msgid ""
-"SD card images, for embedded systems such as Raspberry Pi or BeagleBone Black. These can be downloaded from the https://www."
-"freebsd.org/where/[Download FreeBSD] page. These files must be uncompressed and written as a raw image to an SD card, from which "
-"the board will then boot."
+"SD card images, for embedded systems such as Raspberry Pi or BeagleBone Black. These can be downloaded from the https://www.freebsd.org/where/"
+"[Download FreeBSD] page. These files must be uncompressed and written as a raw image to an SD card, from which the board will then boot."
 msgstr ""
+"SD 卡镜像，用于嵌入式系统，如树莓派或 BeagleBone Black。这些可以从 https://www.freebsd.org/where/[Download FreeBSD] 页面下载。这些文件必须经过解压"
+"缩，并以原始镜像的形式写入 SD 卡，然后才能由 SD 卡启动。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:61
 msgid "Installation images, to install FreeBSD on a hard drive for the usual desktop, laptop, or server systems."
-msgstr ""
+msgstr "安装镜像，用于在硬盘上安装 FreeBSD，适用于一般的台式机、笔记本或服务器。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:63
 msgid ""
-"The rest of this chapter describes the fourth case, explaining how to install FreeBSD using the text-based installation program "
-"named bsdinstall."
-msgstr ""
+"The rest of this chapter describes the fourth case, explaining how to install FreeBSD using the text-based installation program named bsdinstall."
+msgstr "本章的其余部分描述了第四种情况，解释了如何使用名为bsdinstall的文本安装程序来安装 FreeBSD。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:67
 msgid ""
-"In general, the installation instructions in this chapter are written for the i386(TM) and AMD64 architectures.  Where applicable, "
-"instructions specific to other platforms will be listed.  There may be minor differences between the installer and what is shown "
-"here, so use this chapter as a general guide rather than as a set of literal instructions."
+"In general, the installation instructions in this chapter are written for the i386(TM) and AMD64 architectures.  Where applicable, instructions "
+"specific to other platforms will be listed.  There may be minor differences between the installer and what is shown here, so use this chapter as "
+"a general guide rather than as a set of literal instructions."
 msgstr ""
+"一般来说，本章中的安装说明是为 i386(TM) 和 AMD64 架构编写的。在适当的地方，会列出针对其他平台的说明。在安装程序和这里显示的内容之间可能会有细微的"
+"差别，因此请将本章作为一个通用的指南，而不是作为一套固定的说明。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:71
 msgid ""
-"Users who prefer to install FreeBSD using a graphical installer may be interested in https://ghostbsd.org[GhostBSD], https://www."
-"midnightbsd.org[MidnightBSD] or https://nomadbsd.org[NomadBSD]."
+"Users who prefer to install FreeBSD using a graphical installer may be interested in https://ghostbsd.org[GhostBSD], https://www.midnightbsd."
+"org[MidnightBSD] or https://nomadbsd.org[NomadBSD]."
 msgstr ""
+"喜欢使用图形安装程序来安装 FreeBSD 的用户可能会对 https://ghostbsd.org[GhostBSD]、 https://www.midnightbsd.org[MidnightBSD] 或 https://nomadbsd."
+"org[NomadBSD 感兴趣。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:74
 msgid "After reading this chapter, you will know:"
-msgstr ""
+msgstr "读完本章后，您将知道："
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:76
 msgid "The minimum hardware requirements and FreeBSD supported architectures."
-msgstr ""
+msgstr "最低的硬件要求和 FreeBSD 支持的架构。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:77
 msgid "How to create the FreeBSD installation media."
-msgstr ""
+msgstr "如何创建 FreeBSD 的安装介质。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:78
 msgid "How to start bsdinstall."
-msgstr ""
+msgstr "如何启动 bsdinstall。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:79
 msgid "The questions bsdinstall will ask, what they mean, and how to answer them."
-msgstr ""
+msgstr "bsdinstall 会问的问题，它们意味着什么，以及如何回答它们。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:80
 msgid "How to troubleshoot a failed installation."
-msgstr ""
+msgstr "如何解决安装失败的问题。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:81
 msgid "How to access a live version of FreeBSD before committing to an installation."
-msgstr ""
+msgstr "如何在确认安装之前访问 FreeBSD 的 live 版本。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:83
 msgid "Before reading this chapter, you should:"
-msgstr ""
+msgstr "在阅读本章之前，您应该："
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:85
 msgid ""
-"Read the supported hardware list that shipped with the version of FreeBSD to be installed and verify that the system's hardware is "
-"supported."
-msgstr ""
+"Read the supported hardware list that shipped with the version of FreeBSD to be installed and verify that the system's hardware is supported."
+msgstr "阅读将要安装的 FreeBSD 版本所支持的硬件列表，并确认系统的硬件被支持。"
 
 #. type: Title ==
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:87
 #, no-wrap
 msgid "Minimum Hardware Requirements"
-msgstr ""
+msgstr "最低硬件要求"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:92
 msgid ""
-"The hardware requirements to install FreeBSD vary by architecture.  Hardware architectures and devices supported by a FreeBSD "
-"release are listed on the link:https://www.FreeBSD.org/releases/[FreeBSD Release Information] page.  The link:https://www.FreeBSD."
-"org/where/[FreeBSD download page] also has recommendations for choosing the correct image for different architectures."
+"The hardware requirements to install FreeBSD vary by architecture.  Hardware architectures and devices supported by a FreeBSD release are listed "
+"on the link:https://www.FreeBSD.org/releases/[FreeBSD Release Information] page.  The link:https://www.FreeBSD.org/where/[FreeBSD download page] "
+"also has recommendations for choosing the correct image for different architectures."
 msgstr ""
+"安装 FreeBSD 的硬件要求因架构而异。FreeBSD 发行版本所支持的硬件架构和设备会在 link:https://www.FreeBSD.org/releases/[FreeBSD 发行信息]页面上列出。"
+"在 FreeBSD 的 link:https://www.FreeBSD.org/where/[下载页面] 上也有针对不同架构选择正确镜像的建议。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:97
 msgid ""
-"A FreeBSD installation requires a minimum of 96 MB of RAM and 1.5 GB of free hard drive space.  However, such small amounts of "
-"memory and disk space are really only suitable for custom applications like embedded appliances.  General-purpose desktop systems "
-"need more resources.  2-4 GB RAM and at least 8 GB hard drive space is a good starting point."
+"A FreeBSD installation requires a minimum of 96 MB of RAM and 1.5 GB of free hard drive space.  However, such small amounts of memory and disk "
+"space are really only suitable for custom applications like embedded appliances.  General-purpose desktop systems need more resources.  2-4 GB "
+"RAM and at least 8 GB hard drive space is a good starting point."
 msgstr ""
+"安装 FreeBSD 至少需要 96 MB 的内存和 1.5 GB 的可用硬盘空间。然而，这样小的内存和磁盘空间确实只适合于像嵌入式设备这样的定制应用。通用的桌面系统需要"
+"更多的资源。2-4GB 内存和至少 8GB 硬盘空间是一个好的选择。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:99
 msgid "These are the processor requirements for each architecture:"
-msgstr ""
+msgstr "这些是每个架构的处理器要求："
 
 #. type: Labeled list
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:100
 #, no-wrap
 msgid "amd64"
-msgstr ""
+msgstr "amd64"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:104
 msgid ""
-"This is the most common desktop and laptop processor type, used in most modern systems.  Intel(R) calls it Intel64.  Other "
-"manufacturers sometimes call it x86-64."
-msgstr ""
+"This is the most common desktop and laptop processor type, used in most modern systems.  Intel(R) calls it Intel64.  Other manufacturers "
+"sometimes call it x86-64."
+msgstr "这是最常见的台式机和笔记本电脑处理器类型，并在大多数现代系统中使用。Intel(R) 称其为 Intel64。其他制造商有时称它为 x86-64。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:106
 msgid ""
-"Examples of amd64 compatible processors include: AMD Athlon(TM)64, AMD Opteron(TM), multi-core Intel(R) Xeon(TM), and Intel(R) "
-"Core(TM) 2 and later processors."
-msgstr ""
+"Examples of amd64 compatible processors include: AMD Athlon(TM)64, AMD Opteron(TM), multi-core Intel(R) Xeon(TM), and Intel(R) Core(TM) 2 and "
+"later processors."
+msgstr "兼容 amd64 的处理器的例子包括：AMD Athlon(TM) 64、AMD Opteron(TM)、多核 Intel(R) Xeon(TM) 和 Intel(R) Core(TM) 2 及以后的处理器。"
 
 #. type: Labeled list
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:107
 #, no-wrap
 msgid "i386"
-msgstr ""
+msgstr "i386"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:109
 msgid "Older desktops and laptops often use this 32-bit, x86 architecture."
-msgstr ""
+msgstr "老式台式机和笔记本电脑通常使用这种 32 位的 X86 架构。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:113
 msgid ""
-"Almost all i386-compatible processors with a floating point unit are supported.  All Intel(R) processors 486 or higher are "
-"supported.  However, binaries released by the project are compiled for the 686 processor, so a special build will be needed for "
-"486 and 586 systems."
+"Almost all i386-compatible processors with a floating point unit are supported.  All Intel(R) processors 486 or higher are supported.  However, "
+"binaries released by the project are compiled for the 686 processor, so a special build will be needed for 486 and 586 systems."
 msgstr ""
+"几乎所有与 i386 兼容的带有浮点单元的处理器都被支持。所有 486 或更高的 Intel(R) 处理器都被支持。然而，由该项目发布的二进制文件是为 686 处理器编译"
+"的，所以 486 和 586 系统需要进行特殊的编译。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:117
 msgid ""
-"FreeBSD will take advantage of Physical Address Extensions (PAE) support on CPUs with this feature.  A kernel with the PAE feature "
-"enabled will detect memory above 4 GB and allow it to be used by the system.  However, using PAE places constraints on device "
-"drivers and other features of FreeBSD."
+"FreeBSD will take advantage of Physical Address Extensions (PAE) support on CPUs with this feature.  A kernel with the PAE feature enabled will "
+"detect memory above 4 GB and allow it to be used by the system.  However, using PAE places constraints on device drivers and other features of "
+"FreeBSD."
 msgstr ""
+"FreeBSD 将利用物理地址扩展（PAE）对具有这一特性的 CPU 的支持。启用了 PAE 功能的内核会检测到超过 4GB 的内存，并允许系统使用它。然而，使用 PAE 会对"
+"设备驱动和 FreeBSD 的其他功能造成限制。"
 
 #. type: Labeled list
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:118
 #, no-wrap
 msgid "arm64"
-msgstr ""
+msgstr "arm64"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:121
 msgid "Most embedded boards are 64-bit ARM computers.  A number of arm64 servers are supported."
-msgstr ""
+msgstr "大多数嵌入式板卡是 64 位的 ARM 计算机。一些 arm64 服务器可被支持。"
 
 #. type: Labeled list
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:122
 #, no-wrap
 msgid "arm"
-msgstr ""
+msgstr "arm"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:124
 msgid "Older armv7 boards are supported."
-msgstr ""
+msgstr "支持较早的 armv7 板卡。"
 
 #. type: Labeled list
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:125
 #, no-wrap
 msgid "powerpc"
-msgstr ""
+msgstr "powerpc"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:128
 msgid "All New World ROM Apple(R) Mac(R) systems with built-in USB are supported.  SMP is supported on machines with multiple CPUs."
-msgstr ""
+msgstr "支持所有具有内置 USB 的 New World ROM Apple(R) Mac(R) 系统。在有多个 CPU 的机器上支持 SMP。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:130
 msgid "A 32-bit kernel can only use the first 2 GB of RAM."
-msgstr ""
+msgstr "32 位的内核只能使用前 2GB 的 RAM。"
 
 #. type: Title ==
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:132
 #, no-wrap
 msgid "Pre-Installation Tasks"
-msgstr ""
+msgstr "安装前的准备工作"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:136
 msgid ""
-"Once it has been determined that the system meets the minimum hardware requirements for installing FreeBSD, the installation file "
-"should be downloaded and the installation media prepared.  Before doing this, check that the system is ready for an installation "
-"by verifying the items in this checklist:"
+"Once it has been determined that the system meets the minimum hardware requirements for installing FreeBSD, the installation file should be "
+"downloaded and the installation media prepared.  Before doing this, check that the system is ready for an installation by verifying the items in "
+"this checklist:"
 msgstr ""
+"在确定系统符合安装 FreeBSD 的最低硬件要求之后，就应该下载安装文件并准备好安装介质。在这之前，请检查系统是否已经准备好进行安装，方法是检查这个表中"
+"的项目："
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:139
 #, no-wrap
 msgid "*Back Up Important Data*\n"
-msgstr ""
+msgstr "*备份重要数据*\n"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:145
 msgid ""
-"Before installing any operating system, _always_ backup all important data first.  Do not store the backup on the system being "
-"installed.  Instead, save the data to a removable disk such as a USB drive, another system on the network, or an online backup "
-"service.  Test the backup before starting the installation to make sure it contains all of the needed files.  Once the installer "
-"formats the system's disk, all data stored on that disk will be lost."
+"Before installing any operating system, _always_ backup all important data first.  Do not store the backup on the system being installed.  "
+"Instead, save the data to a removable disk such as a USB drive, another system on the network, or an online backup service.  Test the backup "
+"before starting the installation to make sure it contains all of the needed files.  Once the installer formats the system's disk, all data stored "
+"on that disk will be lost."
 msgstr ""
+"在安装任何操作系统之前，_总是_先备份所有的重要数据。不要将备份存储在正在安装的系统上。相反，应将数据保存在可移动磁盘上，如 USB 驱动器，网络上的另"
+"一个系统，或在线备份服务。在开始安装前测试备份，以确保它包含所有需要的文件。只要安装程序格式化了系统的磁盘，存储在该磁盘上的所有数据就会丢失。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:146
 #, no-wrap
 msgid "*Decide Where to Install FreeBSD*\n"
-msgstr ""
+msgstr "*决定在哪里安装 FreeBSD*\n"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:149
 msgid ""
-"If FreeBSD will be the only operating system installed, this step can be skipped.  But if FreeBSD will share the disk with another "
-"operating system, decide which disk or partition will be used for FreeBSD."
-msgstr ""
+"If FreeBSD will be the only operating system installed, this step can be skipped.  But if FreeBSD will share the disk with another operating "
+"system, decide which disk or partition will be used for FreeBSD."
+msgstr "如果 FreeBSD 是唯一安装的操作系统，这一步就可以跳过。但如果 FreeBSD 将与其他操作系统共享磁盘，请决定哪个磁盘或分区将被用于安装 FreeBSD。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:156
 msgid ""
-"In the i386 and amd64 architectures, disks can be divided into multiple partitions using one of two partitioning schemes.  A "
-"traditional _Master Boot Record_ (MBR) holds a partition table defining up to four _primary partitions_.  For historical reasons, "
-"FreeBSD calls these primary partition _slices_.  One of these primary partitions can be made into an _extended partition_ "
-"containing multiple _logical partitions_.  The _GUID Partition Table_ (GPT) is a newer and simpler method of partitioning a disk.  "
-"Common GPT implementations allow up to 128 partitions per disk, eliminating the need for logical partitions."
+"In the i386 and amd64 architectures, disks can be divided into multiple partitions using one of two partitioning schemes.  A traditional _Master "
+"Boot Record_ (MBR) holds a partition table defining up to four _primary partitions_.  For historical reasons, FreeBSD calls these primary "
+"partition _slices_.  One of these primary partitions can be made into an _extended partition_ containing multiple _logical partitions_.  The "
+"_GUID Partition Table_ (GPT) is a newer and simpler method of partitioning a disk.  Common GPT implementations allow up to 128 partitions per "
+"disk, eliminating the need for logical partitions."
 msgstr ""
+"在 i386 和 amd64 架构中，磁盘可以通过两种分区方案之一被划分为多个分区。传统的_主引导记录_（MBR）拥有一个定义了最多四个_主分区_的分区表。由于历史原"
+"因，FreeBSD 将这些主分区称为_片区_。这些主分区中的一个可以被制作成包含多个_逻辑分区_的_扩展分区_。_GUID 分区表_（GPT）是一种较新的、较简单的磁盘分"
+"区方法。常见的 GPT 实现允许每个磁盘有多达 128 个分区，消除了对逻辑分区的需求。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:160
 msgid ""
-"The FreeBSD boot loader requires either a primary or GPT partition.  If all of the primary or GPT partitions are already in use, "
-"one must be freed for FreeBSD.  To create a partition without deleting existing data, use a partition resizing tool to shrink an "
-"existing partition and create a new partition using the freed space."
+"The FreeBSD boot loader requires either a primary or GPT partition.  If all of the primary or GPT partitions are already in use, one must be "
+"freed for FreeBSD.  To create a partition without deleting existing data, use a partition resizing tool to shrink an existing partition and "
+"create a new partition using the freed space."
 msgstr ""
+"FreeBSD 启动加载器需要一个主分区或 GPT 分区。如果所有的主分区或 GPT 分区都已经被使用，则必须为 FreeBSD 腾出一个分区。要在不删除现有数据的情况下创"
+"建一个分区，可以使用分区调整工具来缩小现有的分区，并利用释放的空间创建一个新的分区。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:164
 msgid ""
-"A variety of free and commercial partition resizing tools are listed at http://en.wikipedia.org/wiki/"
-"List_of_disk_partitioning_software[http://en.wikipedia.org/wiki/List_of_disk_partitioning_software].  GParted Live (https://"
-"gparted.org/livecd.php[https://gparted.org/livecd.php]) is a free live CD which includes the GParted partition editor.  GParted is "
-"also included with many other Linux live CD distributions."
+"A variety of free and commercial partition resizing tools are listed at http://en.wikipedia.org/wiki/List_of_disk_partitioning_software[http://en."
+"wikipedia.org/wiki/List_of_disk_partitioning_software].  GParted Live (https://gparted.org/livecd.php[https://gparted.org/livecd.php]) is a free "
+"live CD which includes the GParted partition editor.  GParted is also included with many other Linux live CD distributions."
 msgstr ""
+"各种免费的和商业的分区调整工具列在 http://en.wikipedia.org/wiki/List_of_disk_partitioning_software[http://en.wikipedia.org/wiki/"
+"List_of_disk_partitioning_software] 。GParted Live (https://gparted.org/livecd.php[https://gparted.org/livecd.php]) 是一张免费的 Live CD，其中包"
+"括 GParted 分区编辑器。GParted 也包括在许多其他的 Linux Live CD 发行中。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:169
 msgid ""
-"When used properly, disk shrinking utilities can safely create space for creating a new partition.  Since the possibility of "
-"selecting the wrong partition exists, always backup any important data and verify the integrity of the backup before modifying "
-"disk partitions."
+"When used properly, disk shrinking utilities can safely create space for creating a new partition.  Since the possibility of selecting the wrong "
+"partition exists, always backup any important data and verify the integrity of the backup before modifying disk partitions."
 msgstr ""
+"如果使用得当，磁盘缩减工具可以安全地创造空间来创建一个新的分区。由于存在选择错误分区的可能性，因此在修改磁盘分区之前，一定要备份任何重要数据，并验"
+"证备份的完整性。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:173
 msgid ""
-"Disk partitions containing different operating systems make it possible to install multiple operating systems on one computer.  An "
-"alternative is to use virtualization (crossref:virtualization[virtualization,Virtualization]) which allows multiple operating "
-"systems to run at the same time without modifying any disk partitions."
+"Disk partitions containing different operating systems make it possible to install multiple operating systems on one computer.  An alternative is "
+"to use virtualization (crossref:virtualization[virtualization,Virtualization]) which allows multiple operating systems to run at the same time "
+"without modifying any disk partitions."
 msgstr ""
+"包含不同操作系统的磁盘分区使得在一台计算机上安装多个操作系统成为可能。另一种方法是使用(crossref:virtualization[virtualization,虚拟化])"
+"（Virtualization），它允许多个操作系统同时运行，而无需修改任何磁盘分区。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:174
 #, no-wrap
 msgid "*Collect Network Information*\n"
-msgstr ""
+msgstr "*收集网络信息*\n"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:177
 msgid ""
-"Some FreeBSD installation methods require a network connection in order to download the installation files.  After any "
-"installation, the installer will offer to setup the system's network interfaces."
-msgstr ""
+"Some FreeBSD installation methods require a network connection in order to download the installation files.  After any installation, the "
+"installer will offer to setup the system's network interfaces."
+msgstr "一些 FreeBSD 安装方法需要网络连接以下载安装文件。在任何安装之后，安装程序都会提出要设置系统的网络接口。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:180
 msgid ""
-"If the network has a DHCP server, it can be used to provide automatic network configuration.  If DHCP is not available, the "
-"following network information for the system must be obtained from the local network administrator or Internet service provider:"
+"If the network has a DHCP server, it can be used to provide automatic network configuration.  If DHCP is not available, the following network "
+"information for the system must be obtained from the local network administrator or Internet service provider:"
 msgstr ""
+"如果网络有 DHCP 服务器，可以用它来提供自动的网络配置。如果 DHCP 不可用，则必须从本地网络管理员或互联网服务提供商那里获得系统的下列网络信息："
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:183
 msgid "Required Network Information"
-msgstr ""
+msgstr "所需的网络信息"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:185
 msgid "IP address"
-msgstr ""
+msgstr "IP 地址"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:186
 msgid "Subnet mask"
-msgstr ""
+msgstr "子网掩码"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:187
 msgid "IP address of default gateway"
-msgstr ""
+msgstr "默认网关的 IP 地址"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:188
 msgid "Domain name of the network"
-msgstr ""
+msgstr "网络的域名"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:189
 msgid "IP addresses of the network's DNS servers"
-msgstr ""
+msgstr "网络的 DNS 服务器的 IP 地址"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:191
 #, no-wrap
 msgid "*Check for FreeBSD Errata*\n"
-msgstr ""
+msgstr "*检查 FreeBSD 的勘误表*\n"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:196
 msgid ""
-"Although the FreeBSD Project strives to ensure that each release of FreeBSD is as stable as possible, bugs occasionally creep into "
-"the process.  On very rare occasions those bugs affect the installation process.  As these problems are discovered and fixed, they "
-"are noted in the FreeBSD Errata (link:https://www.FreeBSD.org/releases/{rel130-current}R/errata/[https://www.freebsd.org/releases/"
-"{rel130-current}R/errata/]) on the FreeBSD web site.  Check the errata before installing to make sure that there are no problems "
-"that might affect the installation."
+"Although the FreeBSD Project strives to ensure that each release of FreeBSD is as stable as possible, bugs occasionally creep into the process.  "
+"On very rare occasions those bugs affect the installation process.  As these problems are discovered and fixed, they are noted in the FreeBSD "
+"Errata (link:https://www.FreeBSD.org/releases/{rel130-current}R/errata/[https://www.freebsd.org/releases/{rel130-current}R/errata/]) on the "
+"FreeBSD web site.  Check the errata before installing to make sure that there are no problems that might affect the installation."
 msgstr ""
+"尽管 FreeBSD 项目努力确保每个版本的 FreeBSD 都是尽可能的稳定，但偶尔也会有一些 bug 悄悄发生这个过程。在非常罕见的情况下，这些错误会影响安装过程。"
+"当这些问题被发现和修正时，它们会在 FreeBSD 网站上的 FreeBSD 勘误表 (link:https://www.FreeBSD.org/releases/{rel130-current}R/errata/[https://www."
+"freebsd.org/releases/{rel130-current}R/errata/]) 中注明。在安装前请检查勘误表，以确保没有可能影响安装的问题。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:198
 msgid ""
-"Information and errata for all the releases can be found on the release information section of the FreeBSD web site (link:https://"
-"www.FreeBSD.org/releases/[https://www.freebsd.org/releases/])."
+"Information and errata for all the releases can be found on the release information section of the FreeBSD web site (link:https://www.FreeBSD.org/"
+"releases/[https://www.freebsd.org/releases/])."
 msgstr ""
+"所有发行版的信息和勘误表可以在 FreeBSD 网站上的发行信息部分找到 (link:https://www.FreeBSD.org/releases/[https://www.freebsd.org/releases/])。"
 
 #. type: Title ===
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:200
 #, no-wrap
 msgid "Prepare the Installation Media"
-msgstr ""
+msgstr "准备好安装介质"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:204
 msgid ""
-"The FreeBSD installer is not an application that can be run from within another operating system.  Instead, download a FreeBSD "
-"installation file, burn it to the media associated with its file type and size (CD, DVD, or USB), and boot the system to install "
-"from the inserted media."
+"The FreeBSD installer is not an application that can be run from within another operating system.  Instead, download a FreeBSD installation file, "
+"burn it to the media associated with its file type and size (CD, DVD, or USB), and boot the system to install from the inserted media."
 msgstr ""
+"FreeBSD 安装程序不是一个可以从其他操作系统中运行的应用程序。取而代之的是，下载一个 FreeBSD 安装文件，将其刻录到与其文件类型和大小相关的介质上"
+"（CD、DVD 或 USB），然后从插入的介质启动系统进行安装。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:208
 msgid ""
-"FreeBSD installation files are available at link:https://www.FreeBSD.org/where/[www.freebsd.org/where/].  Each installation file's "
-"name includes the release version of FreeBSD, the architecture, and the type of file.  For example, to install FreeBSD 13.0 on an "
-"amd64 system from a DVD, download [.filename]#FreeBSD-13.0-RELEASE-amd64-dvd1.iso#, burn this file to a DVD, and boot the system "
-"with the DVD inserted."
+"FreeBSD installation files are available at link:https://www.FreeBSD.org/where/[www.freebsd.org/where/].  Each installation file's name includes "
+"the release version of FreeBSD, the architecture, and the type of file.  For example, to install FreeBSD 13.0 on an amd64 system from a DVD, "
+"download [.filename]#FreeBSD-13.0-RELEASE-amd64-dvd1.iso#, burn this file to a DVD, and boot the system with the DVD inserted."
 msgstr ""
+"可以在 link:https://www.FreeBSD.org/where/[www.freebsd.org/where/] 找到 FreeBSD 的安装文件。每个安装文件的名称都包括 FreeBSD 的发行版本、架构和文"
+"件类型。例如，如果要在 amd64 系统上安装 FreeBSD 13.0，请下载 [.filename]#FreeBSD-13.0-RELEASE-amd64-dvd1.iso#，把这个文件刻录到 DVD 上，然后在插"
+"入 DVD 的情况下启动系统。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:211
 msgid "Installation files are available in several formats.  The formats vary depending on computer architecture and media type."
-msgstr ""
+msgstr "安装文件有几种格式。这些格式因计算机结构和介质类型而异。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:215
 msgid ""
-"Additional installation files are included for computers that boot with UEFI (Unified Extensible Firmware Interface).  The names "
-"of these files include the string [.filename]#uefi#."
-msgstr ""
+"Additional installation files are included for computers that boot with UEFI (Unified Extensible Firmware Interface).  The names of these files "
+"include the string [.filename]#uefi#."
+msgstr "对于使用 UEFI（统一可扩展固件接口）启动的计算机，还包括其他安装文件。这些文件的名称包括 [.filename]#uefi# 这个字符串。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:217
 msgid "File types:"
-msgstr ""
+msgstr "文件类型："
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:219
 msgid ""
-"`-bootonly.iso`: This is the smallest installation file as it only contains the installer. A working Internet connection is "
-"required during installation as the installer will download the files it needs to complete the FreeBSD installation. This file "
-"should be burned to a CD using a CD burning application."
+"`-bootonly.iso`: This is the smallest installation file as it only contains the installer. A working Internet connection is required during "
+"installation as the installer will download the files it needs to complete the FreeBSD installation. This file should be burned to a CD using a "
+"CD burning application."
 msgstr ""
+"`-bootonly.iso`：这是最小的安装文件，因为它只包含安装程序。在安装过程中需要一个正常的互联网连接，因为安装程序会下载 FreeBSD 安装所需的文件。应该用"
+"光盘刻录软件把这个文件刻录到光盘上。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:220
 msgid ""
-"`-disc1.iso`: This file contains all of the files needed to install FreeBSD, its source, and the Ports Collection. It should be "
-"burned to a CD using a CD burning application."
-msgstr ""
+"`-disc1.iso`: This file contains all of the files needed to install FreeBSD, its source, and the Ports Collection. It should be burned to a CD "
+"using a CD burning application."
+msgstr "`-disc1.iso`：这个文件包含了安装 FreeBSD 所需的所有文件，包含 FreeBSD 的源代码，以及 Ports Collection。应使用光盘刻录软件将其刻录到光盘上。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:221
 msgid ""
-"`-dvd1.iso`: This file contains all of the files needed to install FreeBSD, its source, and the Ports Collection. It also contains "
-"a set of popular binary packages for installing a window manager and some applications so that a complete system can be installed "
-"from media without requiring a connection to the Internet. This file should be burned to a DVD using a DVD burning application."
+"`-dvd1.iso`: This file contains all of the files needed to install FreeBSD, its source, and the Ports Collection. It also contains a set of "
+"popular binary packages for installing a window manager and some applications so that a complete system can be installed from media without "
+"requiring a connection to the Internet. This file should be burned to a DVD using a DVD burning application."
 msgstr ""
+"`-dvd1.iso`：这个文件包含了安装 FreeBSD、其源代码和 Ports Collection 所需的所有文件。它还包含了一套用于安装窗口管理器和一些应用程序的常用二进制"
+"包，这样就可以从安装介质中安装一个完整的系统，而不需要连接到互联网。应该用 DVD 刻录程序把这个文件刻录到 DVD 上。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:222
 msgid ""
-"`-memstick.img`: This file contains all of the files needed to install FreeBSD, its source, and the Ports Collection. It should be "
-"burned to a USB stick using the instructions below."
-msgstr ""
+"`-memstick.img`: This file contains all of the files needed to install FreeBSD, its source, and the Ports Collection. It should be burned to a "
+"USB stick using the instructions below."
+msgstr "`-memstick.img`：这个文件包含了安装 FreeBSD 所需的所有文件，以及其源代码和 Ports Collection。应该按照下面的说明把它刻录到 U 盘上。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:223
 msgid ""
-"`-mini-memstick.img`: Like `-bootonly.iso`, does not include installation files, but downloads them as needed. A working internet "
-"connection is required during installation. Write this file to a USB stick as shown in <<bsdinstall-usb>>."
+"`-mini-memstick.img`: Like `-bootonly.iso`, does not include installation files, but downloads them as needed. A working internet connection is "
+"required during installation. Write this file to a USB stick as shown in <<bsdinstall-usb>>."
 msgstr ""
+"`-mini-memstick.img`：和 `-bootonly.iso` 一样，不包括安装文件，但会根据需要下载它们。在安装过程中需要一个正常的互联网连接。如<<bsdinstall-usb>>所"
+"示，将此文件写入U盘。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:228
 msgid ""
-"After downloading the image file, download [.filename]#CHECKSUM.SHA256# from the same directory.  Calculate a _checksum_ for the "
-"image file.  FreeBSD provides man:sha256[1] for this, used as `sha256 _imagefilename_`.  Other operating systems have similar "
-"programs."
+"After downloading the image file, download [.filename]#CHECKSUM.SHA256# from the same directory.  Calculate a _checksum_ for the image file.  "
+"FreeBSD provides man:sha256[1] for this, used as `sha256 _imagefilename_`.  Other operating systems have similar programs."
 msgstr ""
+"下载镜像文件后，从同一目录中下载 [.filename]#CHECKSUM.SHA256#。计算映像文件的_校验和_。FreeBSD 为此提供了 man:sha256[1] ，通过命令 `sha256 "
+"_imagefilename_` 来使用。其他操作系统也有类似的程序。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:232
 msgid ""
-"Compare the calculated checksum with the one shown in [.filename]#CHECKSUM.SHA256#.  The checksums must match exactly.  If the "
-"checksums do not match, the image file is corrupt and must be downloaded again."
+"Compare the calculated checksum with the one shown in [.filename]#CHECKSUM.SHA256#.  The checksums must match exactly.  If the checksums do not "
+"match, the image file is corrupt and must be downloaded again."
 msgstr ""
+"将计算出来的校验和与 [.filename]#CHECKSUM.SHA256# 中显示的校验和进行比较。这些校验和必须完全匹配。如果校验和不匹配，就镜像文件损坏了，必须重新下"
+"载。"
 
 #. type: Title ====
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:234
 #, no-wrap
 msgid "Writing an Image File to USB"
-msgstr ""
+msgstr "将镜像写入 USB 设备"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:240
 msgid ""
-"The [.filename]#\\*.img# file is an _image_ of the complete contents of a memory stick.  It _cannot_ be copied to the target "
-"device as a file.  Several applications are available for writing the [.filename]#*.img# to a USB stick.  This section describes "
-"two of these utilities."
+"The [.filename]#\\*.img# file is an _image_ of the complete contents of a memory stick.  It _cannot_ be copied to the target device as a file.  "
+"Several applications are available for writing the [.filename]#*.img# to a USB stick.  This section describes two of these utilities."
 msgstr ""
+"[.filename]#\\*.img# 文件是一个 U 盘完整的_映像_。它_不能_作为文件被复制到目标设备上。有几个应用程序可用于将 [.filename]#\\*.img# 写入 U 盘。本节"
+"将介绍其中的两个软件。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:245
 msgid "Before proceeding, back up any important data on the USB stick.  This procedure will erase the existing data on the stick."
-msgstr ""
+msgstr "在继续进行之前，请备份 U 盘上一切重要的数据。这个程序将删除 U 盘上的现有数据。"
 
 #. type: delimited block * 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:251
 #, no-wrap
 msgid "*Procedure. Using `dd` to Write the Image* +\n"
-msgstr ""
+msgstr "*方法。使用 `dd` 刻录镜像* +\n"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:256
 msgid ""
-"This example uses [.filename]#/dev/da0# as the target device where the image will be written.  Be _very careful_ that the correct "
-"device is used as this command will destroy the existing data on the specified target device."
+"This example uses [.filename]#/dev/da0# as the target device where the image will be written.  Be _very careful_ that the correct device is used "
+"as this command will destroy the existing data on the specified target device."
 msgstr ""
+"这个例子使用 [.filename]#/dev/da0# 作为目标设备，镜像将被写入该设备。要_非常小心_使用正确的设备，因为这个命令会破坏指定的目标设备上的现有数据。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:259
 msgid ""
-"The command-line utility is available on BSD, Linux(R), and Mac OS(R) systems. To burn the image using `dd`, insert the USB stick "
-"and determine its device name. Then, specify the name of the downloaded installation file and the device name for the USB stick. "
-"This example burns the amd64 installation image to the first USB device on an existing FreeBSD system."
+"The command-line utility is available on BSD, Linux(R), and Mac OS(R) systems. To burn the image using `dd`, insert the USB stick and determine "
+"its device name. Then, specify the name of the downloaded installation file and the device name for the USB stick. This example burns the amd64 "
+"installation image to the first USB device on an existing FreeBSD system."
 msgstr ""
+"这个命令行工具在 BSD、Linux(R) 和 Mac OS(R) 系统上可用。要使用 `dd` 刻录镜像，插入 U 盘并确定其设备名称。然后，指定下载的安装文件的名称和 U 盘的设"
+"备名称。这个例子将 amd64 安装镜像刻录到现有 FreeBSD 系统的第一个 USB 设备上。"
 
 #. type: delimited block . 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:263
 #, no-wrap
 msgid "# dd if=FreeBSD-13.0-RELEASE-amd64-memstick.img of=/dev/da0 bs=1M conv=sync\n"
-msgstr ""
+msgstr "# dd if=FreeBSD-13.0-RELEASE-amd64-memstick.img of=/dev/da0 bs=1M conv=sync\n"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:270
 msgid ""
-"If this command fails, verify that the USB stick is not mounted and that the device name is for the disk, not a partition.  Some "
-"operating systems might require this command to be run with man:sudo[8].  The man:dd[1] syntax varies slightly across different "
-"platforms; for example, Mac OS(R) requires a lower-case `bs=1m`.  Systems like Linux(R) might buffer writes.  To force all writes "
-"to complete, use man:sync[8]."
+"If this command fails, verify that the USB stick is not mounted and that the device name is for the disk, not a partition.  Some operating "
+"systems might require this command to be run with man:sudo[8].  The man:dd[1] syntax varies slightly across different platforms; for example, Mac "
+"OS(R) requires a lower-case `bs=1m`.  Systems like Linux(R) might buffer writes.  To force all writes to complete, use man:sync[8]."
 msgstr ""
+"如果这个命令执行失败，请确认 U 盘有无被挂载，且设备名称应是磁盘的名称，而不是一个分区。一些操作系统可能要求这个命令必须在 man:sudo[8] 下运行。man:"
+"dd[1]的语法在不同的平台上略有不同；例如，Mac OS(R) 需要小写的 bs=1m。像 Linux(R) 这样的系统可能会对写入进行缓冲。要强制所有的写操作完成，请使用 "
+"man:sync[8]。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:275
 #, no-wrap
 msgid "*Procedure. Using Windows(R) to Write the Image* +\n"
-msgstr ""
+msgstr "*方法。使用 Windows(R) 刻录镜像* +\n"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:280
 msgid "Be sure to give the correct drive letter as the existing data on the specified drive will be overwritten and destroyed."
-msgstr ""
+msgstr "请确保给出正确的盘符，因为指定驱动器上的现有数据将被覆盖和销毁。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:282
 #, no-wrap
 msgid "*Obtaining Image Writer for Windows(R)*\n"
-msgstr ""
+msgstr "*获得用于 Windows(R) 的 Image Writer*\n"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:285
 msgid ""
-"Image Writer for Windows(R) is a free application that can correctly write an image file to a memory stick.  Download it from "
-"https://sourceforge.net/projects/win32diskimager/[https://sourceforge.net/projects/win32diskimager/] and extract it into a folder."
+"Image Writer for Windows(R) is a free application that can correctly write an image file to a memory stick.  Download it from https://sourceforge."
+"net/projects/win32diskimager/[https://sourceforge.net/projects/win32diskimager/] and extract it into a folder."
 msgstr ""
+"Image Writer for Windows(R) 是一个免费的应用程序，可以正确地将镜像文件写入存储器。从 https://sourceforge.net/projects/win32diskimager/[https://"
+"sourceforge.net/projects/win32diskimager/] 下载，并将其解压到一个文件夹中。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:287
 #, no-wrap
 msgid "*Writing the Image with Image Writer*\n"
-msgstr ""
+msgstr "*用 Image Writer 写入镜像*\n"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:294
 msgid ""
-"Double-click the Win32DiskImager icon to start the program.  Verify that the drive letter shown under `Device` is the drive with "
-"the memory stick.  Click the folder icon and select the image to be written to the memory stick.  Click btn:[Save] to accept the "
-"image file name.  Verify that everything is correct, and that no folders on the memory stick are open in other windows.  When "
-"everything is ready, click btn:[Write] to write the image file to the memory stick."
+"Double-click the Win32DiskImager icon to start the program.  Verify that the drive letter shown under `Device` is the drive with the memory "
+"stick.  Click the folder icon and select the image to be written to the memory stick.  Click btn:[Save] to accept the image file name.  Verify "
+"that everything is correct, and that no folders on the memory stick are open in other windows.  When everything is ready, click btn:[Write] to "
+"write the image file to the memory stick."
 msgstr ""
+"双击 Win32DiskImager 图标以启动该程序。确认 `Device` 下显示的盘符是装有 USB 设备的驱动器。点击文件夹图标，选择要写入 U 盘的镜像。点击 btn:[Save]，"
+"接受镜像文件名。确认一切都正确，并且 U 盘的文件夹没有在其他窗口中打开。一切准备就绪后，点击 btn:[Write]，将镜像文件写入存储器。"
 
 #. type: delimited block * 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:297
 msgid "You are now ready to start installing FreeBSD."
-msgstr ""
+msgstr "现在你已经准备好，可以开始安装 FreeBSD 了。"
 
 #. type: Title ==
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:299
 #, no-wrap
 msgid "Starting the Installation"
-msgstr ""
+msgstr "开始安装"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:304
 msgid "By default, the installation will not make any changes to the disk(s) before the following message:"
-msgstr ""
+msgstr "默认情况下，在出现以下信息之前，安装不会对磁盘进行任何修改："
 
 #. type: delimited block . 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:311
@@ -634,735 +691,790 @@ msgid ""
 "be PERMANENTLY ERASED. Are you sure you want to\n"
 "commit your changes?\n"
 msgstr ""
+"Your changes will now be written to disk. If you\n"
+"have chosen to overwrite existing data, it will\n"
+"be PERMANENTLY ERASED. Are you sure you want to\n"
+"commit your changes?\n"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:315
 msgid ""
-"The install can be exited at any time prior to this warning.  If there is a concern that something is incorrectly configured, just "
-"turn the computer off before this point and no changes will be made to the system's disks."
-msgstr ""
+"The install can be exited at any time prior to this warning.  If there is a concern that something is incorrectly configured, just turn the "
+"computer off before this point and no changes will be made to the system's disks."
+msgstr "在此之前均可安全退出。如果担心有什么地方配置不正确，只要在这之前关闭计算机，系统的磁盘就不会有任何变化。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:321
 msgid ""
-"This section describes how to boot the system from the installation media which was prepared using the instructions in "
-"<<bsdinstall-installation-media>>.  When using a bootable USB stick, plug in the USB stick before turning on the computer.  When "
-"booting from CD or DVD, turn on the computer and insert the media at the first opportunity.  How to configure the system to boot "
-"from the inserted media depends upon the architecture."
+"This section describes how to boot the system from the installation media which was prepared using the instructions in <<bsdinstall-installation-"
+"media>>.  When using a bootable USB stick, plug in the USB stick before turning on the computer.  When booting from CD or DVD, turn on the "
+"computer and insert the media at the first opportunity.  How to configure the system to boot from the inserted media depends upon the "
+"architecture."
 msgstr ""
+"本节介绍了如何从安装介质启动系统，安装介质是按照 <<bsdinstall-installation-media>> 中的说明准备的。当使用可启动的 U 盘时，在打开计算机之前插入 U "
+"盘。当从 CD 或 DVD 启动时，请在第一时间打开计算机并插入媒体。如何配置系统以从插入的媒体启动，取决于架构。"
 
 #. type: Title ===
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:323
 #, no-wrap
 msgid "Booting on i386(TM) and amd64"
-msgstr ""
+msgstr "在 i386(TM) 和 amd64 上启动"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:329
 msgid ""
-"These architectures provide a BIOS menu for selecting the boot device.  Depending upon the installation media being used, select "
-"the CD/DVD or USB device as the first boot device.  Most systems also provide a key for selecting the boot device during startup "
-"without having to enter the BIOS.  Typically, the key is either kbd:[F10], kbd:[F11], kbd:[F12], or kbd:[Escape]."
+"These architectures provide a BIOS menu for selecting the boot device.  Depending upon the installation media being used, select the CD/DVD or "
+"USB device as the first boot device.  Most systems also provide a key for selecting the boot device during startup without having to enter the "
+"BIOS.  Typically, the key is either kbd:[F10], kbd:[F11], kbd:[F12], or kbd:[Escape]."
 msgstr ""
+"这些架构提供了一个 BIOS 菜单来选择启动设备。根据所使用的安装介质，选择 CD/DVD 或 USB 设备作为第一启动设备。大多数系统还提供了一个键，用于在启动过"
+"程中选择启动设备，而不需要进入 BIOS。一般来说，这个键是 kbd:[F10]、kbd:[F11] 或 kbd:[Escape]。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:331
 msgid "If the computer loads the existing operating system instead of the FreeBSD installer, then either:"
-msgstr ""
+msgstr "如果计算机加载的是现有的操作系统而不是 FreeBSD 的安装程序，可能因为："
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:333
-msgid ""
-"The installation media was not inserted early enough in the boot process. Leave the media inserted and try restarting the computer."
-msgstr ""
+msgid "The installation media was not inserted early enough in the boot process. Leave the media inserted and try restarting the computer."
+msgstr "安装介质在启动过程中没有足够早地插入。让介质继续插入并尝试重新启动计算机。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:334
 msgid "The BIOS changes were incorrect or not saved. Double-check that the right boot device is selected as the first boot device."
-msgstr ""
+msgstr "BIOS 更改不正确或没有保存。仔细检查是否选择了正确的启动设备作为第一个启动设备。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:335
 msgid ""
-"This system is too old to support booting from the chosen media. In this case, the Plop Boot Manager (http://www.plop.at/en/"
-"bootmanagers.html[]) can be used to boot the system from the selected media."
+"This system is too old to support booting from the chosen media. In this case, the Plop Boot Manager (http://www.plop.at/en/bootmanagers.html[]) "
+"can be used to boot the system from the selected media."
 msgstr ""
+"这个系统太老了，不支持从所选介质启动。在这种情况下，可以使用 Plop Boot Manager (http://www.plop.at/en/bootmanagers.html[]) 从选定的媒体启动系统。"
 
 #. type: Title ===
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:336
 #, no-wrap
 msgid "Booting on PowerPC(R)"
-msgstr ""
+msgstr "在 PowerPC(R) 上启动"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:341
 msgid ""
-"On most machines, holding kbd:[C] on the keyboard during boot will boot from the CD.  Otherwise, hold kbd:[Command+Option+O+F], or "
-"kbd:[Windows+Alt+O+F] on non-Apple(R) keyboards.  At the `0 >` prompt, enter"
+"On most machines, holding kbd:[C] on the keyboard during boot will boot from the CD.  Otherwise, hold kbd:[Command+Option+O+F], or kbd:[Windows"
+"+Alt+O+F] on non-Apple(R) keyboards.  At the `0 >` prompt, enter"
 msgstr ""
+"在大多数机器上，在启动过程中按住键盘上的kbd:[C] 将从 CD 启动。否则，按住 kbd:[Command+Option+O+F]，或者在非苹果(R)键盘上按住 kbd:[Windows+Alt+O"
+"+F]。在 `0>` 提示下，输入"
 
 #. type: delimited block . 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:345
 #, no-wrap
 msgid " boot cd:,\\ppc\\loader cd:0\n"
-msgstr ""
+msgstr " boot cd:,\\ppc\\loader cd:0\n"
 
 #. type: Title ===
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:348
 #, no-wrap
 msgid "FreeBSD Boot Menu"
-msgstr ""
+msgstr "FreeBSD 引导加载器菜单"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:351
 msgid "Once the system boots from the installation media, a menu similar to the following will be displayed:"
-msgstr ""
+msgstr "系统从安装介质启动以后，将显示一个类似于下图的菜单："
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:353
 #, no-wrap
 msgid "FreeBSD Boot Loader Menu"
-msgstr ""
+msgstr "FreeBSD 安装程序"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:354
 #, no-wrap
 msgid "bsdinstall-newboot-loader-menu.png"
-msgstr ""
+msgstr "bsdinstall-newboot-loader-menu.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:360
 msgid ""
-"By default, the menu will wait ten seconds for user input before booting into the FreeBSD installer or, if FreeBSD is already "
-"installed, before booting into FreeBSD.  To pause the boot timer in order to review the selections, press kbd:[Space].  To select "
-"an option, press its highlighted number, character, or key.  The following options are available."
+"By default, the menu will wait ten seconds for user input before booting into the FreeBSD installer or, if FreeBSD is already installed, before "
+"booting into FreeBSD.  To pause the boot timer in order to review the selections, press kbd:[Space].  To select an option, press its highlighted "
+"number, character, or key.  The following options are available."
 msgstr ""
+"默认情况下，在启动到 FreeBSD 安装程序之前，该菜单会等待 10 秒钟让用户输入；如果已经安装了 FreeBSD，则在启动到 FreeBSD 之前。要暂停启动计时器以查看"
+"选择，请按空格 kbd:[Space]。要选择一个选项，按其高亮的数字、字符或键。以下是可用的选项。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:362
 msgid ""
-"`Boot Multi User`: This will continue the FreeBSD boot process. If the boot timer has been paused, press kbd:[1], upper- or lower-"
-"case kbd:[B], or kbd:[Enter]."
-msgstr ""
+"`Boot Multi User`: This will continue the FreeBSD boot process. If the boot timer has been paused, press kbd:[1], upper- or lower-case kbd:[B], "
+"or kbd:[Enter]."
+msgstr "`Boot Multi User`: 这将继续 FreeBSD 的启动过程。如果启动计时器已经暂停，按 kbd:[1]，大写或小写的 kbd:[B]，或 kbd:[Enter] 键。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:363
 msgid ""
-"`Boot Single User`: This mode can be used to fix an existing FreeBSD installation as described in crossref:boot[boot-"
-"singleuser,“Single-User Mode”]. Press kbd:[2] or the upper- or lower-case kbd:[S] to enter this mode."
+"`Boot Single User`: This mode can be used to fix an existing FreeBSD installation as described in crossref:boot[boot-singleuser,“Single-User "
+"Mode”]. Press kbd:[2] or the upper- or lower-case kbd:[S] to enter this mode."
 msgstr ""
+"`Boot Single User`: 这个模式可以用来修复现有的 FreeBSD 安装，如crossref:boot[boot-singleuser,“Single-User Mode”] 中所述。按kbd:[2] 或大写或小写的 "
+"kbd:[S] 来进入这个模式。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:364
 msgid ""
-"`Escape to loader prompt`: This will boot the system into a repair prompt that contains a limited number of low-level commands. "
-"This prompt is described in crossref:boot[boot-loader,“Stage Three”]. Press kbd:[3] or kbd:[Esc] to boot into this prompt."
+"`Escape to loader prompt`: This will boot the system into a repair prompt that contains a limited number of low-level commands. This prompt is "
+"described in crossref:boot[boot-loader,“Stage Three”]. Press kbd:[3] or kbd:[Esc] to boot into this prompt."
 msgstr ""
+"`Escape to loader prompt`: 这将引导系统进入一个包含有限数量的低级命令的修复提示。这个提示将在 crossref:boot[boot-loader,“Stage Three”] 中描述。按 "
+"kbd:[3] 或 kbd:[Esc] 键启动进入这个提示。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:365
 msgid "`Reboot`: Reboots the system."
-msgstr ""
+msgstr "`Reboot`: 重启系统。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:366
 msgid "`Kernel`: Loads a different kernel."
-msgstr ""
+msgstr "`Kernel`: 加载一个不同的内核。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:367
 msgid "`Configure Boot Options`: Opens the menu shown in, and described under, <<bsdinstall-boot-options-menu>>."
-msgstr ""
+msgstr "`Configure Boot Options`: 打开 <<bsdinstall-boot-options-menu>> 中描述的菜单。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:369
 #, no-wrap
 msgid "FreeBSD Boot Options Menu"
-msgstr ""
+msgstr "FreeBSD 开机选项菜单"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:370
 #, no-wrap
 msgid "bsdinstall-boot-options-menu.png"
-msgstr ""
+msgstr "bsdinstall-boot-options-menu.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:374
 msgid ""
-"The boot options menu is divided into two sections.  The first section can be used to either return to the main boot menu or to "
-"reset any toggled options back to their defaults."
-msgstr ""
+"The boot options menu is divided into two sections.  The first section can be used to either return to the main boot menu or to reset any toggled "
+"options back to their defaults."
+msgstr "开机选项菜单分为两个部分。第一部分可以用来返回到主启动菜单或将任何已切换的选项重新设置为默认值。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:378
 msgid ""
-"The next section is used to toggle the available options to `On` or `Off` by pressing the option's highlighted number or "
-"character.  The system will always boot using the settings for these options until they are modified.  Several options can be "
-"toggled using this menu:"
+"The next section is used to toggle the available options to `On` or `Off` by pressing the option's highlighted number or character.  The system "
+"will always boot using the settings for these options until they are modified.  Several options can be toggled using this menu:"
 msgstr ""
+"下一个部分是用来切换可用的选项，通过按下选项的高亮数字或字符来开启或关闭。系统将始终使用这些选项的设置启动，直到它们被修改。有几个选项可以通过这个"
+"菜单进行切换："
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:380
 msgid "`ACPI Support`: If the system hangs during boot, try toggling this option to `Off`."
-msgstr ""
+msgstr "`ACPI Support`: 如果系统在启动过程中挂起，请尝试将该选项切换为 `Off`。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:381
 msgid "`Safe Mode`: If the system still hangs during boot even with `ACPI Support` set to `Off`, try setting this option to `On`."
-msgstr ""
+msgstr "`Safe Mode`: 如果即使将 `ACPI Support` 设置为 `Off`，系统在启动时仍然挂起，请尝试将这个选项设置为 `On`。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:382
 msgid ""
-"`Single User`: Toggle this option to `On` to fix an existing FreeBSD installation as described in crossref:boot[boot-"
-"singleuser,“Single-User Mode”]. Once the problem is fixed, set it back to `Off`."
+"`Single User`: Toggle this option to `On` to fix an existing FreeBSD installation as described in crossref:boot[boot-singleuser,“Single-User "
+"Mode”]. Once the problem is fixed, set it back to `Off`."
 msgstr ""
+"`Single User`: 将这个选项切换到 `On` 来修复现有的 FreeBSD 安装，如 crossref:boot[boot-singleuser,“Single-User Mode”] 中所述。如果问题得到解决了，"
+"再将其设置为 `Off` 即可。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:383
 msgid ""
-"`Verbose`: Toggle this option to `On` to see more detailed messages during the boot process. This can be useful when "
-"troubleshooting a piece of hardware."
-msgstr ""
+"`Verbose`: Toggle this option to `On` to see more detailed messages during the boot process. This can be useful when troubleshooting a piece of "
+"hardware."
+msgstr "`Verbose`: 把这个选项切换到 `On`，可以在启动过程中看到更详细的信息。这在排除一个硬件的故障时可能很有用。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:387
 msgid ""
-"After making the needed selections, press kbd:[1] or kbd:[Backspace] to return to the main boot menu, then press kbd:[Enter] to "
-"continue booting into FreeBSD.  A series of boot messages will appear as FreeBSD carries out its hardware device probes and loads "
-"the installation program.  Once the boot is complete, the welcome menu shown in <<bsdinstall-choose-mode>> will be displayed."
+"After making the needed selections, press kbd:[1] or kbd:[Backspace] to return to the main boot menu, then press kbd:[Enter] to continue booting "
+"into FreeBSD.  A series of boot messages will appear as FreeBSD carries out its hardware device probes and loads the installation program.  Once "
+"the boot is complete, the welcome menu shown in <<bsdinstall-choose-mode>> will be displayed."
 msgstr ""
+"在做出必要的选择后，按 kbd:[1] 或 kbd:[Backspace] 键返回主启动菜单，然后按 kbd:[Enter] 键继续启动 FreeBSD。当 FreeBSD 进行硬件设备探测并加载安装程"
+"序时，会出现一系列的启动信息。启动完成了以后，将显示 <<bsdinstall-choose-mode>> 中的欢迎菜单。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:389
 #, no-wrap
 msgid "Welcome Menu"
-msgstr ""
+msgstr "欢迎菜单"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:390
 #, no-wrap
 msgid "bsdinstall-choose-mode.png"
-msgstr ""
+msgstr "bsdinstall-choose-mode.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:398
 msgid ""
-"Press kbd:[Enter] to select the default of btn:[Install] to enter the installer.  The rest of this chapter describes how to use "
-"this installer.  Otherwise, use the right or left arrows or the colorized letter to select the desired menu item.  The btn:[Shell] "
-"can be used to access a FreeBSD shell in order to use command line utilities to prepare the disks before installation.  The btn:"
-"[Live CD] option can be used to try out FreeBSD before installing it.  The live version is described in <<using-live-cd>>."
+"Press kbd:[Enter] to select the default of btn:[Install] to enter the installer.  The rest of this chapter describes how to use this installer.  "
+"Otherwise, use the right or left arrows or the colorized letter to select the desired menu item.  The btn:[Shell] can be used to access a FreeBSD "
+"shell in order to use command line utilities to prepare the disks before installation.  The btn:[Live CD] option can be used to try out FreeBSD "
+"before installing it.  The live version is described in <<using-live-cd>>."
 msgstr ""
+"按回车键 kbd:[Enter] ，选择默认的 btn:[Install]，进入安装程序。本章的其余部分将介绍如何使用这个安装程序。否则，使用左右箭头或彩色字母来选择所需的"
+"菜单项。btn:[Shell] 可以用来访问一个 FreeBSD shell，以便在安装前使用命令行工具来准备磁盘。btn:[Live CD] 选项可以用来在安装前试用 FreeBSD。Live版本"
+"在 <<using-live-cd>> 中有描述。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:404
 msgid ""
-"To review the boot messages, including the hardware device probe, press the upper- or lower-case kbd:[S] and then kbd:[Enter] to "
-"access a shell.  At the shell prompt, type `more /var/run/dmesg.boot` and use the space bar to scroll through the messages.  When "
-"finished, type `exit` to return to the welcome menu."
+"To review the boot messages, including the hardware device probe, press the upper- or lower-case kbd:[S] and then kbd:[Enter] to access a shell.  "
+"At the shell prompt, type `more /var/run/dmesg.boot` and use the space bar to scroll through the messages.  When finished, type `exit` to return "
+"to the welcome menu."
 msgstr ""
+"要查看开机信息，包括硬件设备探测，按大写或小写的 kbd:[S]，然后按回车键 kbd:[Enter] 进入一个 shell。在 shell 提示符下，输入 `more /var/run/dmesg."
+"boot`，并使用空格键滚动浏览信息。完成后，键入 `exit` 来返回欢迎菜单。"
 
 #. type: Title ==
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:407
 #, no-wrap
 msgid "Using bsdinstall"
-msgstr ""
+msgstr "使用 bsdinstall"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:412
 msgid ""
-"This section shows the order of the bsdinstall menus and the type of information that will be asked before the system is "
-"installed.  Use the arrow keys to highlight a menu option, then kbd:[Space] to select or deselect that menu item.  When finished, "
-"press kbd:[Enter] to save the selection and move onto the next screen."
+"This section shows the order of the bsdinstall menus and the type of information that will be asked before the system is installed.  Use the "
+"arrow keys to highlight a menu option, then kbd:[Space] to select or deselect that menu item.  When finished, press kbd:[Enter] to save the "
+"selection and move onto the next screen."
 msgstr ""
+"本节显示了bsdinstall菜单的顺序以及在安装系统前将被询问的信息类型。使用方向键选中一个菜单选项，然后用空格 kbd:[Space] 选择或取消选择该菜单项。完成"
+"后，按回车键kbd:[Enter] 保存选择并进入下一屏幕。"
 
 #. type: Title ===
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:414
 #, no-wrap
 msgid "Selecting the Keymap Menu"
-msgstr ""
+msgstr "选择键盘类型"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:417
 msgid "Before starting the process, bsdinstall will load the keymap files as show in <<bsdinstall-keymap-loading>>."
-msgstr ""
+msgstr "在启动这个过程之前，bsdinstall将加载键盘类型文件，如 <<bsdinstall-keymap-loading>> 所示。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:419
 #, no-wrap
 msgid "Keymap Loading"
-msgstr ""
+msgstr "加载键盘类型"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:420
 #, no-wrap
 msgid "bsdinstall-keymap-loading.png"
-msgstr ""
+msgstr "bsdinstall-keymap-loading.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:425
 msgid ""
-"After the keymaps have been loaded bsdinstall displays the menu shown in <<bsdinstall-keymap-10>>.  Use the up and down arrows to "
-"select the keymap that most closely represents the mapping of the keyboard attached to the system.  Press kbd:[Enter] to save the "
-"selection."
+"After the keymaps have been loaded bsdinstall displays the menu shown in <<bsdinstall-keymap-10>>.  Use the up and down arrows to select the "
+"keymap that most closely represents the mapping of the keyboard attached to the system.  Press kbd:[Enter] to save the selection."
 msgstr ""
+"键盘类型文件加载完毕后，bsdinstall会显示 <<bsdinstall-keymap-10>> 中所示的菜单。使用向上和向下的箭头选择最能代表连接到系统的键盘映射的键图。按回车"
+"键 kbd:[Enter] 来保存选择。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:427
 #, no-wrap
 msgid "Keymap Selection Menu"
-msgstr ""
+msgstr "Keymap Selection Menu"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:428
 #, no-wrap
 msgid "bsdinstall-keymap-10.png"
-msgstr ""
+msgstr "bsdinstall-keymap-10.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:434
 msgid ""
-"Pressing kbd:[Esc] will exit this menu and use the default keymap.  If the choice of keymap is not clear, [.guimenuitem]#United "
-"States of America ISO-8859-1# is also a safe option."
+"Pressing kbd:[Esc] will exit this menu and use the default keymap.  If the choice of keymap is not clear, [.guimenuitem]#United States of America "
+"ISO-8859-1# is also a safe option."
 msgstr ""
+"按 kbd:[Esc] 键将退出这个菜单，并使用默认的键盘图。如果不确定该选择哪一项，美国的 [.guimenuitem]#United States of America ISO-8859-1# 是一个安全的"
+"选择。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:437
 msgid ""
-"In addition, when selecting a different keymap, the user can try the keymap and ensure it is correct before proceeding as shown in "
-"<<bsdinstall-keymap-testing>>."
-msgstr ""
+"In addition, when selecting a different keymap, the user can try the keymap and ensure it is correct before proceeding as shown in <<bsdinstall-"
+"keymap-testing>>."
+msgstr "此外，当选择不同的键图时，用户可以尝试键图并确保它是正确的，然后再继续进行，如<<bsdinstall-keymap-testing>>所示。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:439
 #, no-wrap
 msgid "Keymap Testing Menu"
-msgstr ""
+msgstr "Keymap Testing Menu"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:440
 #, no-wrap
 msgid "bsdinstall-keymap-testing.png"
-msgstr ""
+msgstr "bsdinstall-keymap-testing.png"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:443 content/zh-cn/books/handbook/bsdinstall/_index.adoc:448
 #, no-wrap
 msgid "Setting the Hostname"
-msgstr ""
+msgstr "设置主机名"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:446
 msgid "The next bsdinstall menu is used to set the hostname for the newly installed system."
-msgstr ""
+msgstr "下一个 bsdinstall 菜单是用来设置新安装系统的主机名。"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:449
 #, no-wrap
 msgid "bsdinstall-config-hostname.png"
-msgstr ""
+msgstr "bsdinstall-config-hostname.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:453
 msgid "Type in a hostname that is unique for the network.  It should be a fully-qualified hostname, such as `machine3.example.com`."
-msgstr ""
+msgstr "键入一个对网络来说是唯一的主机名。它应该是一个完全资格域名，如 `machine3.example.com`。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:455 content/zh-cn/books/handbook/bsdinstall/_index.adoc:460
 #, no-wrap
 msgid "Selecting Components to Install"
-msgstr ""
+msgstr "选择要安装的组件"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:458
 msgid "Next, bsdinstall will prompt to select optional components to install."
-msgstr ""
+msgstr "下面，bsdinstall 将提示选择要安装的组件。"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:461
 #, no-wrap
 msgid "bsdinstall-config-components.png"
-msgstr ""
+msgstr "bsdinstall-config-components.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:466
 msgid ""
-"Deciding which components to install will depend largely on the intended use of the system and the amount of disk space "
-"available.  The FreeBSD kernel and userland, collectively known as the _base system_, are always installed.  Depending on the "
-"architecture, some of these components may not appear:"
+"Deciding which components to install will depend largely on the intended use of the system and the amount of disk space available.  The FreeBSD "
+"kernel and userland, collectively known as the _base system_, are always installed.  Depending on the architecture, some of these components may "
+"not appear:"
 msgstr ""
+"决定安装哪些组件主要取决于系统的预期用途和可用的磁盘空间大小。FreeBSD 内核和用户空间，统称为_基本系统_，为默认安装。根据架构的不同，其中一些组件可"
+"能不会出现："
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:468
 msgid "`base-dbg` - Base tools like cat, ls among many others with debug symbols activated."
-msgstr ""
+msgstr "`base-dbg` - 基础工具，如cat, ls等，并激活调试符号。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:469
 msgid "`kernel-dbg` - Kernel and modules with debug symbols activated."
-msgstr ""
+msgstr "`kernel-dbg` - 激活调试符号的内核和模块。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:470
-msgid ""
-"`lib32-dbg` - Compatibility libraries for running 32-bit applications on a 64-bit version of FreeBSD with debug symbols activated."
-msgstr ""
+msgid "`lib32-dbg` - Compatibility libraries for running 32-bit applications on a 64-bit version of FreeBSD with debug symbols activated."
+msgstr "`lib32-dbg` - 用于在 64 位的 FreeBSD 上运行 32 位应用程序的兼容库，并激活调试符号。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:471
 msgid "`lib32` - Compatibility libraries for running 32-bit applications on a 64-bit version of FreeBSD."
-msgstr ""
+msgstr "`lib32` - 用于在 64 位版本的 FreeBSD 上运行 32 位应用程序的兼容库。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:472
 msgid ""
-"`ports` - The FreeBSD Ports Collection is a collection of files which automates the downloading, compiling and installation of "
-"third-party software packages. crossref:ports[ports,Installing Applications: Packages and Ports] discusses how to use the Ports "
-"Collection."
+"`ports` - The FreeBSD Ports Collection is a collection of files which automates the downloading, compiling and installation of third-party "
+"software packages. crossref:ports[ports,Installing Applications: Packages and Ports] discusses how to use the Ports Collection."
 msgstr ""
+"`ports` - FreeBSD Ports Collection 是一个文件集，可以自动下载、编译和安装第三方软件包。crossref:ports[ports,安装应用程序：包和 port] 讨论了如何使"
+"用 Ports Collection。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:478
 msgid ""
-"The installation program does not check for adequate disk space.  Select this option only if sufficient hard disk space is "
-"available.  The FreeBSD Ports Collection takes up about {ports-size} of disk space."
-msgstr ""
+"The installation program does not check for adequate disk space.  Select this option only if sufficient hard disk space is available.  The "
+"FreeBSD Ports Collection takes up about {ports-size} of disk space."
+msgstr "安装程序不检查是否有足够的磁盘空间。请只在有足够的硬盘空间时才选择这个选项。FreeBSD Ports Collection 占用了大约 {ports-size} 的磁盘空间。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:481
 msgid ""
-"`src` - The complete FreeBSD source code for both the kernel and the userland. Although not required for the majority of "
-"applications, it may be required to build device drivers, kernel modules, or some applications from the Ports Collection. It is "
-"also used for developing FreeBSD itself. The full source tree requires 1 GB of disk space and recompiling the entire FreeBSD "
-"system requires an additional 5 GB of space."
+"`src` - The complete FreeBSD source code for both the kernel and the userland. Although not required for the majority of applications, it may be "
+"required to build device drivers, kernel modules, or some applications from the Ports Collection. It is also used for developing FreeBSD itself. "
+"The full source tree requires 1 GB of disk space and recompiling the entire FreeBSD system requires an additional 5 GB of space."
 msgstr ""
+"`src` - 内核和用户空间的完整 FreeBSD 源代码。尽管大多数应用程序都不需要它，但在制作设备驱动程序、 内核模块，或某些来自 Ports Collection 的应用程序"
+"时，可能需要它。它也被用于开发 FreeBSD 本身。完整的源代码树需要 1GB 的磁盘空间，重新编译整个 FreeBSD 系统需要额外的 5GB 空间。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:482
 msgid "`tests` - FreeBSD Test Suite."
-msgstr ""
+msgstr "`tests` - FreeBSD 测试套件。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:484 content/zh-cn/books/handbook/bsdinstall/_index.adoc:491
 #, no-wrap
 msgid "Installing from the Network"
-msgstr ""
+msgstr "从网络上安装"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:489
 msgid ""
-"The menu shown in <<bsdinstall-netinstall-notify>> only appears when installing from a [.filename]#-bootonly.iso# or [.filename]#-"
-"mini-memstick.img# as this installation media does not hold copies of the installation files.  Since the installation files must "
-"be retrieved over a network connection, this menu indicates that the network interface must be configured first.  If this menu is "
-"shown in any step of the process remember to follow the instructions in <<bsdinstall-config-network-dev>>."
+"The menu shown in <<bsdinstall-netinstall-notify>> only appears when installing from a [.filename]#-bootonly.iso# or [.filename]#-mini-memstick."
+"img# as this installation media does not hold copies of the installation files.  Since the installation files must be retrieved over a network "
+"connection, this menu indicates that the network interface must be configured first.  If this menu is shown in any step of the process remember "
+"to follow the instructions in <<bsdinstall-config-network-dev>>."
 msgstr ""
+"从 <<bsdinstall-netinstall-notify>> 中显示的菜单只在从 [.filename]#-bootonly.iso# 或 [.filename]#-mini-memstick.img# 安装时出现，因为这种安装介质"
+"没有保存安装文件的副本。由于安装文件必须通过网络连接来获取，这个菜单表明必须先配置网络接口。如果在这个过程的任何步骤中显示这个菜单，请记住按照 "
+"<<bsdinstall-config-network-dev>> 的说明进行操作。"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:492
 #, no-wrap
 msgid "bsdinstall-netinstall-files.png"
-msgstr ""
+msgstr "bsdinstall-netinstall-files.png"
 
 #. type: Title ==
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:495
 #, no-wrap
 msgid "Allocating Disk Space"
-msgstr ""
+msgstr "分配硬盘空间"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:498
 msgid "The next menu is used to determine the method for allocating disk space."
-msgstr ""
+msgstr "下一个菜单是用来确定分配磁盘空间的方法。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:500
 #, no-wrap
 msgid "Partitioning Choices"
-msgstr ""
+msgstr "硬盘分区选项"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:501
 #, no-wrap
 msgid "bsdinstall-zfs-partmenu.png"
-msgstr ""
+msgstr "bsdinstall-zfs-partmenu.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:504
 msgid "bsdinstall gives the user four methods for allocating disk space:"
-msgstr ""
+msgstr "bsdinstall 为用户提供了四种分配磁盘空间的方法："
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:506
 msgid "`Auto (UFS)` partitioning automatically sets up the disk partitions using the `UFS` file system."
-msgstr ""
+msgstr "`Auto (UFS)` 分区使用 `UFS` 文件系统自动设置磁盘分区。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:507
 msgid "`Manual` partitioning allows advanced users to create customized partitions from menu options."
-msgstr ""
+msgstr "`Manual` 分区允许高级用户通过菜单选项创建自定义分区。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:508
 msgid ""
-"`Shell` opens a shell prompt where advanced users can create customized partitions using command-line utilities like man:gpart[8], "
-"man:fdisk[8], and man:bsdlabel[8]."
-msgstr ""
+"`Shell` opens a shell prompt where advanced users can create customized partitions using command-line utilities like man:gpart[8], man:fdisk[8], "
+"and man:bsdlabel[8]."
+msgstr "`Shell` 打开一个 shell 提示符，高级用户可以使用 man:gpart[8], man:fdisk[8] 和 man:bsdlabel[8] 等命令行工具创建自定义分区。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:509
 msgid "`Auto (ZFS)` partitioning creates a root-on-ZFS system with optional GELI encryption support for _boot environments_."
-msgstr ""
+msgstr "`Auto (ZFS)` 分区创建了一个 root-on-ZFS 系统，并为_启动环境_提供可选的 GELI 加密支持。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:512
 msgid ""
-"This section describes what to consider when laying out the disk partitions.  It then demonstrates how to use the different "
-"partitioning methods."
-msgstr ""
+"This section describes what to consider when laying out the disk partitions.  It then demonstrates how to use the different partitioning methods."
+msgstr "本节描述了在布置磁盘分区时需要考虑的问题。然后，它演示了如何使用不同的分区方法。"
 
 #. type: Title ===
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:514
 #, no-wrap
 msgid "Designing the Partition Layout"
-msgstr ""
+msgstr "设计分区布局"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:519
 msgid ""
-"When laying out file systems, remember that hard drives transfer data faster from the outer tracks to the inner.  Thus, smaller "
-"and heavier-accessed file systems should be closer to the outside of the drive, while larger partitions like [.filename]#/usr# "
-"should be placed toward the inner parts of the disk.  It is a good idea to create partitions in an order similar to: [.filename]#/"
-"#, swap, [.filename]#/var#, and [.filename]#/usr#."
+"When laying out file systems, remember that hard drives transfer data faster from the outer tracks to the inner.  Thus, smaller and heavier-"
+"accessed file systems should be closer to the outside of the drive, while larger partitions like [.filename]#/usr# should be placed toward the "
+"inner parts of the disk.  It is a good idea to create partitions in an order similar to: [.filename]#/#, swap, [.filename]#/var#, and [."
+"filename]#/usr#."
 msgstr ""
+"在布局文件系统时，请记住，硬盘从外部轨道向内部传输数据的速度较快。因此，较小和较大的文件系统应该靠近硬盘的外部，而较大的分区，如 [.filename]#/"
+"usr# 应该放在磁盘的内部。以类似的顺序创建分区是个好主意：[.filename]#/#, swap, [.filename]#/var#, [.filename]#/usr#。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:524
 msgid ""
-"The size of the [.filename]#/var# partition reflects the intended machine's usage.  This partition is used to hold mailboxes, log "
-"files, and printer spools.  Mailboxes and log files can grow to unexpected sizes depending on the number of users and how long log "
-"files are kept.  On average, most users rarely need more than about a gigabyte of free disk space in [.filename]#/var#."
+"The size of the [.filename]#/var# partition reflects the intended machine's usage.  This partition is used to hold mailboxes, log files, and "
+"printer spools.  Mailboxes and log files can grow to unexpected sizes depending on the number of users and how long log files are kept.  On "
+"average, most users rarely need more than about a gigabyte of free disk space in [.filename]#/var#."
 msgstr ""
+"[.filename]#/var# 分区的大小反映了机器的用途。这个分区用来存放邮箱、日志文件和打印机线轴。信箱和日志文件可以增长到意想不到的大小，这取决于用户的数"
+"量和日志文件的保存时间。平均来说，大多数用户很少需要超过 [.filename]#/var# 中约一千兆字节的自由磁盘空间。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:530
 msgid ""
-"Sometimes, a lot of disk space is required in [.filename]#/var/tmp#.  When new software is installed, the packaging tools extract "
-"a temporary copy of the packages under [.filename]#/var/tmp#.  Large software packages, like Firefox or LibreOffice may be tricky "
-"to install if there is not enough disk space under [.filename]#/var/tmp#."
+"Sometimes, a lot of disk space is required in [.filename]#/var/tmp#.  When new software is installed, the packaging tools extract a temporary "
+"copy of the packages under [.filename]#/var/tmp#.  Large software packages, like Firefox or LibreOffice may be tricky to install if there is not "
+"enough disk space under [.filename]#/var/tmp#."
 msgstr ""
+"有时，在 [.filename]#/var/tmp# 中需要大量的磁盘空间。当安装新软件时，打包工具会在 [.filename]#/var/tmp# 下提取软件包的临时复制。如果 [.filename]#/"
+"var/tmp# 下没有足够的磁盘空间，大型软件包，如 Firefox 或 LibreOffice 的安装可能会很麻烦。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:534
 msgid ""
-"The [.filename]#/usr# partition holds many of the files which support the system, including the FreeBSD Ports Collection and "
-"system source code.  At least 2 gigabytes of space is recommended for this partition."
-msgstr ""
+"The [.filename]#/usr# partition holds many of the files which support the system, including the FreeBSD Ports Collection and system source code.  "
+"At least 2 gigabytes of space is recommended for this partition."
+msgstr "[.filename]#/usr# 分区存放着许多支持系统的文件，包括 FreeBSD Ports Collection 和系统源代码。建议这个分区至少要有 2GB 的空间。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:537
 msgid ""
-"When selecting partition sizes, keep the space requirements in mind.  Running out of space in one partition while barely using "
-"another can be a hassle."
-msgstr ""
+"When selecting partition sizes, keep the space requirements in mind.  Running out of space in one partition while barely using another can be a "
+"hassle."
+msgstr "在选择分区大小的时候，要牢记空间的要求。一个分区的空间用完了，而另一个分区却几乎用不完，这可能是个麻烦事。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:541
 msgid ""
-"As a rule of thumb, the swap partition should be about double the size of physical memory (RAM).  Systems with minimal RAM may "
-"perform better with more swap.  Configuring too little swap can lead to inefficiencies in the VM page scanning code and might "
-"create issues later if more memory is added."
+"As a rule of thumb, the swap partition should be about double the size of physical memory (RAM).  Systems with minimal RAM may perform better "
+"with more swap.  Configuring too little swap can lead to inefficiencies in the VM page scanning code and might create issues later if more memory "
+"is added."
 msgstr ""
+"作为一个经验法则，交换分区应该是物理内存（RAM）的两倍。拥有最小内存的系统可能会因为有更多的交换空间而表现得更好。配置太小的交换空间会导致虚拟机页"
+"面扫描代码的效率低下，如果以后添加更多的内存，可能会产生问题。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:548
 msgid ""
-"On larger systems with multiple SCSI disks or multiple IDE disks operating on different controllers, it is recommended that swap "
-"be configured on each drive, up to four drives.  The swap partitions should be approximately the same size.  The kernel can handle "
-"arbitrary sizes but internal data structures scale to 4 times the largest swap partition.  Keeping the swap partitions near the "
-"same size will allow the kernel to optimally stripe swap space across disks.  Large swap sizes are fine, even if swap is not used "
-"much.  It might be easier to recover from a runaway program before being forced to reboot."
+"On larger systems with multiple SCSI disks or multiple IDE disks operating on different controllers, it is recommended that swap be configured on "
+"each drive, up to four drives.  The swap partitions should be approximately the same size.  The kernel can handle arbitrary sizes but internal "
+"data structures scale to 4 times the largest swap partition.  Keeping the swap partitions near the same size will allow the kernel to optimally "
+"stripe swap space across disks.  Large swap sizes are fine, even if swap is not used much.  It might be easier to recover from a runaway program "
+"before being forced to reboot."
 msgstr ""
+"在具有多个 SCSI 磁盘或在不同控制器上运行的多个 IDE 磁盘的大型系统上，建议在每个驱动器上配置交换空间，最多可配置四个驱动器。交换分区的大小应该大致"
+"相同。内核可以处理任意大小的分区，但是内部数据结构可以扩展到最大交换分区的 4 倍。保持交换分区接近相同的大小将允许内核以最佳的方式在不同的磁盘上剥"
+"离交换空间。即使交换空间用得不多，稍大的交换空间也有益。在被迫重启之前，可能更容易从失控的程序中恢复。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:552
 msgid ""
-"By properly partitioning a system, fragmentation introduced in the smaller write heavy partitions will not bleed over into the "
-"mostly read partitions.  Keeping the write loaded partitions closer to the disk's edge will increase I/O performance in the "
-"partitions where it occurs the most.  While I/O performance in the larger partitions may be needed, shifting them more toward the "
-"edge of the disk will not lead to a significant performance improvement over moving [.filename]#/var# to the edge."
+"By properly partitioning a system, fragmentation introduced in the smaller write heavy partitions will not bleed over into the mostly read "
+"partitions.  Keeping the write loaded partitions closer to the disk's edge will increase I/O performance in the partitions where it occurs the "
+"most.  While I/O performance in the larger partitions may be needed, shifting them more toward the edge of the disk will not lead to a "
+"significant performance improvement over moving [.filename]#/var# to the edge."
 msgstr ""
+"通过对系统进行适当的分区，在较小的写入量大的分区中引入的碎片将不会渗入主要读取的分区。让写入量大的分区更接近磁盘的边缘，将提高发生率最高的分区的 "
+"I/O 性能。虽然可能需要较大分区的 I/O 性能，但将它们移向磁盘边缘不会比将 [.filename]#/var# 移向边缘带来明显的性能改善。"
 
 #. type: Title ===
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:554
 #, no-wrap
 msgid "Guided Partitioning Using UFS"
-msgstr ""
+msgstr "使用 UFS 进行向导式分区"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:558
 msgid ""
-"When this method is selected, a menu will display the available disk(s).  If multiple disks are connected, choose the one where "
-"FreeBSD is to be installed."
-msgstr ""
+"When this method is selected, a menu will display the available disk(s).  If multiple disks are connected, choose the one where FreeBSD is to be "
+"installed."
+msgstr "当选择这种方法时，一个菜单将显示可用的磁盘。如果连接了多个磁盘，请选择要安装 FreeBSD 的那个磁盘。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:560
 #, no-wrap
 msgid "Selecting from Multiple Disks"
-msgstr ""
+msgstr "从多个硬盘选择"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:561
 #, no-wrap
 msgid "bsdinstall-part-guided-disk.png"
-msgstr ""
+msgstr "bsdinstall-part-guided-disk.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:566
 msgid ""
-"Once the disk is selected, the next menu prompts to install to either the entire disk or to create a partition using free space.  "
-"If btn:[Entire Disk] is chosen, a general partition layout filling the whole disk is automatically created.  Selecting btn:"
-"[Partition] creates a partition layout from the unused space on the disk."
+"Once the disk is selected, the next menu prompts to install to either the entire disk or to create a partition using free space.  If btn:[Entire "
+"Disk] is chosen, a general partition layout filling the whole disk is automatically created.  Selecting btn:[Partition] creates a partition "
+"layout from the unused space on the disk."
 msgstr ""
+"选择了磁盘以后，下一个菜单就会提示安装到整个磁盘或利用可用空间创建一个分区。如果选择 btn:[Entire Disk]，将自动创建一个充满整个磁盘的一般分区布局。"
+"选择 btn:[Partition] 则从磁盘上未使用的空间创建一个分区布局。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:568
 #, no-wrap
 msgid "Selecting Entire Disk or Partition"
-msgstr ""
+msgstr "选择整个硬盘或分区"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:569
 #, no-wrap
 msgid "bsdinstall-part-entire-part.png"
-msgstr ""
+msgstr "bsdinstall-part-entire-part.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:572
 msgid "After btn:[Entire Disk] is chosen bsdinstall displays a dialog indicating that the disk will be erased."
-msgstr ""
+msgstr "在选择了 btn:[Entire Disk] 之后，bsdinstall 会显示一个对话框，表明磁盘所有内容将被删除。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:574
 #, no-wrap
 msgid "Confirmation"
-msgstr ""
+msgstr "确认"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:575
 #, no-wrap
 msgid "bsdinstall-ufs-warning.png"
-msgstr ""
+msgstr "bsdinstall-ufs-warning.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:582
 msgid ""
-"The next menu shows a list with the partition schemes types.  GPT is usually the most appropriate choice for amd64 computers.  "
-"Older computers that are not compatible with GPT should use MBR.  The other partition schemes are generally used for uncommon or "
-"older computers.  More information is available in <<partition-schemes>>."
+"The next menu shows a list with the partition schemes types.  GPT is usually the most appropriate choice for amd64 computers.  Older computers "
+"that are not compatible with GPT should use MBR.  The other partition schemes are generally used for uncommon or older computers.  More "
+"information is available in <<partition-schemes>>."
 msgstr ""
+"下一个菜单显示了一个带有分区方案类型的列表。GPT 通常是 amd64 计算机最合适的选择。与 GPT 不兼容的老式计算机应该使用 MBR。其他分区方案一般用于不常见"
+"的或较老的计算机。更多信息可在  <<partition-schemes>> 中找到。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:584
 #, no-wrap
 msgid "Select Partition Scheme"
-msgstr ""
+msgstr "选择分区表类型"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:585 content/zh-cn/books/handbook/bsdinstall/_index.adoc:620
 #, no-wrap
 msgid "bsdinstall-part-manual-partscheme.png"
-msgstr ""
+msgstr "bsdinstall-part-manual-partscheme.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:591
 msgid ""
-"After the partition layout has been created, review it to ensure it meets the needs of the installation.  Selecting btn:[Revert] "
-"will reset the partitions to their original values and pressing btn:[Auto] will recreate the automatic FreeBSD partitions.  "
-"Partitions can also be manually created, modified, or deleted.  When the partitioning is correct, select btn:[Finish] to continue "
-"with the installation."
+"After the partition layout has been created, review it to ensure it meets the needs of the installation.  Selecting btn:[Revert] will reset the "
+"partitions to their original values and pressing btn:[Auto] will recreate the automatic FreeBSD partitions.  Partitions can also be manually "
+"created, modified, or deleted.  When the partitioning is correct, select btn:[Finish] to continue with the installation."
 msgstr ""
+"在创建了分区布局之后，请检查它以确保它符合安装的需要。选择btn:[Revert] 可以将分区重置为原来的值，按 btn:[Auto] 可以重新创建自动的 FreeBSD 分区。分"
+"区也可以手动创建、修改或删除。当分区正确时，选择 btn:[Finish] 来继续安装。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:593
 #, no-wrap
 msgid "Review Created Partitions"
-msgstr ""
+msgstr "检查分区布局"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:594
 #, no-wrap
 msgid "bsdinstall-part-review.png"
-msgstr ""
+msgstr "bsdinstall-part-review.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:600
 msgid ""
-"Once the disks are configured, the next menu provides the last chance to make changes before the selected drives are formatted.  "
-"If changes need to be made, select btn:[Back] to return to the main partitioning menu.  btn:[Revert & Exit] exits the installer "
-"without making any changes to the drive.  Select btn:[Commit] to start the installation process."
+"Once the disks are configured, the next menu provides the last chance to make changes before the selected drives are formatted.  If changes need "
+"to be made, select btn:[Back] to return to the main partitioning menu.  btn:[Revert & Exit] exits the installer without making any changes to the "
+"drive.  Select btn:[Commit] to start the installation process."
 msgstr ""
+"磁盘被配置好之后，下一个菜单提供了在选定的驱动器被格式化之前进行修改的最后机会。如果需要进行修改，请选择 btn:[Back]，返回到主分区菜单。btn:"
+"[Revert & Exit] 退出安装程序，不对驱动器做任何改变。选择btn:[Commit]，开始安装过程。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:602
 #, no-wrap
 msgid "Final Confirmation"
-msgstr ""
+msgstr "最终确认"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:603
 #, no-wrap
 msgid "bsdinstall-final-confirmation.png"
-msgstr ""
+msgstr "bsdinstall-final-confirmation.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:606
 msgid "To continue with the installation process go to <<bsdinstall-fetching-distribution>>."
-msgstr ""
+msgstr "要继续安装过程，请进入<<bsdinstall-fetching-distribution>>。"
 
 #. type: Title ===
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:608
 #, no-wrap
 msgid "Manual Partitioning"
-msgstr ""
+msgstr "手动分区"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:611
 msgid "Selecting this method opens the partition editor:"
-msgstr ""
+msgstr "手动式分区将直接使用分区编辑器进行操作："
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:613 content/zh-cn/books/handbook/bsdinstall/_index.adoc:619
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:650
 #, no-wrap
 msgid "Manually Create Partitions"
-msgstr ""
+msgstr "手动创建分区"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:614
 #, no-wrap
 msgid "bsdinstall-part-manual-create.png"
-msgstr ""
+msgstr "bsdinstall-part-manual-create.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:617
 msgid ""
-"Highlight the installation drive ([.filename]#ada0# in this example) and select btn:[Create] to display a menu of available "
-"partition schemes:"
-msgstr ""
+"Highlight the installation drive ([.filename]#ada0# in this example) and select btn:[Create] to display a menu of available partition schemes:"
+msgstr "突出显示安装驱动器（本例中为 [.filename]#ada0#），并选择Create以显示可用分区方案的菜单："
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:625
 msgid ""
-"GPT is usually the most appropriate choice for amd64 computers.  Older computers that are not compatible with GPT should use MBR.  "
-"The other partition schemes are generally used for uncommon or older computers."
-msgstr ""
+"GPT is usually the most appropriate choice for amd64 computers.  Older computers that are not compatible with GPT should use MBR.  The other "
+"partition schemes are generally used for uncommon or older computers."
+msgstr "GPT 通常是 amd64 电脑的最合适选择。与 GPT 不兼容的老式计算机应该使用 MBR。其他分区方案一般用于不常见的或较老的计算机。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:627
 #, no-wrap
 msgid "Partitioning Schemes"
-msgstr ""
+msgstr "分区计划"
 
 #. type: Table
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:644
@@ -1383,117 +1495,139 @@ msgid ""
 "|MBR\n"
 "|Master Boot Record (http://en.wikipedia.org/wiki/Master_boot_record[http://en.wikipedia.org/wiki/Master_boot_record]).\n"
 msgstr ""
+"<| 缩写\n"
+"<| 描述\n"
+"\n"
+"|APM\n"
+"|苹果分区表，PowerPC(R) 使用.\n"
+"\n"
+"|BSD\n"
+"|B不带 MBR 的 BSD Label，有时也称作_危险专用模式_，因为非 BSD 磁盘工具可能无法识别它.\n"
+"\n"
+"|GPT\n"
+"|GUID 分区表 (http://en.wikipedia.org/wiki/GUID_Partition_Table[http://en.wikipedia.org/wiki/GUID_Partition_Table]).\n"
+"\n"
+"|MBR\n"
+"|主引导记录 (http://en.wikipedia.org/wiki/Master_boot_record[http://en.wikipedia.org/wiki/Master_boot_record]).\n"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:648
 msgid ""
-"After the partitioning scheme has been selected and created, select btn:[Create] again to create the partitions.  The kbd:[Tab] "
-"key is used to move the cursor between fields."
-msgstr ""
+"After the partitioning scheme has been selected and created, select btn:[Create] again to create the partitions.  The kbd:[Tab] key is used to "
+"move the cursor between fields."
+msgstr "选择并创建了分区方案后，再次选择 btn:[Create] 来创建分区。kbd:[Tab] 键用于在各领域之间移动光标。"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:651
 #, no-wrap
 msgid "bsdinstall-part-manual-addpart.png"
-msgstr ""
+msgstr "bsdinstall-part-manual-addpart.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:654
 msgid "A standard FreeBSD GPT installation uses at least three partitions:"
-msgstr ""
+msgstr "一个标准的 FreeBSD GPT 安装至少要使用三个分区："
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:656
 msgid "`freebsd-boot` - Holds the FreeBSD boot code."
-msgstr ""
+msgstr "`freebsd-boot` - 存放 FreeBSD 的启动代码。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:657
 msgid "`freebsd-ufs` - A FreeBSD UFS file system."
-msgstr ""
+msgstr "`freebsd-ufs` - 一个 FreeBSD UFS 文件系统。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:658
-msgid ""
-"`freebsd-zfs` - A FreeBSD ZFS file system. More information about ZFS is available in crossref:zfs[zfs,The Z File System (ZFS)]."
-msgstr ""
+msgid "`freebsd-zfs` - A FreeBSD ZFS file system. More information about ZFS is available in crossref:zfs[zfs,The Z File System (ZFS)]."
+msgstr "`freebsd-zfs` - 一个 FreeBSD ZFS 文件系统。关于 ZFS 的更多信息可以在 Z 文件系统（ZFS）中找到。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:659
 msgid "`freebsd-swap` - FreeBSD swap space."
-msgstr ""
+msgstr "`freebsd-swap` - FreeBSD 交换空间。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:661
 msgid "Refer to man:gpart[8] for descriptions of the available GPT partition types."
-msgstr ""
+msgstr "关于可用的 GPT 分区类型的描述，请参考 man:gpart[8]。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:664
 msgid ""
-"Multiple file system partitions can be created and some people prefer a traditional layout with separate partitions for [."
-"filename]#/#, [.filename]#/var#, [.filename]#/tmp#, and [.filename]#/usr#.  See <<bsdinstall-part-manual-splitfs>> for an example."
+"Multiple file system partitions can be created and some people prefer a traditional layout with separate partitions for [.filename]#/#, [."
+"filename]#/var#, [.filename]#/tmp#, and [.filename]#/usr#.  See <<bsdinstall-part-manual-splitfs>> for an example."
 msgstr ""
+"可以创建多个文件系统分区，有些人喜欢采用传统的布局，为[.filename]#/#, [.filename]#/var#, [.filename]#/tmp# 和 [.filename]#/usr# 分开分区。请看 "
+"<<bsdinstall-part-manual-splitfs>> 的例子。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:666
 msgid "The `Size` may be entered with common abbreviations: _K_ for kilobytes, _M_ for megabytes, or _G_ for gigabytes."
-msgstr ""
+msgstr "`Size`大小可以用常见的缩写来输入。_K_代表千字节，_M_代表兆字节，_G_代表千兆字节。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:672
 msgid ""
-"Proper sector alignment provides the best performance, and making partition sizes even multiples of 4K bytes helps to ensure "
-"alignment on drives with either 512-byte or 4K-byte sectors.  Generally, using partition sizes that are even multiples of 1M or 1G "
-"is the easiest way to make sure every partition starts at an even multiple of 4K.  There is one exception: the _freebsd-boot_ "
-"partition should be no larger than 512K due to current boot code limitations."
+"Proper sector alignment provides the best performance, and making partition sizes even multiples of 4K bytes helps to ensure alignment on drives "
+"with either 512-byte or 4K-byte sectors.  Generally, using partition sizes that are even multiples of 1M or 1G is the easiest way to make sure "
+"every partition starts at an even multiple of 4K.  There is one exception: the _freebsd-boot_ partition should be no larger than 512K due to "
+"current boot code limitations."
 msgstr ""
+"正确的扇区对齐才能提供最好的性能，使分区大小为 4K 字节的偶数倍有助于确保在具有 512 字节或 4K 字节扇区的驱动器上对齐。一般来说，使用 1M 或 1G 的偶"
+"数倍的分区大小是确保每个分区从 4K 的偶数倍开始的最简单方法。有一个例外：由于目前启动代码的限制，_freebsd-boot_ 分区不应大于 512K。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:676
 msgid ""
-"A `Mountpoint` is needed if the partition will contain a file system.  If only a single UFS partition will be created, the "
-"mountpoint should be [.filename]#/#."
-msgstr ""
+"A `Mountpoint` is needed if the partition will contain a file system.  If only a single UFS partition will be created, the mountpoint should be [."
+"filename]#/#."
+msgstr "如果该分区将包含一个文件系统，则需要一个挂载点`Mountpoint`。如果只创建一个 UFS 分区，挂载点应该是 [.filename]#/#。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:682
 msgid ""
-"The `Label` is a name by which the partition will be known.  Drive names or numbers can change if the drive is connected to a "
-"different controller or port, but the partition label does not change.  Referring to labels instead of drive names and partition "
-"numbers in files like [.filename]#/etc/fstab# makes the system more tolerant to hardware changes.  GPT labels appear in [."
-"filename]#/dev/gpt/# when a disk is attached.  Other partitioning schemes have different label capabilities and their labels "
-"appear in different directories in [.filename]#/dev/#."
+"The `Label` is a name by which the partition will be known.  Drive names or numbers can change if the drive is connected to a different "
+"controller or port, but the partition label does not change.  Referring to labels instead of drive names and partition numbers in files like [."
+"filename]#/etc/fstab# makes the system more tolerant to hardware changes.  GPT labels appear in [.filename]#/dev/gpt/# when a disk is attached.  "
+"Other partitioning schemes have different label capabilities and their labels appear in different directories in [.filename]#/dev/#."
 msgstr ""
+"标签（`Label`）是一个分区的名称，人们将通过它来了解该分区。如果驱动器被连接到不同的控制器或端口，驱动器的名称或编号可以改变，但分区的标签不会改"
+"变。在 [.filename]#/etc/fstab# 等文件中参考标签而不是驱动器名称和分区号，可以使系统对硬件变化有更大的兼容性。GPT 标签在连接磁盘时出现在 [."
+"filename]#/dev/gpt/#。其他分区方案有不同的标签功能，它们的标签出现在 [.filename]#/dev/# 的不同目录中。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:688
 msgid ""
-"Use a unique label on every partition to avoid conflicts from identical labels.  A few letters from the computer's name, use, or "
-"location can be added to the label.  For instance, use `labroot` or `rootfslab` for the UFS root partition on the computer named "
-"`lab`."
+"Use a unique label on every partition to avoid conflicts from identical labels.  A few letters from the computer's name, use, or location can be "
+"added to the label.  For instance, use `labroot` or `rootfslab` for the UFS root partition on the computer named `lab`."
 msgstr ""
+"在每个分区上使用一个独特的标签，以避免相同的标签产生冲突。可以将计算机名称、用途或位置中的几个字母添加到标签中。例如，在名为`lab`的计算机上使用 "
+"`labroot` 或`rootfslab` 作为 UFS 根分区。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:691
 #, no-wrap
 msgid "Creating Traditional Split File System Partitions"
-msgstr ""
+msgstr "创建传统的分离式文件系统分区"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:698
 msgid ""
-"For a traditional partition layout where the [.filename]#/#, [.filename]#/var#, [.filename]#/tmp#, and [.filename]#/usr# "
-"directories are separate file systems on their own partitions, create a GPT partitioning scheme, then create the partitions as "
-"shown.  Partition sizes shown are typical for a 20G target disk.  If more space is available on the target disk, larger swap or [."
-"filename]#/var# partitions may be useful.  Labels shown here are prefixed with `ex` for \"example\", but readers should use other "
-"unique label values as described above."
+"For a traditional partition layout where the [.filename]#/#, [.filename]#/var#, [.filename]#/tmp#, and [.filename]#/usr# directories are separate "
+"file systems on their own partitions, create a GPT partitioning scheme, then create the partitions as shown.  Partition sizes shown are typical "
+"for a 20G target disk.  If more space is available on the target disk, larger swap or [.filename]#/var# partitions may be useful.  Labels shown "
+"here are prefixed with `ex` for \"example\", but readers should use other unique label values as described above."
 msgstr ""
+"对于传统的分区布局，即 [.filename]#/#, [.filename]#/var#, [.filename]#/tmp# 和 [.filename]#/usr# 目录在各自的分区上是独立的文件系统，创建一个 GPT "
+"分区方案，然后按图所示创建分区。所示的分区大小是 20G 目标磁盘的典型情况。如果目标磁盘上有更多的空间，更大的交换分区或 [.filename]#/var# 分区可能是"
+"有用的。这里显示的标签以 `ex` 为前缀，表示“示例”，但读者应该使用其他独特的标签值，如上所述。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:700
 msgid "By default, FreeBSD's [.filename]#gptboot# expects the first UFS partition to be the [.filename]#/# partition."
-msgstr ""
+msgstr "默认情况下，FreeBSD 的 [.filename]#gptboot# 希望第一个 UFS 分区是 [.filename]#/# 分区。"
 
 #. type: Table
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:738
@@ -1534,1054 +1668,1119 @@ msgid ""
 "|[.filename]#/usr#\n"
 "|`exusrfs`\n"
 msgstr ""
+"| 分区类型\n"
+"| 大小\n"
+"| 挂载点\n"
+"| 标签\n"
+"\n"
+"|`freebsd-boot`\n"
+"|`512K`\n"
+"|\n"
+"|\n"
+"\n"
+"|`freebsd-ufs`\n"
+"|`2G`\n"
+"|[.filename]#/#\n"
+"|`exrootfs`\n"
+"\n"
+"|`freebsd-swap`\n"
+"|`4G`\n"
+"|\n"
+"|`exswap`\n"
+"\n"
+"|`freebsd-ufs`\n"
+"|`2G`\n"
+"|[.filename]#/var#\n"
+"|`exvarfs`\n"
+"\n"
+"|`freebsd-ufs`\n"
+"|`1G`\n"
+"|[.filename]#/tmp#\n"
+"|`extmpfs`\n"
+"\n"
+"|`freebsd-ufs`\n"
+"|接受默认值（使用磁盘的剩余部分）\n"
+"|[.filename]#/usr#\n"
+"|`exusrfs`\n"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:742
 msgid ""
-"After the custom partitions have been created, select btn:[Finish] to continue with the installation and go to <<bsdinstall-"
-"fetching-distribution>>."
-msgstr ""
+"After the custom partitions have been created, select btn:[Finish] to continue with the installation and go to <<bsdinstall-fetching-"
+"distribution>>."
+msgstr "自定义分区创建完毕后，选择btn:[Finish] 继续安装，并进入 <<bsdinstall-fetching-distribution>>。"
 
 #. type: Title ===
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:744
 #, no-wrap
 msgid "Guided Partitioning Using Root-on-ZFS"
-msgstr ""
+msgstr "使用 Root-on-ZFS 进行向导式分区"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:748
 msgid ""
-"This partitioning mode only works with whole disks and will erase the contents of the entire disk.  The main ZFS configuration "
-"menu offers a number of options to control the creation of the pool."
-msgstr ""
+"This partitioning mode only works with whole disks and will erase the contents of the entire disk.  The main ZFS configuration menu offers a "
+"number of options to control the creation of the pool."
+msgstr "这种分区模式只适用于整个磁盘，并且会擦除整个磁盘的内容。ZFS 的主配置菜单提供了许多选项来控制池的创建。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:750
 #, no-wrap
 msgid "ZFS Partitioning Menu"
-msgstr ""
+msgstr "ZFS 分区选项"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:751
 #, no-wrap
 msgid "bsdinstall-zfs-menu.png"
-msgstr ""
+msgstr "bsdinstall-zfs-menu.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:754
 msgid "Here is a summary of the options which can be used in this menu:"
-msgstr ""
+msgstr "下面是这个菜单中可以使用的选项的摘要介绍："
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:756
 msgid "`Install` - Proceed with the installation with the selected options."
-msgstr ""
+msgstr "`Install` - 使用选定的选项继续安装。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:757
 msgid ""
-"`Pool Type/Disks` - Allow to configure the `Pool Type` and the disk(s) that will constitute the pool. The automatic ZFS installer "
-"currently only supports the creation of a single top level vdev, except in stripe mode. To create more complex pools, use the "
-"instructions in <<bsdinstall-part-shell>> to create the pool."
+"`Pool Type/Disks` - Allow to configure the `Pool Type` and the disk(s) that will constitute the pool. The automatic ZFS installer currently only "
+"supports the creation of a single top level vdev, except in stripe mode. To create more complex pools, use the instructions in <<bsdinstall-part-"
+"shell>> to create the pool."
 msgstr ""
+"`Pool Type/Disks` - 允许配置池类型和将构成池的磁盘。自动 ZFS 安装程序目前只支持创建一个顶层的vdev，除了在 stripe 模式下。要创建更复杂的池，请使用 "
+"<<bsdinstall-part-shell>> 中的说明来创建池。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:758
 msgid "`Rescan Devices` - Repopulate the list of available disks."
-msgstr ""
+msgstr "`Rescan Devices` - 重新填充可用磁盘的列表。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:759
 msgid ""
-"`Disk Info` - Disk Info menu can be used to inspect each disk, including its partition table and various other information such as "
-"the device model number and serial number, if available."
-msgstr ""
+"`Disk Info` - Disk Info menu can be used to inspect each disk, including its partition table and various other information such as the device "
+"model number and serial number, if available."
+msgstr "`Disk Info` - 磁盘信息菜单可以用来检查每个磁盘，包括它的分区表和其他各种信息，如设备型号和序列号（如果有）。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:760
 msgid "`Pool Name` - Establish the name of the pool. The default name is _zroot_."
-msgstr ""
+msgstr "`Pool Name` - 建立磁盘池的名称。默认名称是_zroot_。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:761
 msgid ""
-"`Force 4K Sectors?` - Force the use of 4K sectors. By default, the installer will automatically create partitions aligned to 4K "
-"boundaries and force ZFS to use 4K sectors. This is safe even with 512 byte sector disks, and has the added benefit of ensuring "
-"that pools created on 512 byte disks will be able to have 4K sector disks added in the future, either as additional storage space "
-"or as replacements for failed disks. Press the kbd:[Enter] key to chose to activate it or not."
+"`Force 4K Sectors?` - Force the use of 4K sectors. By default, the installer will automatically create partitions aligned to 4K boundaries and "
+"force ZFS to use 4K sectors. This is safe even with 512 byte sector disks, and has the added benefit of ensuring that pools created on 512 byte "
+"disks will be able to have 4K sector disks added in the future, either as additional storage space or as replacements for failed disks. Press the "
+"kbd:[Enter] key to chose to activate it or not."
 msgstr ""
+"`Force 4K Sectors?` - 强制使用 4K 扇区。默认情况下，安装程序会自动创建与 4K 边界对齐的分区并强制 ZFS 使用 4K 扇区。这在 512 字节扇区的磁盘上也是安"
+"全的，而且还有一个额外的好处，那就是确保在 512 字节磁盘上创建的池子将来可以添加 4K 扇区的磁盘，作为额外的存储空间或替换故障磁盘。按回车键kbd:"
+"[Enter]，选择是否激活它。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:762
 msgid ""
-"`Encrypt Disks?` - Encrypting the disks allows the user to encrypt the disks using GELI. More information about disk encryption is "
-"available in crossref:disks[disks-encrypting-geli,“Disk Encryption with geli”]. Press the kbd:[Enter] key to chose activate it or "
-"not."
+"`Encrypt Disks?` - Encrypting the disks allows the user to encrypt the disks using GELI. More information about disk encryption is available in "
+"crossref:disks[disks-encrypting-geli,“Disk Encryption with geli”]. Press the kbd:[Enter] key to chose activate it or not."
 msgstr ""
+"`Encrypt Disks?` - 加密磁盘允许用户使用 GELI 对磁盘进行加密。更多关于磁盘加密的信息可以在 crossref:disks[disks-encrypting-geli,“Disk Encryption "
+"with geli”] 中找到。按回车键kbd:[Enter] ，选择是否激活它。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:763
 msgid ""
-"`Partition Scheme` - Allow to choose the partition scheme. GPT is the recommended option in most cases. Press the kbd:[Enter] key "
-"to chose between the different options."
-msgstr ""
+"`Partition Scheme` - Allow to choose the partition scheme. GPT is the recommended option in most cases. Press the kbd:[Enter] key to chose "
+"between the different options."
+msgstr "`Partition Scheme` - 允许选择分区方案。GPT 是大多数情况下的推荐选项。按回车键在不同的选项中进行选择。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:764
 msgid "`Swap Size` - Establish the amount of swap space."
-msgstr ""
+msgstr "`Swap Size` - 建立交换空间的数量。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:765
 msgid ""
-"`Mirror Swap?` - Allows the user to mirror the swap between the disks. Be aware, enabling mirror swap will break crash dumps. "
-"Press the kbd:[Enter] key to activate it or not."
-msgstr ""
+"`Mirror Swap?` - Allows the user to mirror the swap between the disks. Be aware, enabling mirror swap will break crash dumps. Press the kbd:"
+"[Enter] key to activate it or not."
+msgstr "`Mirror Swap?` - 允许用户在磁盘之间做镜像交换。请注意，启用镜像交换将破坏崩溃转储。按回车键来激活或不激活。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:766
 msgid ""
-"`Encrypt Swap?` - Allow the user the possibility to encrypt the swap. Encrypts the swap with a temporary key each time that the "
-"system boots and discards it on reboot. Press the kbd:[Enter] key to chose activate it or not. More information about swap "
-"encryption in crossref:disks[swap-encrypting,“Encrypting Swap”]."
+"`Encrypt Swap?` - Allow the user the possibility to encrypt the swap. Encrypts the swap with a temporary key each time that the system boots and "
+"discards it on reboot. Press the kbd:[Enter] key to chose activate it or not. More information about swap encryption in crossref:disks[swap-"
+"encrypting,“Encrypting Swap”]."
 msgstr ""
+"`Encrypt Swap?` - 允许用户对交换盘进行加密。每次系统启动时，用一个临时密钥加密交换，并在重启时丢弃。按回车键可以选择是否激活它。在crossref:"
+"disks[swap-encrypting,“加密 Swap”]中有更多关于交换分区加密的信息。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:768
 msgid "Select kbd:[T] to configure the `Pool Type` and the disk(s) that will constitute the pool."
-msgstr ""
+msgstr "选择 kbd:[T] 来配置`Pool Type` 和构成池的磁盘。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:770
 #, no-wrap
 msgid "ZFS Pool Type"
-msgstr ""
+msgstr "ZFS 池类型"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:771
 #, no-wrap
 msgid "bsdinstall-zfs-vdev_type.png"
-msgstr ""
+msgstr "bsdinstall-zfs-vdev_type.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:774
 msgid "Here is a summary of the `Pool Type` which can be selected in this menu:"
-msgstr ""
+msgstr "下面是在这个菜单中可以选择的Pool Type的摘要："
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:776
 msgid ""
-"`stripe` - Striping provides maximum storage of all connected devices, but no redundancy. If just one disk fails the data on the "
-"pool is lost irrevocably."
-msgstr ""
+"`stripe` - Striping provides maximum storage of all connected devices, but no redundancy. If just one disk fails the data on the pool is lost "
+"irrevocably."
+msgstr "`stripe` - 条带化提供所有连接设备的最大存储量，但没有冗余。如果只有一个磁盘发生故障，池上的数据将不可逆转地丢失。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:777
 msgid ""
-"`mirror` - Mirroring stores a complete copy of all data on every disk. Mirroring provides a good read performance because data is "
-"read from all disks in parallel. Write performance is slower as the data must be written to all disks in the pool. Allows all but "
-"one disk to fail. This option requires at least two disks."
+"`mirror` - Mirroring stores a complete copy of all data on every disk. Mirroring provides a good read performance because data is read from all "
+"disks in parallel. Write performance is slower as the data must be written to all disks in the pool. Allows all but one disk to fail. This option "
+"requires at least two disks."
 msgstr ""
+"`mirror` - 镜像在每个磁盘上存储所有数据的一个完整副本。镜像提供了良好的读取性能，因为数据是从所有磁盘上平行读取的。写入性能较慢，因为数据必须写到"
+"池中的所有磁盘上。允许除一个磁盘外的所有磁盘发生故障。这个选项至少需要两个磁盘。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:778
 msgid ""
-"`raid10` - Striped mirrors. Provides the best performance, but the least storage. This option needs at least an even number of "
-"disks and a minimum of four disks."
-msgstr ""
+"`raid10` - Striped mirrors. Provides the best performance, but the least storage. This option needs at least an even number of disks and a "
+"minimum of four disks."
+msgstr "`raid10` - 带状镜像。提供最好的性能，但存储量最少。这个选项至少需要偶数个磁盘，至少需要四个磁盘。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:779
 msgid "`raidz1` - Single Redundant RAID. Allow one disk to fail concurrently. This option needs at least three disks."
-msgstr ""
+msgstr "`raidz1` - 单一冗余 RAID。允许一个磁盘同时发生故障。该选项至少需要 3 个磁盘。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:780
 msgid "`raidz2` - Double Redundant RAID. Allows two disks to fail concurrently. This option needs at least four disks."
-msgstr ""
+msgstr "`raidz2` - 双重冗余 RAID。允许两个磁盘同时发生故障。该选项至少需要 4 个磁盘。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:781
 msgid "`raidz3` - Triple Redundant RAID. Allows three disks to fail concurrently. This option needs at least five disks."
-msgstr ""
+msgstr "`raidz3` - 三重冗余 RAID。允许三个磁盘同时发生故障。该选项至少需要 5 个磁盘。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:785
 msgid ""
-"Once a `Pool Type` has been selected, a list of available disks is displayed, and the user is prompted to select one or more disks "
-"to make up the pool.  The configuration is then validated, to ensure enough disks are selected.  If not, select btn:[<Change "
-"Selection>] to return to the list of disks, or btn:[<Back>] to change the `Pool Type`."
+"Once a `Pool Type` has been selected, a list of available disks is displayed, and the user is prompted to select one or more disks to make up the "
+"pool.  The configuration is then validated, to ensure enough disks are selected.  If not, select btn:[<Change Selection>] to return to the list "
+"of disks, or btn:[<Back>] to change the `Pool Type`."
 msgstr ""
+"选择了 `Pool Type` 之后，就会显示可用的磁盘列表，并提示用户选择一个或多个磁盘来组成池。然后，配置会被验证，以确保有足够的磁盘被选中。如果没有，选"
+"择btn:[<Change Selection>] 回到磁盘列表，或者 btn:[<Back>] 改变池类型。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:787
 #, no-wrap
 msgid "Disk Selection"
-msgstr ""
+msgstr "选择硬盘"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:788
 #, no-wrap
 msgid "bsdinstall-zfs-disk_select.png"
-msgstr ""
+msgstr "bsdinstall-zfs-disk_select.png"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:791
 #, no-wrap
 msgid "Invalid Selection"
-msgstr ""
+msgstr "无效选择"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:792
 #, no-wrap
 msgid "bsdinstall-zfs-vdev_invalid.png"
-msgstr ""
+msgstr "bsdinstall-zfs-vdev_invalid.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:795
 msgid ""
-"If one or more disks are missing from the list, or if disks were attached after the installer was started, select btn:[- Rescan "
-"Devices] to repopulate the list of available disks."
-msgstr ""
+"If one or more disks are missing from the list, or if disks were attached after the installer was started, select btn:[- Rescan Devices] to "
+"repopulate the list of available disks."
+msgstr "如果列表中缺少一个或多个磁盘，或者磁盘是在安装程序启动后连接的，请选择——btn:[- Rescan Devices] 设备来重新填充可用磁盘的列表。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:797
 #, no-wrap
 msgid "Rescan Devices"
-msgstr ""
+msgstr "重新扫描硬盘"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:798
 #, no-wrap
 msgid "bsdinstall-zfs-rescan-devices.png"
-msgstr ""
+msgstr "bsdinstall-zfs-rescan-devices.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:801
 msgid ""
-"To avoid accidentally erasing the wrong disk, the btn:[- Disk Info] menu can be used to inspect each disk, including its partition "
-"table and various other information such as the device model number and serial number, if available."
-msgstr ""
+"To avoid accidentally erasing the wrong disk, the btn:[- Disk Info] menu can be used to inspect each disk, including its partition table and "
+"various other information such as the device model number and serial number, if available."
+msgstr "为了避免意外地擦除错误的磁盘， btn:[- Disk Info] 菜单可以用来检查每个磁盘，包括其分区表和其他各种信息，如设备型号和序列号（如果有的话）。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:803
 #, no-wrap
 msgid "Analyzing a Disk"
-msgstr ""
+msgstr "分析硬盘"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:804
 #, no-wrap
 msgid "bsdinstall-zfs-disk_info.png"
-msgstr ""
+msgstr "bsdinstall-zfs-disk_info.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:808
 msgid ""
-"Select kbd:[N] to configure the `Pool Name`.  Enter the desired name then select btn:[<OK>] to establish it or btn:[<Cancel>] to "
-"return to the main menu and leave the default name."
-msgstr ""
+"Select kbd:[N] to configure the `Pool Name`.  Enter the desired name then select btn:[<OK>] to establish it or btn:[<Cancel>] to return to the "
+"main menu and leave the default name."
+msgstr "选择 kbd:[N] 来配置`Pool Name`。输入所需的名称，然后选择btn:[<OK>] 建立它，或 btn:[<Cancel>] 返回主菜单并保留默认名称。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:810
 #, no-wrap
 msgid "Pool Name"
-msgstr ""
+msgstr "存储池名"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:811
 #, no-wrap
 msgid "bsdinstall-zfs-pool-name.png"
-msgstr ""
+msgstr "bsdinstall-zfs-pool-name.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:815
 msgid ""
-"Select kbd:[S] to set the amount of swap.  Enter the desired amount of swap and then select btn:[<OK>] to establish it or btn:"
-"[<Cancel>] to return to the main menu and let the default amount."
-msgstr ""
+"Select kbd:[S] to set the amount of swap.  Enter the desired amount of swap and then select btn:[<OK>] to establish it or btn:[<Cancel>] to "
+"return to the main menu and let the default amount."
+msgstr "选择 kbd:[S] 来设置交换量。输入所需的交换量，然后选择btn:[<OK>]建立，或选择btn:[<Cancel>]返回主菜单，让其使用默认量。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:817
 #, no-wrap
 msgid "Swap Amount"
-msgstr ""
+msgstr "交换量"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:818
 #, no-wrap
 msgid "bsdinstall-zfs-swap-amount.png"
-msgstr ""
+msgstr "bsdinstall-zfs-swap-amount.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:822
 msgid ""
-"Once all options have been set to the desired values, select the btn:[>>> Install] option at the top of the menu.  The installer "
-"then offers a last chance to cancel before the contents of the selected drives are destroyed to create the ZFS pool."
+"Once all options have been set to the desired values, select the btn:[>>> Install] option at the top of the menu.  The installer then offers a "
+"last chance to cancel before the contents of the selected drives are destroyed to create the ZFS pool."
 msgstr ""
+"所有的选项都被设置为所需的值之后，选择菜单顶部的btn:[>>> Install] 。然后安装程序提供了一个最后的机会，在所选驱动器的内容被销毁以创建 ZFS 池之前，"
+"可以取消。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:824
 #, no-wrap
 msgid "Last Chance"
-msgstr ""
+msgstr "最后的机会"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:825
 #, no-wrap
 msgid "bsdinstall-zfs-warning.png"
-msgstr ""
+msgstr "bsdinstall-zfs-warning.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:829
 msgid ""
-"If GELI disk encryption was enabled, the installer will prompt twice for the passphrase to be used to encrypt the disks.  And "
-"after that the initializing of the encryption begins."
-msgstr ""
+"If GELI disk encryption was enabled, the installer will prompt twice for the passphrase to be used to encrypt the disks.  And after that the "
+"initializing of the encryption begins."
+msgstr "如果启用了 GELI 磁盘加密，安装程序将提示两次用于加密磁盘的口令。而后开始初始化加密。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:831
 #, no-wrap
 msgid "Disk Encryption Password"
-msgstr ""
+msgstr "硬盘加密密码"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:832
 #, no-wrap
 msgid "bsdinstall-zfs-geli_password.png"
-msgstr ""
+msgstr "bsdinstall-zfs-geli_password.png"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:835
 #, no-wrap
 msgid "Initializing Encryption"
-msgstr ""
+msgstr "初始化加密"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:836
 #, no-wrap
 msgid "bsdinstall-zfs-init-encription.png"
-msgstr ""
+msgstr "bsdinstall-zfs-init-encription.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:840
 msgid "The installation then proceeds normally.  To continue with the installation go to <<bsdinstall-fetching-distribution>>."
-msgstr ""
+msgstr "然后安装会正常进行。要继续安装，请进入<<bsdinstall-fetching-distribution>>。"
 
 #. type: Title ===
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:842
 #, no-wrap
 msgid "Shell Mode Partitioning"
-msgstr ""
+msgstr "SHELL 模式分区"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:847
 msgid ""
-"When creating advanced installations, the bsdinstall partitioning menus may not provide the level of flexibility required.  "
-"Advanced users can select the btn:[Shell] option from the partitioning menu in order to manually partition the drives, create the "
-"file system(s), populate [.filename]#/tmp/bsdinstall_etc/fstab#, and mount the file systems under [.filename]#/mnt#.  Once this is "
-"done, type `exit` to return to bsdinstall and continue the installation."
+"When creating advanced installations, the bsdinstall partitioning menus may not provide the level of flexibility required.  Advanced users can "
+"select the btn:[Shell] option from the partitioning menu in order to manually partition the drives, create the file system(s), populate [."
+"filename]#/tmp/bsdinstall_etc/fstab#, and mount the file systems under [.filename]#/mnt#.  Once this is done, type `exit` to return to bsdinstall "
+"and continue the installation."
 msgstr ""
+"在创建高级安装时，bsdinstall 的分区菜单可能无法提供所需的灵活性水平。高级用户可以从分区菜单中选择 btn:[Shell] 选项，以便手动对驱动器进行分区，创建"
+"文件系统，填充 [.filename]#/tmp/bsdinstall_etc/fstab#，并在 [.filename]#/mnt# 下加载文件系统。完成后，键入`exit`，返回bsdinstall，继续安装。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:849 content/zh-cn/books/handbook/bsdinstall/_index.adoc:858
 #, no-wrap
 msgid "Fetching Distribution Files"
-msgstr ""
+msgstr "获取安装文件"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:853
 msgid ""
-"Installation time will vary depending on the distributions chosen, installation media, and speed of the computer.  A series of "
-"messages will indicate the progress."
-msgstr ""
+"Installation time will vary depending on the distributions chosen, installation media, and speed of the computer.  A series of messages will "
+"indicate the progress."
+msgstr "安装时间将取决于所选择的组件、安装媒体和计算机的速度。一系列的信息都将显示进度。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:856
 msgid ""
-"First, the installer formats the selected disk(s) and initializes the partitions.  Next, in the case of a `bootonly media` or "
-"`mini memstick`, it downloads the selected components:"
-msgstr ""
+"First, the installer formats the selected disk(s) and initializes the partitions.  Next, in the case of a `bootonly media` or `mini memstick`, it "
+"downloads the selected components:"
+msgstr "首先，安装程序会格式化所选磁盘并初始化分区。接下来，如果是`bootonly media`或`mini memstick`，它会下载所选的组件："
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:859
 #, no-wrap
 msgid "bsdinstall-distfile-fetching.png"
-msgstr ""
+msgstr "bsdinstall-distfile-fetching.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:862
 msgid ""
-"Next, the integrity of the distribution files is verified to ensure they have not been corrupted during download or misread from "
-"the installation media:"
-msgstr ""
+"Next, the integrity of the distribution files is verified to ensure they have not been corrupted during download or misread from the installation "
+"media:"
+msgstr "接下来，分发文件的完整性得到验证，以确保它们在下载过程中没有被破坏或从安装介质中误读："
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:864
 #, no-wrap
 msgid "Verifying Distribution Files"
-msgstr ""
+msgstr "校验发行文件"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:865
 #, no-wrap
 msgid "bsdinstall-distfile-verifying.png"
-msgstr ""
+msgstr "bsdinstall-distfile-verifying.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:868
 msgid "Finally, the verified distribution files are extracted to the disk:"
-msgstr ""
+msgstr "最后，经过验证的发行文件被提取到磁盘："
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:870
 #, no-wrap
 msgid "Extracting Distribution Files"
-msgstr ""
+msgstr "解压缩发行文件"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:871
 #, no-wrap
 msgid "bsdinstall-distfile-extracting.png"
-msgstr ""
+msgstr "bsdinstall-distfile-extracting.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:875
 msgid ""
-"Once all requested distribution files have been extracted, bsdinstall displays the first post-installation configuration screen.  "
-"The available post-configuration options are described in the next section."
-msgstr ""
+"Once all requested distribution files have been extracted, bsdinstall displays the first post-installation configuration screen.  The available "
+"post-configuration options are described in the next section."
+msgstr "如果所有要求的发行文件都被解压缩，bsdinstall会显示第一个安装后配置屏幕。可用的后配置选项将在下一节描述。"
 
 #. type: Title ==
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:877
 #, no-wrap
 msgid "Accounts, Time Zone, Services and Hardening"
-msgstr ""
+msgstr "账户、时区、服务和安全"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:880 content/zh-cn/books/handbook/bsdinstall/_index.adoc:888
 #, no-wrap
 msgid "Setting the `root` Password"
-msgstr ""
+msgstr "设置`root`密码"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:886
 msgid ""
-"First, the `root` password must be set.  While entering the password, the characters being typed are not displayed on the screen.  "
-"After the password has been entered, it must be entered again.  This helps prevent typing errors."
-msgstr ""
+"First, the `root` password must be set.  While entering the password, the characters being typed are not displayed on the screen.  After the "
+"password has been entered, it must be entered again.  This helps prevent typing errors."
+msgstr "首先，必须设置root密码。在输入密码时，正在输入的字符不会显示在屏幕上。输入密码后，必须再次输入。这有助于防止输入错误。"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:889
 #, no-wrap
 msgid "bsdinstall-post-root-passwd.png"
-msgstr ""
+msgstr "bsdinstall-post-root-passwd.png"
 
 #. type: Title ===
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:892
 #, no-wrap
 msgid "Setting the Time Zone"
-msgstr ""
+msgstr "设置时区"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:896
 msgid ""
-"The next series of menus are used to determine the correct local time by selecting the geographic region, country, and time zone.  "
-"Setting the time zone allows the system to automatically correct for regional time changes, such as daylight savings time, and "
-"perform other time zone related functions properly."
+"The next series of menus are used to determine the correct local time by selecting the geographic region, country, and time zone.  Setting the "
+"time zone allows the system to automatically correct for regional time changes, such as daylight savings time, and perform other time zone "
+"related functions properly."
 msgstr ""
+"接下来的一系列菜单用于通过选择地理区域、国家和时区来确定正确的当地时间。设置时区可以使系统自动纠正地区时间变化，如夏令时，并正确执行其他与时区有关"
+"的功能。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:899
 msgid ""
-"The example shown here is for a machine located in the mainland time zone of Spain, Europe.  The selections will vary according to "
-"the geographical location."
-msgstr ""
+"The example shown here is for a machine located in the mainland time zone of Spain, Europe.  The selections will vary according to the "
+"geographical location."
+msgstr "这里显示的例子是针对位于欧洲西班牙大陆时区的机器。根据地理位置的不同，选择也会有所不同。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:901
 #, no-wrap
 msgid "Select a Region"
-msgstr ""
+msgstr "选择区域"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:902
 #, no-wrap
 msgid "bsdinstall-timezone-region.png"
-msgstr ""
+msgstr "bsdinstall-timezone-region.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:905
 msgid "The appropriate region is selected using the arrow keys and then pressing kbd:[Enter]."
-msgstr ""
+msgstr "使用方向键选择适当的区域，然后按回车键。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:907
 #, no-wrap
 msgid "Select a Country"
-msgstr ""
+msgstr "选择国家"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:908
 #, no-wrap
 msgid "bsdinstall-timezone-country.png"
-msgstr ""
+msgstr "bsdinstall-timezone-country.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:911
 msgid "Select the appropriate country using the arrow keys and press kbd:[Enter]."
-msgstr ""
+msgstr "用方向键选择适当的国家，然后按回车键kbd:[Enter].。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:913
 #, no-wrap
 msgid "Select a Time Zone"
-msgstr ""
+msgstr "选择时区"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:914
 #, no-wrap
 msgid "bsdinstall-timezone-zone.png"
-msgstr ""
+msgstr "bsdinstall-timezone-zone.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:917
 msgid "The appropriate time zone is selected using the arrow keys and pressing kbd:[Enter]."
-msgstr ""
+msgstr "使用箭头键并按下回车键kbd:[Enter]，选择适当的时区。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:919
 #, no-wrap
 msgid "Confirm Time Zone"
-msgstr ""
+msgstr "确认时区"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:920
 #, no-wrap
 msgid "bsdinstall-timezone-confirm.png"
-msgstr ""
+msgstr "bsdinstall-timezone-confirm.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:923
 msgid "Confirm the abbreviation for the time zone is correct."
-msgstr ""
+msgstr "确认时区的简写是正确的。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:925
 #, no-wrap
 msgid "Select Date"
-msgstr ""
+msgstr "选择日期"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:926
 #, no-wrap
 msgid "bsdinstall-timezone-date.png"
-msgstr ""
+msgstr "bsdinstall-timezone-date.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:930
 msgid ""
-"The appropriate date is selected using the arrow keys and then pressing btn:[Set Date].  Otherwise, the date selection can be "
-"skipped by pressing btn:[Skip]."
-msgstr ""
+"The appropriate date is selected using the arrow keys and then pressing btn:[Set Date].  Otherwise, the date selection can be skipped by pressing "
+"btn:[Skip]."
+msgstr "使用方向键选择适当的日期，然后按btn:[Set Date]。否则，可以通过按 btn:[Skip] 来跳过日期的选择。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:932
 #, no-wrap
 msgid "Select Time"
-msgstr ""
+msgstr "选择时间"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:933
 #, no-wrap
 msgid "bsdinstall-timezone-time.png"
-msgstr ""
+msgstr "bsdinstall-timezone-time.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:937
 msgid ""
-"The appropriate time is selected using the arrow keys and then pressing btn:[Set Time].  Otherwise, the time selection can be "
-"skipped by pressing btn:[Skip]."
-msgstr ""
+"The appropriate time is selected using the arrow keys and then pressing btn:[Set Time].  Otherwise, the time selection can be skipped by pressing "
+"btn:[Skip]."
+msgstr "使用方向键选择适当的时间，然后按btn:[Set Time]。否则，可以通过按btn:[Skip] 来跳过时间的选择。"
 
 #. type: Title ===
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:939
 #, no-wrap
 msgid "Enabling Services"
-msgstr ""
+msgstr "开启服务"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:944
 msgid ""
-"The next menu is used to configure which system services will be started whenever the system boots.  All of these services are "
-"optional.  Only start the services that are needed for the system to function."
-msgstr ""
+"The next menu is used to configure which system services will be started whenever the system boots.  All of these services are optional.  Only "
+"start the services that are needed for the system to function."
+msgstr "下一个菜单用于配置在系统启动时哪些系统服务将被启动。所有这些服务都是可选的。只启动系统运行所需的服务。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:946
 #, no-wrap
 msgid "Selecting Additional Services to Enable"
-msgstr ""
+msgstr "选择要启用的其他服务"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:947
 #, no-wrap
 msgid "bsdinstall-config-services.png"
-msgstr ""
+msgstr "bsdinstall-config-services.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:950
 msgid "Here is a summary of the services which can be enabled in this menu:"
-msgstr ""
+msgstr "下面是在这个菜单中可以启用的服务的摘要："
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:952
 msgid ""
-"`local_unbound` - Enable the DNS local unbound. It is necessary to keep in mind that this is the unbound of the base system and is "
-"only meant for use as a local caching forwarding resolver. If the objective is to set up a resolver for the entire network install "
-"package:dns/unbound[]."
+"`local_unbound` - Enable the DNS local unbound. It is necessary to keep in mind that this is the unbound of the base system and is only meant for "
+"use as a local caching forwarding resolver. If the objective is to set up a resolver for the entire network install package:dns/unbound[]."
 msgstr ""
+"`local_unbound` - 启用 DNS 本地非绑定。有必要记住，这是基础系统的 unbound，只作为本地缓存转发解析器使用。如果目标是为整个网络建立一个解析器，请安"
+"装package:dns/unbound[]。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:953
 msgid ""
-"`sshd` - The Secure Shell (SSH) daemon is used to remotely access a system over an encrypted connection. Only enable this service "
-"if the system should be available for remote logins."
-msgstr ""
+"`sshd` - The Secure Shell (SSH) daemon is used to remotely access a system over an encrypted connection. Only enable this service if the system "
+"should be available for remote logins."
+msgstr "`sshd` - 安全 shell（SSH）守护程序用于通过加密连接远程访问系统。只有在系统应该可用于远程登录的情况下才启用这个服务。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:954
 msgid "`moused` - Enable this service if the mouse will be used from the command-line system console."
-msgstr ""
+msgstr "`moused` - 如果要从命令行系统控制台使用鼠标，则启用该服务。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:955
 msgid ""
-"`ntpdate` - Enable the automatic clock synchronization at boot time. The functionality of this program is now available in the man:"
-"ntpd[8] daemon. After a suitable period of mourning, the man:ntpdate[8] utility will be retired."
+"`ntpdate` - Enable the automatic clock synchronization at boot time. The functionality of this program is now available in the man:ntpd[8] "
+"daemon. After a suitable period of mourning, the man:ntpdate[8] utility will be retired."
 msgstr ""
+"`ntpdate` - 启用启动时的自动时钟同步功能。这个程序的功能现在在 man:ntpd[8] 守护进程中可用。在一段适当的哀悼期之后，man:ntpdate[8] 工具将退役。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:956
 msgid ""
-"`ntpd` - The Network Time Protocol (NTP) daemon for automatic clock synchronization. Enable this service if there is a Windows(R), "
-"Kerberos, or LDAP server on the network."
-msgstr ""
+"`ntpd` - The Network Time Protocol (NTP) daemon for automatic clock synchronization. Enable this service if there is a Windows(R), Kerberos, or "
+"LDAP server on the network."
+msgstr "`ntpd` - 用于自动时钟同步的网络时间协议（NTP）守护进程。如果网络上有一个 Windows(R)、Kerberos 或 LDAP 服务器，请启用这个服务。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:957
 msgid "`powerd` - System power control utility for power control and energy saving."
-msgstr ""
+msgstr "`powerd` - 用于电源控制和节约能源的系统电源控制工具。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:958
-msgid ""
-"`dumpdev` - Enabling crash dumps is useful in debugging issues with the system, so users are encouraged to enable crash dumps."
-msgstr ""
+msgid "`dumpdev` - Enabling crash dumps is useful in debugging issues with the system, so users are encouraged to enable crash dumps."
+msgstr "`powerd` - 用于电源控制和节约能源的系统电源控制工具。"
 
 #. type: Title ===
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:960
 #, no-wrap
 msgid "Enabling Hardening Security Options"
-msgstr ""
+msgstr "启用强化安全选项"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:965
-msgid ""
-"The next menu is used to configure which security options will be enabled.  All of these options are optional.  But their use is "
-"encouraged."
-msgstr ""
+msgid "The next menu is used to configure which security options will be enabled.  All of these options are optional.  But their use is encouraged."
+msgstr "下一个菜单是用来配置哪些安全选项将被启用。所有这些选项都是可选的。但我们鼓励开启它们。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:967
 #, no-wrap
 msgid "Selecting Hardening Security Options"
-msgstr ""
+msgstr "选择加固安全选项"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:968
 #, no-wrap
 msgid "bsdinstall-hardening.png"
-msgstr ""
+msgstr "bsdinstall-hardening.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:971
 msgid "Here is a summary of the options which can be enabled in this menu:"
-msgstr ""
+msgstr "下面是这个菜单中可以启用的选项的摘要："
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:973
 msgid ""
-"`hide_uids` - Hide processes running as other users to prevent the unprivileged users to see other running processes in execution "
-"by other users (UID) preventing information leakage."
-msgstr ""
+"`hide_uids` - Hide processes running as other users to prevent the unprivileged users to see other running processes in execution by other users "
+"(UID) preventing information leakage."
+msgstr "`hide_uids` - 隐藏以其他用户身份运行的进程，防止非特权用户看到其他用户正在执行的进程（UID），防止信息泄露。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:974
 msgid ""
-"`hide_gids` - Hide processes running as other groups to prevent the unprivileged users to see other running processes in execution "
-"by other groups (GID) preventing information leakage."
-msgstr ""
+"`hide_gids` - Hide processes running as other groups to prevent the unprivileged users to see other running processes in execution by other "
+"groups (GID) preventing information leakage."
+msgstr "`hide_gids` - 隐藏以其他组的名义运行的进程，以防止非特权用户看到其他组正在执行的进程（GID），防止信息泄露。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:975
 msgid "`hide_jail` - Hide processes running in jails to prevent the unprivileged users to see processes running inside the jails."
-msgstr ""
+msgstr "`hide_jail` - 隐藏在 Jail 中运行的进程，防止非特权用户看到 Jail 中运行的进程。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:976
 msgid ""
-"`read_msgbuf` - Disabling reading kernel message buffer for unprivileged users prevent from using man:dmesg[8] to view messages "
-"from the kernel's log buffer."
-msgstr ""
+"`read_msgbuf` - Disabling reading kernel message buffer for unprivileged users prevent from using man:dmesg[8] to view messages from the kernel's "
+"log buffer."
+msgstr "`read_msgbuf` - 禁止非特权用户使用 man:dmesg[8] 查看内核日志缓冲区的信息，以防止读取内核信息缓冲区。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:977
 msgid ""
-"`proc_debug` - Disabling process debugging facilities for unprivileged users disables a variety of unprivileged inter-process "
-"debugging services, including some procfs functionality, ptrace(), and ktrace(). Please note that this will also prevent debugging "
-"tools, for instance man:lldb[1], man:truss[1], man:procstat[1], as well as some built-in debugging facilities in certain scripting "
-"language like PHP, etc., from working for unprivileged users."
+"`proc_debug` - Disabling process debugging facilities for unprivileged users disables a variety of unprivileged inter-process debugging services, "
+"including some procfs functionality, ptrace(), and ktrace(). Please note that this will also prevent debugging tools, for instance man:lldb[1], "
+"man:truss[1], man:procstat[1], as well as some built-in debugging facilities in certain scripting language like PHP, etc., from working for "
+"unprivileged users."
 msgstr ""
+"`proc_debug` - 禁用非特权用户的进程调试设施，禁用各种非特权的进程间调试服务，包括一些 procfs 功能、trace() 和 ktrace()。请注意，这也会阻止调试工"
+"具，例如 man:lldb[1], man:truss[1], man:procstat[1]，以及某些脚本语言（如 PHP）中的内置调试设施对非特权用户的作用。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:978
 msgid "`random_pid` - Randomize the PID of newly created processes."
-msgstr ""
+msgstr "`random_pid` - 随机化新创建进程的 PID。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:979
 msgid "`clear_tmp` - Clean [.filename]#/tmp# when the system starts up."
-msgstr ""
+msgstr "`clear_tmp` - 在系统启动时清理 [.filename]#/tmp# 。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:980
 msgid ""
-"`disable_syslogd` - Disable opening syslogd network socket. By default FreeBSD runs syslogd in a secure way with `-s`. That "
-"prevents the daemon from listening for incoming UDP requests at port 514. With this option enabled syslogd will run with the flag "
-"`-ss` which prevents syslogd from opening any port. To get more information consult man:syslogd[8]."
+"`disable_syslogd` - Disable opening syslogd network socket. By default FreeBSD runs syslogd in a secure way with `-s`. That prevents the daemon "
+"from listening for incoming UDP requests at port 514. With this option enabled syslogd will run with the flag `-ss` which prevents syslogd from "
+"opening any port. To get more information consult man:syslogd[8]."
 msgstr ""
+"`disable_syslogd` - 禁止打开 syslogd 网络套接字。在默认情况下，FreeBSD 以安全的方式运行 syslogd，并使用 `-s`。这可以防止守护进程在 514 端口监听传"
+"入的 UDP 请求。启用该选项后，syslogd 将以标志 `-ss`运行，它可以防止 syslogd 打开任何端口。要获得更多信息，请参考 man:syslogd[8]。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:981
 msgid "`disable_sendmail` - Disable the sendmail mail transport agent."
-msgstr ""
+msgstr "`disable_sendmail` - 禁用 sendmail 邮件传输代理。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:982
 msgid "`secure_console` - When this option is enabled, the prompt requests the `root` password when entering single-user mode."
-msgstr ""
+msgstr "`secure_console` - 当这个选项被启用时，在进入单用户模式时，提示要求输入 `root` 密码。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:983
 msgid ""
-"`disable_ddtrace` - DTrace can run in a mode that will actually affect the running kernel. Destructive actions may not be used "
-"unless they have been explicitly enabled. To enable this option when using DTrace use `-w`. To get more information consult man:"
-"dtrace[1]."
+"`disable_ddtrace` - DTrace can run in a mode that will actually affect the running kernel. Destructive actions may not be used unless they have "
+"been explicitly enabled. To enable this option when using DTrace use `-w`. To get more information consult man:dtrace[1]."
 msgstr ""
+"`disable_ddtrace` - DTrace 可以在实际影响运行中的内核的模式下运行。除非明确启用，否则不得使用破坏性的操作。要在使用 DTrace 时启用该选项，请使用 `-"
+"w`。要获得更多信息，请查阅 man:dtrace[1]。"
 
 #. type: Title ===
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:985
 #, no-wrap
 msgid "Add Users"
-msgstr ""
+msgstr "添加用户"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:991
 msgid ""
-"The next menu prompts to create at least one user account.  It is recommended to login to the system using a user account rather "
-"than as `root`.  When logged in as `root`, there are essentially no limits or protection on what can be done.  Logging in as a "
-"normal user is safer and more secure."
+"The next menu prompts to create at least one user account.  It is recommended to login to the system using a user account rather than as `root`.  "
+"When logged in as `root`, there are essentially no limits or protection on what can be done.  Logging in as a normal user is safer and more "
+"secure."
 msgstr ""
+"下一个菜单提示至少要创建一个用户账户。建议使用一个用户账户而不是以 `root` 身份登录系统。当以 `root` 身份登录时，对可以做的事情基本上没有限制或保"
+"护。以普通用户身份登录更安全、更有保障。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:993
 msgid "Select btn:[Yes] to add new users."
-msgstr ""
+msgstr "选择 btn:[Yes] 来添加新用户。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:995
 #, no-wrap
 msgid "Add User Accounts"
-msgstr ""
+msgstr "添加用户账户"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:996
 #, no-wrap
 msgid "bsdinstall-adduser1.png"
-msgstr ""
+msgstr "bsdinstall-adduser1.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1000
 msgid ""
-"Follow the prompts and input the requested information for the user account.  The example shown in <<bsdinstall-add-user2>> "
-"creates the `asample` user account."
-msgstr ""
+"Follow the prompts and input the requested information for the user account.  The example shown in <<bsdinstall-add-user2>> creates the `asample` "
+"user account."
+msgstr "按照提示，输入所要求的用户账户信息。 <<bsdinstall-add-user2>> 中显示的例子创建了一个 `asample` 用户账户。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1002
 #, no-wrap
 msgid "Enter User Information"
-msgstr ""
+msgstr "输入用户信息"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1003
 #, no-wrap
 msgid "bsdinstall-adduser2.png"
-msgstr ""
+msgstr "bsdinstall-adduser2.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1006
 msgid "Here is a summary of the information to input:"
-msgstr ""
+msgstr "以下是需要输入的信息的摘要："
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1008
 msgid ""
-"`Username` - The name the user will enter to log in. A common convention is to use the first letter of the first name combined "
-"with the last name, as long as each username is unique for the system. The username is case sensitive and should not contain any "
-"spaces."
+"`Username` - The name the user will enter to log in. A common convention is to use the first letter of the first name combined with the last "
+"name, as long as each username is unique for the system. The username is case sensitive and should not contain any spaces."
 msgstr ""
+"`Username` - 用户登录时要输入的名字。一个常见的惯例是使用名字的第一个字母与姓氏相结合，只要每个用户名对系统来说是唯一的。用户名是区分大小写的，不"
+"应包含任何空格。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1009
 msgid "`Full name` - The user's full name. This can contain spaces and is used as a description for the user account."
-msgstr ""
+msgstr "`Full name` - 用户的全名。这可以包含空格，作为用户账户的描述。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1010
 msgid "`Uid` - User ID. Typically, this is left blank so the system will assign a value."
-msgstr ""
+msgstr "`Uid` - 用户 ID。通常情况下，这部分留空，所以系统会分配一个值。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1011
 msgid "`Login group` - The user's group. Typically this is left blank to accept the default."
-msgstr ""
+msgstr "`Login group` - 用户的组别。典型的情况是留空，以接受默认值。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1012
 msgid ""
-"`Invite _user_ into other groups?` - Additional groups to which the user will be added as a member. If the user needs "
-"administrative access, type `wheel` here."
-msgstr ""
+"`Invite _user_ into other groups?` - Additional groups to which the user will be added as a member. If the user needs administrative access, type "
+"`wheel` here."
+msgstr "`Invite user into other groups?` - 额外的组，用户将被添加为成员。如果用户需要管理权限，在这里输入 `wheel`。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1013
 msgid "`Login class` - Typically left blank for the default."
-msgstr ""
+msgstr "`Login class` - 通常留空以接受默认值。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1014
 msgid ""
-"`Shell` - Type in one of the listed values to set the interactive shell for the user. Refer to crossref:basics[shells,“Shells”] "
-"for more information about shells."
-msgstr ""
+"`Shell` - Type in one of the listed values to set the interactive shell for the user. Refer to crossref:basics[shells,“Shells”] for more "
+"information about shells."
+msgstr "`Shell` - 键入一个列出的值来设置用户的交互式 shell。关于 shell 的更多信息，请参考crossref:basics[shells,“Shells”]。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1015
 msgid "`Home directory` - The user's home directory. The default is usually correct."
-msgstr ""
+msgstr "`Home directory` - 用户的主目录。默认值通常是正确的。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1016
 msgid "`Home directory permissions` - Permissions on the user's home directory. The default is usually correct."
-msgstr ""
+msgstr "`Home directory permissions` - 用户的主目录的权限。默认值通常是正确的。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1017
 msgid "`Use password-based authentication?` - Typically `yes` so that the user is prompted to input their password at login."
-msgstr ""
+msgstr "`Use password-based authentication?` - 通常选择 `yes`，这样用户在登录时就会被提示输入他们的密码。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1018
 msgid "`Use an empty password?` - Typically `no` as it is insecure to have a blank password."
-msgstr ""
+msgstr "`Use an empty password?` - 通常不使用，因为空白的密码是不安全的。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1019
 msgid "`Use a random password?` - Typically `no` so that the user can set their own password in the next prompt."
-msgstr ""
+msgstr "`Use a random password?` - 通常不是，这样用户可以在下一个提示中设置自己的密码。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1020
 msgid "`Enter password` - The password for this user. Characters typed will not show on the screen."
-msgstr ""
+msgstr "`Enter password` - 这个用户的密码。输入的字符不会显示在屏幕上。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1021
 msgid "`Enter password again` - The password must be typed again for verification."
-msgstr ""
+msgstr "`Enter password` - 这个用户的密码。输入的字符不会显示在屏幕上。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1022
 msgid "`Lock out the account after creation?` - Typically `no` so that the user can login."
-msgstr ""
+msgstr "`Lock out the account after creation?` - 通常是 `no`，这样用户就可以登录。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1026
 msgid ""
-"After entering everything, a summary is shown for review.  If a mistake was made, enter `no` and try again.  If everything is "
-"correct, enter `yes` to create the new user."
-msgstr ""
+"After entering everything, a summary is shown for review.  If a mistake was made, enter `no` and try again.  If everything is correct, enter "
+"`yes` to create the new user."
+msgstr "在输入所有内容后，会显示一个摘要供审查。如果犯了一个错误，输入`no`，再试一次。如果一切正确，输入`yes` 来创建新用户。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1028
 #, no-wrap
 msgid "Exit User and Group Management"
-msgstr ""
+msgstr "退出用户和组的管理"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1029
 #, no-wrap
 msgid "bsdinstall-adduser3.png"
-msgstr ""
+msgstr "bsdinstall-adduser3.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1033
 msgid ""
-"If there are more users to add, answer the `Add another user?` question with `yes`.  Enter `no` to finish adding users and "
-"continue the installation."
-msgstr ""
+"If there are more users to add, answer the `Add another user?` question with `yes`.  Enter `no` to finish adding users and continue the "
+"installation."
+msgstr "如果有更多的用户需要添加，请在`Add another user?` 问题上回答 `yes`。输入 `no` 可完成添加用户步骤并继续安装。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1035
-msgid ""
-"For more information on adding users and user management, see crossref:basics[users-synopsis,“Users and Basic Account Management”]."
-msgstr ""
+msgid "For more information on adding users and user management, see crossref:basics[users-synopsis,“Users and Basic Account Management”]."
+msgstr "关于添加用户和用户管理的更多信息，请参阅crossref:basics[users-synopsis,“Users and Basic Account Management”]。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1037 content/zh-cn/books/handbook/bsdinstall/_index.adoc:1042
 #, no-wrap
 msgid "Final Configuration"
-msgstr ""
+msgstr "最终配置"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1040
 msgid "After everything has been installed and configured, a final chance is provided to modify settings."
-msgstr ""
+msgstr "在所有东西都被安装和配置好之后，提供了一个修改设置的最后机会。"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1043
 #, no-wrap
 msgid "bsdinstall-finalconfiguration.png"
-msgstr ""
+msgstr "bsdinstall-finalconfiguration.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1046
 msgid "Use this menu to make any changes or do any additional configuration before completing the installation."
-msgstr ""
+msgstr "在完成安装之前，使用此菜单进行任何修改或做任何额外的配置。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1048
 msgid "`Add User` - Described in <<bsdinstall-addusers>>."
-msgstr ""
+msgstr "`Add User` - 在<<bsdinstall-addusers>>中描述。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1049
 msgid "`Root Password` - Described in <<bsdinstall-post-root>>."
-msgstr ""
+msgstr "`Root Password` - 在<<bsdinstall-post-root>>中描述。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1050
 msgid "`Hostname` - Described in <<bsdinstall-hostname>>."
-msgstr ""
+msgstr "`Hostname` - 在<<bsdinstall-hostname>>中描述。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1051
 msgid "`Network` - Described in <<bsdinstall-config-network-dev>>."
-msgstr ""
+msgstr "`Network` - 在<<bsdinstall-config-network-dev>>中描述。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1052
 msgid "`Services` - Described in <<bsdinstall-sysconf>>."
-msgstr ""
+msgstr "`Services` - 在<<bsdinstall-sysconf>>.中描述。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1053
 msgid "`System Hardening` - Described in <<bsdinstall-hardening>>."
-msgstr ""
+msgstr "`System Hardening` - 在 <<bsdinstall-hardening>>中描述。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1054
 msgid "`Time Zone` - Described in <<bsdinstall-timezone>>."
-msgstr ""
+msgstr "`Time Zone` - 在<<bsdinstall-timezone>>中进行了描述。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1055
 msgid "`Handbook` - Download and install the FreeBSD Handbook."
-msgstr ""
+msgstr "`Handbook` - 下载并安装 FreeBSD 手册。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1057
 msgid "After any final configuration is complete, select btn:[Exit]."
-msgstr ""
+msgstr "在任何最终配置完成后，选择 btn:[Exit]。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1059
 #, no-wrap
 msgid "Manual Configuration"
-msgstr ""
+msgstr "手动设置"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1060
 #, no-wrap
 msgid "bsdinstall-final-modification-shell.png"
-msgstr ""
+msgstr "bsdinstall-final-modification-shell.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1064
 msgid ""
-"bsdinstall will prompt if there are any additional configuration that needs to be done before rebooting into the new system.  "
-"Select btn:[Yes] to exit to a shell within the new system or btn:[No] to proceed to the last step of the installation."
-msgstr ""
+"bsdinstall will prompt if there are any additional configuration that needs to be done before rebooting into the new system.  Select btn:[Yes] to "
+"exit to a shell within the new system or btn:[No] to proceed to the last step of the installation."
+msgstr "bsdinstall 会提示在重启到新系统之前是否有任何其他配置需要完成。选择btn:[Yes] 退出到新系统的 shell，或者选择 btn:[No] 进入安装的最后一步。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1066
 #, no-wrap
 msgid "Complete the Installation"
-msgstr ""
+msgstr "完成安装"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1067
 #, no-wrap
 msgid "bsdinstall-mainexit.png"
-msgstr ""
+msgstr "bsdinstall-mainexit.png"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1070
 msgid "If further configuration or special setup is needed, select btn:[Live CD] to boot the install media into Live CD mode."
-msgstr ""
+msgstr "如果需要进一步的配置或特殊的设置，选择 btn:[Live CD] 来启动安装介质进入 Live CD 模式。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1073
 msgid ""
-"If the installation is complete, select btn:[Reboot] to reboot the computer and start the new FreeBSD system.  Do not forget to "
-"remove the FreeBSD install media or the computer may boot from it again."
-msgstr ""
+"If the installation is complete, select btn:[Reboot] to reboot the computer and start the new FreeBSD system.  Do not forget to remove the "
+"FreeBSD install media or the computer may boot from it again."
+msgstr "如果安装完成，选择 btn:[Reboot] 来重新启动计算机并开始新的 FreeBSD 系统。不要忘记卸载 FreeBSD 的安装介质，否则计算机可能会再次从它启动。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1079
 msgid ""
-"As FreeBSD boots, informational messages are displayed.  After the system finishes booting, a login prompt is displayed.  At the "
-"`login:` prompt, enter the username added during the installation.  Avoid logging in as `root`.  Refer to crossref:basics[users-"
-"superuser,“The Superuser Account”] for instructions on how to become the superuser when administrative access is needed."
+"As FreeBSD boots, informational messages are displayed.  After the system finishes booting, a login prompt is displayed.  At the `login:` prompt, "
+"enter the username added during the installation.  Avoid logging in as `root`.  Refer to crossref:basics[users-superuser,“The Superuser Account”] "
+"for instructions on how to become the superuser when administrative access is needed."
 msgstr ""
+"当 FreeBSD 启动时，会显示一些信息性的信息。在系统完成启动后，会显示一个登录提示。在 `login:` 的提示下，输入安装时添加的用户名。避免以 `root` 身份"
+"登录。了解在需要管理权限时如何成为超级用户的说明，请参考crossref:basics[users-superuser,“The Superuser Account”] 。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1085
 msgid ""
-"The messages that appeared during boot can be reviewed by pressing kbd:[Scroll-Lock] to turn on the scroll-back buffer.  The kbd:"
-"[PgUp], kbd:[PgDn], and arrow keys can be used to scroll back through the messages.  When finished, press kbd:[Scroll-Lock] again "
-"to unlock the display and return to the console.  To review these messages once the system has been up for some time, type `less /"
-"var/run/dmesg.boot` from a command prompt.  Press kbd:[q] to return to the command line after viewing."
+"The messages that appeared during boot can be reviewed by pressing kbd:[Scroll-Lock] to turn on the scroll-back buffer.  The kbd:[PgUp], kbd:"
+"[PgDn], and arrow keys can be used to scroll back through the messages.  When finished, press kbd:[Scroll-Lock] again to unlock the display and "
+"return to the console.  To review these messages once the system has been up for some time, type `less /var/run/dmesg.boot` from a command "
+"prompt.  Press kbd:[q] to return to the command line after viewing."
 msgstr ""
+"按kbd:[Scroll-Lock] 打开回卷缓冲器，就可以查看启动时出现的信息。可以用 kbd:[PgUp]、kbd:[PgDn] 和方向键来回滚信息。完成后，再按一次 kbd:[Scroll-"
+"Lock] 键，解除显示并返回到控制台。要在系统运行一段时间后查看这些信息，可以在命令提示符下输入`less /var/run/dmesg.boot`。查看后按 kbd:[q] 键返回到"
+"命令行。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1089
 msgid ""
-"If sshd was enabled in <<bsdinstall-config-serv>>, the first boot may be a bit slower as the system will generate the RSA and DSA "
-"keys.  Subsequent boots will be faster.  The fingerprints of the keys will be displayed, as seen in this example:"
+"If sshd was enabled in <<bsdinstall-config-serv>>, the first boot may be a bit slower as the system will generate the RSA and DSA keys.  "
+"Subsequent boots will be faster.  The fingerprints of the keys will be displayed, as seen in this example:"
 msgstr ""
+"如果在<<bsdinstall-config-serv>>中启用了sshd，第一次启动时可能会慢一些，因为系统会生成 RSA 和 DSA 密钥。后续的启动会更快。密钥的指纹将被显示出来，"
+"如本例所示："
 
 #. type: delimited block . 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1127
@@ -2623,409 +2822,464 @@ msgid ""
 "+-----------------+\n"
 "Starting sshd.\n"
 msgstr ""
+"Generating public/private rsa1 key pair.\n"
+"Your identification has been saved in /etc/ssh/ssh_host_key.\n"
+"Your public key has been saved in /etc/ssh/ssh_host_key.pub.\n"
+"The key fingerprint is:\n"
+"10:a0:f5:af:93:ae:a3:1a:b2:bb:3c:35:d9:5a:b3:f3 root@machine3.example.com\n"
+"The key’s randomart image is:\n"
+"+—[RSA1 1024]——+\n"
+"|    o..          |\n"
+"|   o . .         |\n"
+"|  .   o          |\n"
+"|       o         |\n"
+"|    o   S        |\n"
+"|   + + o         |\n"
+"|o . + *          |\n"
+"|o+ ..+ .         |\n"
+"|==o..o+E         |\n"
+"+————————+\n"
+"Generating public/private dsa key pair.\n"
+"Your identification has been saved in /etc/ssh/ssh_host_dsa_key.\n"
+"Your public key has been saved in /etc/ssh/ssh_host_dsa_key.pub.\n"
+"The key fingerprint is:\n"
+"7e:1c:ce:dc:8a:3a:18:13:5b:34:b5:cf:d9:d1:47:b2 root@machine3.example.com\n"
+"The key’s randomart image is:\n"
+"+————————[ DSA 1024]——+\n"
+"|       ..     . .|\n"
+"|      o  .   . + |\n"
+"|     . ..   . E .|\n"
+"|    . .  o o . . |\n"
+"|     +  S = .    |\n"
+"|    +  . = o     |\n"
+"|     +  . * .    |\n"
+"|    . .  o .     |\n"
+"|      .o. .      |\n"
+"+————————+\n"
+"Starting sshd.\n"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1130
 msgid "Refer to crossref:security[openssh,\"OpenSSH\"] for more information about fingerprints and SSH."
-msgstr ""
+msgstr "关于指纹和 SSH 的更多信息请参考 crossref:security[openssh,”OpenSSH”]。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1133
 msgid ""
-"FreeBSD does not install a graphical environment by default.  Refer to crossref:x11[x11,The X Window System] for more information "
-"about installing and configuring a graphical window manager."
-msgstr ""
+"FreeBSD does not install a graphical environment by default.  Refer to crossref:x11[x11,The X Window System] for more information about "
+"installing and configuring a graphical window manager."
+msgstr "FreeBSD 默认不会安装图形环境。请参考 crossref:x11[x11,The X Window 系统] 以了解更多关于安装和配置图形化窗口管理器的信息。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1137
 msgid ""
-"Proper shutdown of a FreeBSD computer helps protect data and hardware from damage.  _Do not turn off the power before the system "
-"has been properly shut down!_ If the user is a member of the `wheel` group, become the superuser by typing `su` at the command "
-"line and entering the `root` password.  Then, type `shutdown -p now` and the system will shut down cleanly, and if the hardware "
-"supports it, turn itself off."
+"Proper shutdown of a FreeBSD computer helps protect data and hardware from damage.  _Do not turn off the power before the system has been "
+"properly shut down!_ If the user is a member of the `wheel` group, become the superuser by typing `su` at the command line and entering the "
+"`root` password.  Then, type `shutdown -p now` and the system will shut down cleanly, and if the hardware supports it, turn itself off."
 msgstr ""
+"正确地关闭 FreeBSD 计算机有助于保护数据和硬件免受损害。_在系统正确关闭之前，请不要关闭电源！_如果用户是 `wheel` 组的成员，通过在命令行输入 `su` 并"
+"输入 `root` 密码，成为超级用户。然后，输入`shutdown -p now`，系统就会干净利落地关闭，如果硬件支持，就会自动关闭。"
 
 #. type: Title ==
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1139
 #, no-wrap
 msgid "Network Interfaces"
-msgstr ""
+msgstr "网络接口"
 
 #. type: Title ===
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1142
 #, no-wrap
 msgid "Configuring Network Interfaces"
-msgstr ""
+msgstr "配置网络接口"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1146
 msgid "Next, a list of the network interfaces found on the computer is shown.  Select the interface to configure."
-msgstr ""
+msgstr "接下来，会显示计算机上发现的网络接口的列表。选择要配置的接口。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1148
 #, no-wrap
 msgid "Choose a Network Interface"
-msgstr ""
+msgstr "选择网络接口"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1149
 #, no-wrap
 msgid "bsdinstall-configure-network-interface.png"
-msgstr ""
+msgstr "bsdinstall-configure-network-interface.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1153
 msgid ""
-"If an Ethernet interface is selected, the installer will skip ahead to the menu shown in <<bsdinstall-configure-net-ipv4>>.  If a "
-"wireless network interface is chosen, the system will instead scan for wireless access points:"
-msgstr ""
+"If an Ethernet interface is selected, the installer will skip ahead to the menu shown in <<bsdinstall-configure-net-ipv4>>.  If a wireless "
+"network interface is chosen, the system will instead scan for wireless access points:"
+msgstr "如果选择了以太网接口，安装程序将跳到 <<bsdinstall-configure-net-ipv4>>中显示的菜单。如果选择了无线网络接口，系统将转而扫描无线接入点："
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1155
 #, no-wrap
 msgid "Scanning for Wireless Access Points"
-msgstr ""
+msgstr "正在扫描接入点"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1156
 #, no-wrap
 msgid "bsdinstall-configure-wireless-scan.png"
-msgstr ""
+msgstr "bsdinstall-configure-wireless-scan.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1163
 msgid ""
-"Wireless networks are identified by a Service Set Identifier (SSID), a short, unique name given to each network.  SSIDs found "
-"during the scan are listed, followed by a description of the encryption types available for that network.  If the desired SSID "
-"does not appear in the list, select btn:[Rescan] to scan again.  If the desired network still does not appear, check for problems "
-"with antenna connections or try moving the computer closer to the access point.  Rescan after each change is made."
+"Wireless networks are identified by a Service Set Identifier (SSID), a short, unique name given to each network.  SSIDs found during the scan are "
+"listed, followed by a description of the encryption types available for that network.  If the desired SSID does not appear in the list, select "
+"btn:[Rescan] to scan again.  If the desired network still does not appear, check for problems with antenna connections or try moving the computer "
+"closer to the access point.  Rescan after each change is made."
 msgstr ""
+"无线网络是由服务集标识符（SSID）来识别的，这是给予每个网络的一个简短而独特的名称。在扫描过程中发现的 SSID 会被列出，然后是对该网络可用的加密类型的"
+"描述。如果所需的 SSID 没有出现在列表中，选择btn:[Rescan] 以再次扫描。如果想要的网络仍然没有出现，请检查天线连接是否有问题，或者尝试将电脑移到离接"
+"入点更近的地方。每次改变后都要重新扫描。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1165
 #, no-wrap
 msgid "Choosing a Wireless Network"
-msgstr ""
+msgstr "选择无线网络"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1166
 #, no-wrap
 msgid "bsdinstall-configure-wireless-accesspoints.png"
-msgstr ""
+msgstr "bsdinstall-configure-wireless-accesspoints.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1172
 msgid ""
-"Next, enter the encryption information for connecting to the selected wireless network.  WPA2 encryption is strongly recommended "
-"as older encryption types, like WEP, offer little security.  If the network uses WPA2, input the password, also known as the Pre-"
-"Shared Key (PSK).  For security reasons, the characters typed into the input box are displayed as asterisks."
+"Next, enter the encryption information for connecting to the selected wireless network.  WPA2 encryption is strongly recommended as older "
+"encryption types, like WEP, offer little security.  If the network uses WPA2, input the password, also known as the Pre-Shared Key (PSK).  For "
+"security reasons, the characters typed into the input box are displayed as asterisks."
 msgstr ""
+"接下来，输入连接到所选无线网络的加密信息。强烈建议使用 WPA2 加密，因为旧的加密类型，如 WEP，提供的安全性不高。如果网络使用 WPA2，请输入密码，也被"
+"称为预共享密钥（PSK）。出于安全考虑，输入框中的字符会显示为星号。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1174
 #, no-wrap
 msgid "WPA2 Setup"
-msgstr ""
+msgstr "设置 WPA2"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1175
 #, no-wrap
 msgid "bsdinstall-configure-wireless-wpa2setup.png"
-msgstr ""
+msgstr "bsdinstall-configure-wireless-wpa2setup.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1178
 msgid "Next, choose whether or not an IPv4 address should be configured on the Ethernet or wireless interface:"
-msgstr ""
+msgstr "接下来，选择是否要在以太网或无线接口上配置一个 IPv4 地址："
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1180
 #, no-wrap
 msgid "Choose IPv4 Networking"
-msgstr ""
+msgstr "选择 IPv4 地址"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1181
 #, no-wrap
 msgid "bsdinstall-configure-network-interface-ipv4.png"
-msgstr ""
+msgstr "bsdinstall-configure-network-interface-ipv4.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1186
 msgid ""
-"There are two methods of IPv4 configuration.  DHCP will automatically configure the network interface correctly and should be used "
-"if the network provides a DHCP server.  Otherwise, the addressing information needs to be input manually as a static configuration."
+"There are two methods of IPv4 configuration.  DHCP will automatically configure the network interface correctly and should be used if the network "
+"provides a DHCP server.  Otherwise, the addressing information needs to be input manually as a static configuration."
 msgstr ""
+"有两种配置 IPv4 的方法。DHCP 会自动正确配置网络接口，如果网络提供了 DHCP 服务器，就应该使用这种方法。否则，寻址信息需要以静态配置的方式手动输入。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1191
 msgid ""
-"Do not enter random network information as it will not work.  If a DHCP server is not available, obtain the information listed in "
-"<<bsdinstall-collect-network-information, Required Network Information>> from the network administrator or Internet service "
-"provider."
+"Do not enter random network information as it will not work.  If a DHCP server is not available, obtain the information listed in <<bsdinstall-"
+"collect-network-information, Required Network Information>> from the network administrator or Internet service provider."
 msgstr ""
+"不要随意输入网络信息，因为它将无法工作。如果没有 DHCP 服务器，请从网络管理员或互联网服务提供商那里获得<<bsdinstall-collect-network-information, 所"
+"需网络信息>> 中列出的信息。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1195
 msgid ""
-"If a DHCP server is available, select btn:[Yes] in the next menu to automatically configure the network interface.  The installer "
-"will appear to pause for a minute or so as it finds the DHCP server and obtains the addressing information for the system."
-msgstr ""
+"If a DHCP server is available, select btn:[Yes] in the next menu to automatically configure the network interface.  The installer will appear to "
+"pause for a minute or so as it finds the DHCP server and obtains the addressing information for the system."
+msgstr "如果有 DHCP 服务器，在下一个菜单中选择 Yes来自动配置网络接口。当安装程序找到 DHCP 服务器并获得系统的寻址信息时，会出现一分钟左右的停顿。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1197
 #, no-wrap
 msgid "Choose IPv4DHCP Configuration"
-msgstr ""
+msgstr "选择 IPv4 DHCP 配置"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1198
 #, no-wrap
 msgid "bsdinstall-configure-network-interface-ipv4-dhcp.png"
-msgstr ""
+msgstr "bsdinstall-configure-network-interface-ipv4-dhcp.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1201
 msgid "If a DHCP server is not available, select btn:[No] and input the following addressing information in this menu:"
-msgstr ""
+msgstr "如果没有 DHCP 服务器，请选择 btn:[No]，并在此菜单中输入以下寻址信息："
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1203
 #, no-wrap
 msgid "IPv4 Static Configuration"
-msgstr ""
+msgstr "IPv4 静态配置"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1204
 #, no-wrap
 msgid "bsdinstall-configure-network-interface-ipv4-static.png"
-msgstr ""
+msgstr "bsdinstall-configure-network-interface-ipv4-static.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1207
 msgid ""
-"`IP Address` - The IPv4 address assigned to this computer. The address must be unique and not already in use by another piece of "
-"equipment on the local network."
-msgstr ""
+"`IP Address` - The IPv4 address assigned to this computer. The address must be unique and not already in use by another piece of equipment on the "
+"local network."
+msgstr "`IP Address` - 分配给该计算机的 IPv4 地址。该地址必须是唯一的，并且没有被本地网络中的其他设备使用。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1208
 msgid "`Subnet Mask` - The subnet mask for the network."
-msgstr ""
+msgstr "`Subnet Mask` - 网络的子网掩码。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1209
 msgid "`Default Router` - The IP address of the network's default gateway."
-msgstr ""
+msgstr "`Default Router` - 网络的默认网关的 IP 地址。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1211
-msgid ""
-"The next screen will ask if the interface should be configured for IPv6. If IPv6 is available and desired, choose btn:[Yes] to "
-"select it."
-msgstr ""
+msgid "The next screen will ask if the interface should be configured for IPv6. If IPv6 is available and desired, choose btn:[Yes] to select it."
+msgstr "下一个屏幕将询问该接口是否应配置为 IPv6。如果 IPv6 可用并且需要，请选择 btn:[Yes] 来选择它。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1213
 #, no-wrap
 msgid "Choose IPv6 Networking"
-msgstr ""
+msgstr "选择 IPv6 网络"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1214
 #, no-wrap
 msgid "bsdinstall-configure-network-interface-ipv6.png"
-msgstr ""
+msgstr "bsdinstall-configure-network-interface-ipv6.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1220
 msgid ""
-"IPv6 also has two methods of configuration.  StateLess Address AutoConfiguration (SLAAC) will automatically request the correct "
-"configuration information from a local router.  Refer to http://tools.ietf.org/html/rfc4862[rfc4862] for more information.  Static "
-"configuration requires manual entry of network information."
+"IPv6 also has two methods of configuration.  StateLess Address AutoConfiguration (SLAAC) will automatically request the correct configuration "
+"information from a local router.  Refer to http://tools.ietf.org/html/rfc4862[rfc4862] for more information.  Static configuration requires "
+"manual entry of network information."
 msgstr ""
+"IPv6 也有两种配置方法。无状态地址自动配置（SLAAC）将自动向本地路由器请求正确的配置信息。更多信息请参考 http://tools.ietf.org/html/"
+"rfc4862[rfc4862]。静态配置需要手动输入网络信息。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1223
 msgid ""
-"If an IPv6 router is available, select btn:[Yes] in the next menu to automatically configure the network interface.  The installer "
-"will appear to pause for a minute or so as it finds the router and obtains the addressing information for the system."
-msgstr ""
+"If an IPv6 router is available, select btn:[Yes] in the next menu to automatically configure the network interface.  The installer will appear to "
+"pause for a minute or so as it finds the router and obtains the addressing information for the system."
+msgstr "如果有 IPv6 路由器，请在下一个菜单中选择btn:[Yes]，以自动配置网络接口。安装程序在找到路由器并获得系统的寻址信息时，会出现一分钟左右的停顿。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1225
 #, no-wrap
 msgid "Choose IPv6 SLAAC Configuration"
-msgstr ""
+msgstr "选择 IPv6 SLAAC 配置"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1226
 #, no-wrap
 msgid "bsdinstall-configure-network-interface-slaac.png"
-msgstr ""
+msgstr "bsdinstall-configure-network-interface-slaac.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1229
 msgid "If an IPv6 router is not available, select btn:[No] and input the following addressing information in this menu:"
-msgstr ""
+msgstr "如果没有 IPv6 路由器，请选择btn:[No] 并在该菜单中输入以下寻址信息："
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1231
 #, no-wrap
 msgid "IPv6 Static Configuration"
-msgstr ""
+msgstr "配置静态 IPv6"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1232
 #, no-wrap
 msgid "bsdinstall-configure-network-interface-ipv6-static.png"
-msgstr ""
+msgstr "bsdinstall-configure-network-interface-ipv6-static.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1235
 msgid ""
-"`IPv6 Address` - The IPv6 address assigned to this computer. The address must be unique and not already in use by another piece of "
-"equipment on the local network."
-msgstr ""
+"`IPv6 Address` - The IPv6 address assigned to this computer. The address must be unique and not already in use by another piece of equipment on "
+"the local network."
+msgstr "`IPv6 Address` - 分配给该计算机的 IPv6 地址。该地址必须是唯一的，并且没有被本地网络中的其他设备使用。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1236
 msgid "`Default Router` - The IPv6 address of the network's default gateway."
-msgstr ""
+msgstr "`Default Router` - 网络的默认网关的 IPv6 地址。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1242
 msgid ""
-"The last network configuration menu is used to configure the Domain Name System (DNS) resolver, which converts hostnames to and "
-"from network addresses.  If DHCP or SLAAC was used to autoconfigure the network interface, the `Resolver Configuration` values may "
-"already be filled in.  Otherwise, enter the local network's domain name in the `Search` field.  `DNS #1` and `DNS #2` are the IPv4 "
-"and/or IPv6 addresses of the DNS servers.  At least one DNS server is required."
+"The last network configuration menu is used to configure the Domain Name System (DNS) resolver, which converts hostnames to and from network "
+"addresses.  If DHCP or SLAAC was used to autoconfigure the network interface, the `Resolver Configuration` values may already be filled in.  "
+"Otherwise, enter the local network's domain name in the `Search` field.  `DNS #1` and `DNS #2` are the IPv4 and/or IPv6 addresses of the DNS "
+"servers.  At least one DNS server is required."
 msgstr ""
+"最后一个网络配置菜单用于配置域名系统（DNS）解析器，它将主机名转换为网络地址。如果 DHCP 或 SLAAC 被用来自动配置网络接口，那么`Resolver "
+"Configuration` 可能已经被填入。否则，在搜索栏中输入本地网络的域名。`DNS #1` 和 `DNS #2` 是 DNS 服务器的 IPv4 或 IPv6 地址。至少需要一个 DNS 服务"
+"器。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1244
 #, no-wrap
 msgid "DNS Configuration"
-msgstr ""
+msgstr "配置 DNS"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1245
 #, no-wrap
 msgid "bsdinstall-configure-network-ipv4-dns.png"
-msgstr ""
+msgstr "bsdinstall-configure-network-ipv4-dns.png"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1249
 msgid ""
-"Once the interface is configured, select a mirror site that is located in the same region of the world as the computer on which "
-"FreeBSD is being installed.  Files can be retrieved more quickly when the mirror is close to the target computer, reducing "
-"installation time."
-msgstr ""
+"Once the interface is configured, select a mirror site that is located in the same region of the world as the computer on which FreeBSD is being "
+"installed.  Files can be retrieved more quickly when the mirror is close to the target computer, reducing installation time."
+msgstr "配置好了界面，选择一个与安装 FreeBSD 的计算机位于同一地区的镜像站点。当镜像站点靠近目标计算机时，可以更快地检索到文件，从而减少安装时间。"
 
 #. type: Block title
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1251
 #, no-wrap
 msgid "Choosing a Mirror"
-msgstr ""
+msgstr "选择一个镜像站点"
 
 #. type: Target for macro image
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1252
 #, no-wrap
 msgid "bsdinstall-netinstall-mirrorselect.png"
-msgstr ""
+msgstr "bsdinstall-netinstall-mirrorselect.png"
 
 #. type: Title ==
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1255
 #, no-wrap
 msgid "Troubleshooting"
-msgstr ""
+msgstr "故障排除"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1258
 msgid "This section covers basic installation troubleshooting, such as common problems people have reported."
-msgstr ""
+msgstr "这一节涵盖了基本安装的故障排除，例如人们所报告的常见问题。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1263
 msgid ""
-"Check the Hardware Notes (link:https://www.FreeBSD.org/releases/[https://www.freebsd.org/releases/]) document for the version of "
-"FreeBSD to make sure the hardware is supported.  If the hardware is supported and lock-ups or other problems occur, build a custom "
-"kernel using the instructions in crossref:kernelconfig[kernelconfig,Configuring the FreeBSD Kernel] to add support for devices "
-"which are not present in the [.filename]#GENERIC# kernel.  The default kernel assumes that most hardware devices are in their "
-"factory default configuration in terms of IRQs, I/O addresses, and DMA channels.  If the hardware has been reconfigured, a custom "
-"kernel configuration file can tell FreeBSD where to find things."
+"Check the Hardware Notes (link:https://www.FreeBSD.org/releases/[https://www.freebsd.org/releases/]) document for the version of FreeBSD to make "
+"sure the hardware is supported.  If the hardware is supported and lock-ups or other problems occur, build a custom kernel using the instructions "
+"in crossref:kernelconfig[kernelconfig,Configuring the FreeBSD Kernel] to add support for devices which are not present in the [."
+"filename]#GENERIC# kernel.  The default kernel assumes that most hardware devices are in their factory default configuration in terms of IRQs, I/"
+"O addresses, and DMA channels.  If the hardware has been reconfigured, a custom kernel configuration file can tell FreeBSD where to find things."
 msgstr ""
+"检查 FreeBSD 版本的硬件说明  (link:https://www.FreeBSD.org/releases/[https://www.freebsd.org/releases/])  文件，以确定硬件是否被支持。如果硬件被支"
+"持，但出现了卡住或其他问题，请按照crossref:kernelconfig[kernelconfig,配置 FreeBSD 内核] 的说明建立一个定制的内核，以增加对 [.filename]#GENERIC# "
+"kernel 中不存在的设备的支持。默认内核假定大多数硬件设备在出厂时都是默认配置的，包括 IRQ、I/O 地址和 DMA 通道。如果硬件已经被重新配置过，自定义的内"
+"核配置文件可以告诉 FreeBSD 在哪里找东西。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1269
 msgid ""
-"Some installation problems can be avoided or alleviated by updating the firmware on various hardware components, most notably the "
-"motherboard.  Motherboard firmware is usually referred to as the BIOS.  Most motherboard and computer manufacturers have a website "
-"for upgrades and upgrade information."
+"Some installation problems can be avoided or alleviated by updating the firmware on various hardware components, most notably the motherboard.  "
+"Motherboard firmware is usually referred to as the BIOS.  Most motherboard and computer manufacturers have a website for upgrades and upgrade "
+"information."
 msgstr ""
+"一些安装问题可以通过更新各种硬件组件上的固件来避免或改善，其中最明显的是主板。主板固件通常被称为 BIOS。大多数主板和计算机制造商都有一个升级和升级"
+"信息的网站。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1272
 msgid ""
-"Manufacturers generally advise against upgrading the motherboard BIOS unless there is a good reason for doing so, like a critical "
-"update.  The upgrade process _can_ go wrong, leaving the BIOS incomplete and the computer inoperative."
-msgstr ""
+"Manufacturers generally advise against upgrading the motherboard BIOS unless there is a good reason for doing so, like a critical update.  The "
+"upgrade process _can_ go wrong, leaving the BIOS incomplete and the computer inoperative."
+msgstr "制造商通常建议不要升级主板 BIOS，除非有很好的理由这样做，如关键更新。升级过程可能出错，导致 BIOS 不完整，电脑无法使用。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1278
 msgid ""
-"If the system hangs while probing hardware during boot, or it behaves strangely during install, ACPI may be the culprit.  FreeBSD "
-"makes extensive use of the system ACPI service on the i386 and amd64 platforms to aid in system configuration if it is detected "
-"during boot.  Unfortunately, some bugs still exist in both the ACPI driver and within system motherboards and BIOS firmware.  ACPI "
-"can be disabled by setting the `hint.acpi.0.disabled` hint in the third stage boot loader:"
+"If the system hangs while probing hardware during boot, or it behaves strangely during install, ACPI may be the culprit.  FreeBSD makes extensive "
+"use of the system ACPI service on the i386 and amd64 platforms to aid in system configuration if it is detected during boot.  Unfortunately, some "
+"bugs still exist in both the ACPI driver and within system motherboards and BIOS firmware.  ACPI can be disabled by setting the `hint.acpi.0."
+"disabled` hint in the third stage boot loader:"
 msgstr ""
+"如果系统在启动过程中探测硬件时挂起，或者在安装过程中表现得很奇怪，ACPI 可能是罪魁祸首。FreeBSD 在 i386 和 amd64 平台上广泛使用了系统 ACPI 服务，如"
+"果在启动过程中检测到它，就可以帮助系统配置。不幸的是，ACPI 驱动程序和系统主板及 BIOS 固件中仍然存在一些错误。ACPI 可以通过在第三阶段启动加载器中设"
+"置 `hint.acpi.0.disabled` 提示来禁用："
 
 #. type: delimited block . 4
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1282
 #, no-wrap
 msgid " set hint.acpi.0.disabled=\"1\"\n"
-msgstr ""
+msgstr " set hint.acpi.0.disabled=“1”\n"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1286
 msgid ""
-"This is reset each time the system is booted, so it is necessary to add `hint.acpi.0.disabled=\"1\"` to the file [.filename]#/boot/"
-"loader.conf#.  More information about the boot loader can be found in crossref:boot[boot-synopsis,“Synopsis”]."
+"This is reset each time the system is booted, so it is necessary to add `hint.acpi.0.disabled=\"1\"` to the file [.filename]#/boot/loader.conf#.  "
+"More information about the boot loader can be found in crossref:boot[boot-synopsis,“Synopsis”]."
 msgstr ""
+"这在每次系统启动时都会被重置，因此有必要在文件 [.filename]#/boot/loader.conf# 中加入 `hint.acpi.0.disabled=“1”`。更多关于启动引导的信息可以在"
+"crossref:boot[boot-synopsis,“概述”] 中找到。"
 
 #. type: Title ==
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1288
 #, no-wrap
 msgid "Using the Live CD"
-msgstr ""
+msgstr "使用 Live CD"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1292
 msgid ""
-"The welcome menu of bsdinstall, shown in <<bsdinstall-choose-mode>>, provides a btn:[Live CD] option.  This is useful for those "
-"who are still wondering whether FreeBSD is the right operating system for them and want to test some of the features before "
-"installing."
+"The welcome menu of bsdinstall, shown in <<bsdinstall-choose-mode>>, provides a btn:[Live CD] option.  This is useful for those who are still "
+"wondering whether FreeBSD is the right operating system for them and want to test some of the features before installing."
 msgstr ""
+"bsdinstall的欢迎菜单如<<bsdinstall-choose-mode>>所示，提供了一个btn:[Live CD]选项。这对于那些还在怀疑 FreeBSD 是否是适合他们的操作系统，并想在安装"
+"前测试一些功能的人来说是很有用的。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1294
 msgid "The following points should be noted before using the btn:[Live CD]:"
-msgstr ""
+msgstr "在使用 btn:[Live CD] 之前，应该注意以下几点:"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1296
 msgid "To gain access to the system, authentication is required. The username is `root` and the password is blank."
-msgstr ""
+msgstr "要进入系统，需要进行认证。用户名是 `root`，密码为空。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1297
 msgid ""
-"As the system runs directly from the installation media, performance will be significantly slower than that of a system installed "
-"on a hard disk."
-msgstr ""
+"As the system runs directly from the installation media, performance will be significantly slower than that of a system installed on a hard disk."
+msgstr "由于系统直接从安装介质上运行，性能将比安装在硬盘上的系统明显降低。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/bsdinstall/_index.adoc:1297
 msgid "This option only provides a command prompt and not a graphical interface."
-msgstr ""
+msgstr "该选项只提供了一个命令提示符，而非图形界面。"
