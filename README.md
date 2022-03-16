@@ -1,4 +1,4 @@
-# Handbook-Doc-CN-po
+# Handbook 中文手册 PO 文档转换项目
 
 基本提取流程
 
