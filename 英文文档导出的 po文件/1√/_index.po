@@ -1,0 +1,989 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR The FreeBSD Project
+# This file is distributed under the same license as the FreeBSD Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreeBSD Documentation VERSION\n"
+"POT-Creation-Date: 2022-03-11 19:55+0800\n"
+"PO-Revision-Date: 2022-03-16 22:52+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. type: YAML Front Matter: description
+#: content/zh-cn/books/handbook/introduction/_index.adoc:1
+#, no-wrap
+msgid "This chapter covers various aspects of the FreeBSD Project, such as its history, goals, development model, and so on"
+msgstr "下面这一章涉及到了 FreeBSD 项目的各个方面，例如它的历史、目标、开发模式等等"
+
+#. type: YAML Front Matter: part
+#: content/zh-cn/books/handbook/introduction/_index.adoc:1
+#, no-wrap
+msgid "Part I. Getting Started"
+msgstr "第一部分：快速开始"
+
+#. type: YAML Front Matter: title
+#: content/zh-cn/books/handbook/introduction/_index.adoc:1
+#, no-wrap
+msgid "Chapter 1. Introduction"
+msgstr "第一章 简介"
+
+#. type: Title =
+#: content/zh-cn/books/handbook/introduction/_index.adoc:14
+#, no-wrap
+msgid "Introduction"
+msgstr "简介"
+
+#. type: Title ==
+#: content/zh-cn/books/handbook/introduction/_index.adoc:52
+#, no-wrap
+msgid "Synopsis"
+msgstr "概述"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:55
+msgid ""
+"Thank you for your interest in FreeBSD! The following chapter covers various aspects of the FreeBSD Project, such as its history, goals, "
+"development model, and so on."
+msgstr "感谢你对 FreeBSD 有所兴趣！ 下面这一章涉及到了 FreeBSD 项目的各个方面，例如它的历史、目标、开发模式等等。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:57
+msgid "After reading this chapter you will know:"
+msgstr "读完这一章后，您将知道："
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:59
+msgid "How FreeBSD relates to other computer operating systems."
+msgstr "FreeBSD 与其他计算机操作系统的关系。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:60
+msgid "The history of the FreeBSD Project."
+msgstr "FreeBSD 项目的历史。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:61
+msgid "The goals of the FreeBSD Project."
+msgstr "FreeBSD 项目的目标。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:62
+msgid "The basics of the FreeBSD open-source development model."
+msgstr "FreeBSD 开源开发模式的基本原理。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:63
+msgid "And of course: where the name \"FreeBSD\" comes from."
+msgstr "当然还有：“FreeBSD”这个名字的由来。"
+
+#. type: Title ==
+#: content/zh-cn/books/handbook/introduction/_index.adoc:65
+#, no-wrap
+msgid "Welcome to FreeBSD!"
+msgstr "欢迎来到 FreeBSD！"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:70
+msgid ""
+"FreeBSD is an Open Source, standards-compliant Unix-like operating system for x86 (both 32 and 64 bit), ARM(R), AArch64, RISC-V(R), MIPS(R), "
+"POWER(R), PowerPC(R), and Sun UltraSPARC(R) computers.  It provides all the features that are nowadays taken for granted, such as preemptive "
+"multitasking, memory protection, virtual memory, multi-user facilities, SMP support, all the Open Source development tools for different "
+"languages and frameworks, and desktop features centered around X Window System, KDE, or GNOME.  Its particular strengths are:"
+msgstr ""
+"FreeBSD 是一个开源的、符合类 Unix 标准的操作系统，适用于 x86（包括 32 和 64 位）、ARM(R)、AArch64、RISC-V(R)、MIPS(R)、POWER(R)、PowerPC(R) 和 "
+"Sun UltraSPARC(R) 架构的计算机。它提供了如今所有被认为是理所当然的功能，如抢占式多任务、内存保护、虚拟内存、多用户设施、SMP 支持、不同语言和框架"
+"的所有开源开发工具，以及以 X Window System、KDE 或 GNOME 为中心的桌面功能。它的特殊优势在于："
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:72
+msgid ""
+"_Liberal Open Source license_, which grants you rights to freely modify and extend its source code and incorporate it in both Open Source "
+"projects and closed products without imposing restrictions typical to copyleft licenses, as well as avoiding potential license incompatibility "
+"problems."
+msgstr ""
+"_自由的开源许可证_，它授予你自由修改和扩展其源代码的权力，并将其纳入开源项目和封闭的产品中，而不会施加典型的复制许可的限制，同时也避免了潜在的许"
+"可证不兼容的问题。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:73
+msgid ""
+"_Strong TCP/IP networking_ - FreeBSD implements industry standard protocols with ever increasing performance and scalability. This makes it a "
+"good match in both server, and routing/firewalling roles - and indeed many companies and vendors use it precisely for that purpose."
+msgstr ""
+"_强大的 TCP/IP 网络_ - FreeBSD 实现了工业标准协议，并具有不断提高的性能和可扩展性。这使得它在服务器和路由/防火墙方面都是一个很好的选择——事实上，"
+"许多公司和供应商正是为此而使用它。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:74
+msgid ""
+"_Fully integrated OpenZFS support_, including root-on-ZFS, ZFS Boot Environments, fault management, administrative delegation, support for "
+"jails, FreeBSD specific documentation, and system installer support."
+msgstr "_完全集成的 OpenZFS 支持_，包括 root-on-ZFS、ZFS 启动环境、故障管理、管理授权、对 Jail 的支持、FreeBSD 特定的文档，以及系统安装程序支持。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:75
+msgid "_Extensive security features_, from the Mandatory Access Control framework to Capsicum capability and sandbox mechanisms."
+msgstr "_广泛的安全功能_，从强制访问控制框架到 Capsicum 能力和沙盒机制。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:76
+msgid ""
+"_Over 30 thousand prebuilt packages_ for all supported architectures, and the Ports Collection which makes it easy to build your own, customized "
+"ones."
+msgstr "_超过 3 万个预置软件包_，适用于所有支持的体系结构，而 Ports Collection 则使您可以轻松地建立自己的、定制的软件包。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:77
+msgid ""
+"_Documentation_ - in addition to Handbook and books from different authors that cover topics ranging from system administration to kernel "
+"internals, there are also the man:man[1] pages, not only for userspace daemons, utilities, and configuration files, but also for kernel driver "
+"APIs (section 9) and individual drivers (section 4)."
+msgstr ""
+"_文档_ - 除了来自不同作者的手册和书籍，涵盖了从系统管理到内核内部的主题，还有 man:man[1] 页面，不仅有用户空间守护程序、实用程序和配置文件，还有内"
+"核驱动 API（第 9 节）和单个驱动（第 4 节）。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:78
+msgid ""
+"_Simple and consistent repository structure and build system_ - FreeBSD uses a single repository for all of its components, both kernel and "
+"userspace. This, along with an unified and easy to customize build system and a well thought out development process makes it easy to integrate "
+"FreeBSD with build infrastructure for your own product."
+msgstr ""
+"_简单而一致的资源库结构和联编系统_ - FreeBSD 对其所有组件，包括内核和用户空间，都使用一个单一的资源库。这一点，加上统一的、易于定制的联编系统和经"
+"过深思熟虑的开发流程，使得将 FreeBSD 与您自己的产品的联编基础架构整合起来变得容易。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:79
+msgid "_Staying true to Unix philosophy_, preferring composability instead of monolithic \"all in one\" daemons with hardcoded behavior."
+msgstr "_忠实于 Unix 的理念_，更倾向于可组合性，而不是硬编码行为的单体“一体化”守护程序。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:80
+msgid "_Binary compatibility_ with Linux, which makes it possible to run many Linux binaries without the need for virtualisation."
+msgstr "_与 Linux 的二进制兼容_，这使得不需要虚拟化就可以运行许多 Linux 二进制文件成为可能。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:84
+msgid ""
+"FreeBSD is based on the 4.4BSD-Lite release from Computer Systems Research Group (CSRG) at the University of California at Berkeley, and carries "
+"on the distinguished tradition of BSD systems development.  In addition to the fine work provided by CSRG, the FreeBSD Project has put in many "
+"thousands of man-hours into extending the functionality and fine-tuning the system for maximum performance and reliability in real-life load "
+"situations.  FreeBSD offers performance and reliability on par with other Open Source and commercial offerings, combined with cutting-edge "
+"features not available anywhere else."
+msgstr ""
+"FreeBSD 基于加州大学伯克利分校计算机系统研究组 (CSRG) 发布的 4.4BSD-Lite，并继承了 BSD 系统开发的杰出传统。除了 CSRG 提供的精细工作外，FreeBSD 项"
+"目还投入了成千上万的工时来扩展功能并对系统进行微调，以便在实际的负载情况下获得最大的性能和可靠性。FreeBSD 提供了与其他开源和商业产品相同的性能和"
+"可靠性，并结合了其他系统所没有的最先进的功能。"
+
+#. type: Title ===
+#: content/zh-cn/books/handbook/introduction/_index.adoc:86
+#, no-wrap
+msgid "What Can FreeBSD Do?"
+msgstr "FreeBSD 能做些什么？"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:90
+msgid ""
+"The applications to which FreeBSD can be put are truly limited only by your own imagination.  From software development to factory automation, "
+"inventory control to azimuth correction of remote satellite antennae; if it can be done with a commercial UNIX(R) product then it is more than "
+"likely that you can do it with FreeBSD too! FreeBSD also benefits significantly from literally thousands of high quality applications developed "
+"by research centers and universities around the world, often available at little to no cost."
+msgstr ""
+"FreeBSD 的应用真的只受限于您的想象力。从软件开发到工厂自动化，从库存控制到远程卫星天线的方位角校正；一项工作如果可以用商业 UNIX(R) 产品来完成，那"
+"么很可能也可以用 FreeBSD 来做。FreeBSD 还从世界各地的研究中心和大学开发的数以千计的高质量的应用程序中获益颇多，这些应用程序通常只需要很少的费用就"
+"可以获得。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:93
+msgid ""
+"Because the source code for FreeBSD itself is freely available, the system can also be customized to an almost unheard of degree for special "
+"applications or projects, and in ways not generally possible with operating systems from most major commercial vendors.  Here is just a sampling "
+"of some of the applications in which people are currently using FreeBSD:"
+msgstr ""
+"由于 FreeBSD 本身的源代码是免费提供的，系统也可以为特殊的应用或项目进行定制，其程度几乎是闻所未闻的，这在大多数主要商业供应商的操作系统中是不可能"
+"实现的。以下是目前人们使用 FreeBSD 的一些应用的例子："
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:95
+msgid "_Internet Services:_ The robust TCP/IP networking built into FreeBSD makes it an ideal platform for a variety of Internet services such as:"
+msgstr "_互联网服务_。FreeBSD 内置的强大的 TCP/IP 网络使其成为各种互联网服务的理想平台，例如："
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:97
+msgid "Web servers"
+msgstr "网络服务器"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:98
+msgid "IPv4 and IPv6 routing"
+msgstr "IPv4 和 IPv6 路由"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:99
+msgid "Firewalls and NAT (\"IP masquerading\") gateways"
+msgstr "防火墙和 NAT（“IP 伪装”）网关"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:100
+msgid "FTP servers"
+msgstr "FTP 服务器"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:101
+msgid "Email servers"
+msgstr "电子邮件服务器"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:102
+msgid "And more..."
+msgstr "还有更多…"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:104
+msgid ""
+"_Education:_ Are you a student of computer science or a related engineering field? There is no better way of learning about operating systems, "
+"computer architecture and networking than the hands on, under the hood experience that FreeBSD can provide. A number of freely available CAD, "
+"mathematical and graphic design packages also make it highly useful to those whose primary interest in a computer is to get _other_ work done!"
+msgstr ""
+"_教育_。你是计算机科学或相关工程领域的学生吗？学习操作系统、计算机结构和网络的最好方式莫过于通过 FreeBSD 提供的亲身体验。一些免费提供的 CAD、数学"
+"和图形设计软件包也使它对那些对计算机的主要兴趣在于完成其他工作的人非常有用！"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:105
+msgid ""
+"_Research:_ With source code for the entire system available, FreeBSD is an excellent platform for research in operating systems as well as "
+"other branches of computer science. FreeBSD's freely available nature also makes it possible for remote groups to collaborate on ideas or shared "
+"development without having to worry about special licensing agreements or limitations on what may be discussed in open forums."
+msgstr ""
+"_研究_。由于可以获得整个系统的源代码，FreeBSD 是一个很好的操作系统研究平台，同时也是计算机科学的其他分支。FreeBSD 自由使用的性质也使得远程团体在"
+"想法或共享开发上的合作成为可能，而不必担心特殊的许可协议或在公开论坛上讨论的内容的限制。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:106
+msgid ""
+"_Networking:_ Need a new router? A name server (DNS)? A firewall to keep people out of your internal network? FreeBSD can easily turn that "
+"unused PC sitting in the corner into an advanced router with sophisticated packet-filtering capabilities."
+msgstr ""
+"_网络_。需要一个新的路由器？一个域名服务器（DNS）？一个防火墙来阻止人们进入你的内部网络？FreeBSD 可以很容易地将那台闲置在角落里的 PC 变成一个具有"
+"复杂的数据包过滤能力的高级路由器。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:107
+msgid ""
+"_Embedded:_ FreeBSD makes an excellent platform to build embedded systems upon. With support for the ARM(R), MIPS(R) and PowerPC(R) platforms, "
+"coupled with a robust network stack, cutting edge features and the permissive extref:{faq}[BSD license, bsd-license-restrictions] FreeBSD makes "
+"an excellent foundation for building embedded routers, firewalls, and other devices."
+msgstr ""
+"_嵌入式_。FreeBSD 是构建嵌入式系统的一个优秀平台。通过对 ARM(R), MIPS(R) 和 PowerPC(R) 平台的支持，再加上强大的网络堆栈、最先进的功能和宽松的 "
+"extref:{faq}[BSD 许可]，FreeBSD 成为构建嵌入式路由器、防火墙和其他设备的绝佳基础。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:108
+msgid ""
+"_Desktop:_ FreeBSD makes a fine choice for an inexpensive desktop solution using the freely available X11 server. FreeBSD offers a choice from "
+"many open-source desktop environments, including the standard GNOME and KDE graphical user interfaces. FreeBSD can even boot \"diskless\" from a "
+"central server, making individual workstations even cheaper and easier to administer."
+msgstr ""
+"_桌面_。对于使用免费提供的 X11 服务器的廉价桌面解决方案来说，FreeBSD 是一个不错的选择。FreeBSD 提供了许多开源的桌面环境，包括标准的 GNOME 和 KDE "
+"图形用户界面。FreeBSD 甚至可以从中央服务器上“无盘”启动，使单个工作站更便宜，更容易管理。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:109
+msgid ""
+"_Software Development:_ The basic FreeBSD system comes with a full suite of development tools including a full C/C++ compiler and debugger "
+"suite. Support for many other languages are also available through the ports and packages collection."
+msgstr ""
+"_软件开发_。FreeBSD 基本系统带有全套的开发工具，包括完整的 C/C++ 编译器和调试器套件。对许多其他语言的支持也可以通过 port 和软件包集合来实现。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:112
+msgid ""
+"FreeBSD is available to download free of charge, or can be obtained on either CD-ROM or DVD.  Please see crossref:mirrors[mirrors, Obtaining "
+"FreeBSD] for more information about obtaining FreeBSD."
+msgstr "可以免费下载 FreeBSD，也可以通过 CD-ROM 或 DVD 获得。请参阅 crossref:mirrors[获得 FreeBSD] 的更多信息。"
+
+#. type: Title ===
+#: content/zh-cn/books/handbook/introduction/_index.adoc:114
+#, no-wrap
+msgid "Who Uses FreeBSD?"
+msgstr "谁在使用 FreeBSD？"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:117
+msgid ""
+"FreeBSD has been known for its web serving capabilities - sites that run on FreeBSD include link:https://news.ycombinator.com/[Hacker News], "
+"link:http://www.netcraft.com/[Netcraft], link:http://www.163.com/[NetEase], link:https://signup.netflix.com/openconnect[Netflix], link:http://"
+"www.sina.com/[Sina], link:http://www.sony.co.jp/[Sony Japan], link:http://www.rambler.ru/[Rambler], link:http://www.yahoo.com/[Yahoo!], and link:"
+"http://www.yandex.ru/[Yandex]."
+msgstr ""
+"FreeBSD 以其网络服务能力而闻名——在 FreeBSD 上运行的网站包括 link:https://news.ycombinator.com/[Hacker News], link:http://www.netcraft.com/"
+"[Netcraft], link:http://www.163.com/[NetEase], link:https://signup.netflix.com/openconnect[Netflix], link:http://www.sina.com/[Sina], link:"
+"http://www.sony.co.jp/[Sony Japan], link:http://www.rambler.ru/[Rambler], link:http://www.yahoo.com/[Yahoo!] 和 link:http://www.yandex.ru/"
+"[Yandex]。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:120
+msgid ""
+"FreeBSD's advanced features, proven security, predictable release cycle, and permissive license have led to its use as a platform for building "
+"many commercial and open source appliances, devices, and products.  Many of the world's largest IT companies use FreeBSD:"
+msgstr ""
+"FreeBSD 先进的功能、经过验证的安全性、可预测的发布周期和宽松的许可证，使得它被用作构建许多商业和开源设备、装置和产品的平台。许多世界上最大的 IT "
+"公司都使用 FreeBSD："
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:122
+msgid ""
+"link:http://www.apache.org/[Apache] - The Apache Software Foundation runs most of its public facing infrastructure, including possibly one of "
+"the largest SVN repositories in the world with over 1.4 million commits, on FreeBSD."
+msgstr ""
+"link:http://www.apache.org/[Apache] - Apache 软件基金会在 FreeBSD 上运行其大部分面向公众的基础设施，包括可能是世界上最大的 SVN 存储库之一，有超"
+"过 140 万的提交。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:123
+msgid ""
+"link:http://www.apple.com/[Apple] - OS X borrows heavily from FreeBSD for the network stack, virtual file system, and many userland components. "
+"Apple iOS also contains elements borrowed from FreeBSD."
+msgstr ""
+"link:http://www.apple.com/[Apple] - OS X 的网络堆栈、虚拟文件系统和许多用户区组件都大量借用了 FreeBSD。苹果的 iOS 也包含了从 FreeBSD 借来的元素。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:124
+msgid "link:http://www.cisco.com/[Cisco] - IronPort network security and anti-spam appliances run a modified FreeBSD kernel."
+msgstr "link:http://www.cisco.com/[Cisco] - IronPort 网络安全和反垃圾邮件设备运行修改过的 FreeBSD 内核。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:125
+msgid ""
+"link:http://www.citrix.com/[Citrix] - The NetScaler line of security appliances provide layer 4-7 load balancing, content caching, application "
+"firewall, secure VPN, and mobile cloud network access, along with the power of a FreeBSD shell."
+msgstr ""
+"link:http://www.citrix.com/[Citrix] - NetScaler 系列安全设备提供了 4-7 层的负载平衡、内容缓存、应用防火墙、安全 VPN 和移动云网络访问，以及强大的 "
+"FreeBSD shell。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:126
+msgid ""
+"link:https://www.emc.com/isilon[Dell EMC Isilon] - Isilon's enterprise storage appliances are based on FreeBSD. The extremely liberal FreeBSD "
+"license allowed Isilon to integrate their intellectual property throughout the kernel and focus on building their product instead of an "
+"operating system."
+msgstr ""
+"link:https://www.emc.com/isilon[Dell EMC Isilon] - Isilon 的企业存储设备是基于 FreeBSD 的。极为自由的 FreeBSD 许可允许 Isilon 在整个内核中整合他"
+"们的知识产权，并专注于建立他们的产品而不是操作系统。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:127
+msgid ""
+"link:http://www.quest.com/KACE[Quest KACE] - The KACE system management appliances run FreeBSD because of its reliability, scalability, and the "
+"community that supports its continued development."
+msgstr "link:http://www.quest.com/KACE[Quest KACE] - KACE 系统管理设备运行 FreeBSD，因为它的可靠性、可扩展性和支持其继续发展的社区。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:128
+msgid "link:http://www.ixsystems.com/[iXsystems] - The TrueNAS line of unified storage appliances is based on FreeBSD."
+msgstr "link:http://www.ixsystems.com/[iXsystems] - TrueNAS 系列的统一存储设备是基于 FreeBSD 的。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:129
+msgid ""
+"link:http://www.juniper.net/[Juniper] - The JunOS operating system that powers all Juniper networking gear (including routers, switches, and "
+"security and networking appliances) is based on FreeBSD. Juniper is one of many vendors that showcases the symbiotic relationship between the "
+"project and vendors of commercial products. Improvements generated at Juniper are upstreamed into FreeBSD to reduce the complexity of "
+"integrating new features from FreeBSD back into JunOS in the future."
+msgstr ""
+"link:http://www.juniper.net/[Juniper] - 为所有 Juniper 网络设备（包括路由器、交换机、安全和网络设备）提供动力的 JunOS 操作系统是基于 FreeBSD 的。"
+"Juniper 是展示该项目与商业产品供应商之间共生关系的众多供应商之一。在 Juniper 产生的改进被上传到 FreeBSD，以减少将来从 FreeBSD 集成新功能到 JunOS "
+"的复杂性。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:130
+msgid "link:http://www.mcafee.com/[McAfee] - SecurOS, the basis of McAfee enterprise firewall products including Sidewinder is based on FreeBSD."
+msgstr "link:http://www.mcafee.com/[McAfee] - SecurOS，包括 Sidewinder 在内的 McAfee 企业防火墙产品的基础是基于 FreeBSD。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:131
+msgid ""
+"link:http://www.netapp.com/[NetApp] - The Data ONTAP GX line of storage appliances are based on FreeBSD. In addition, NetApp has contributed "
+"back many features, including the new BSD licensed hypervisor, bhyve."
+msgstr ""
+"link:http://www.netapp.com/[NetApp] - Data ONTAP GX 系列的存储设备是基于 FreeBSD 的。此外，NetApp 还贡献了许多功能，包括新的 BSD 授权管理程序 "
+"bhyve。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:132
+msgid ""
+"link:http://www.netflix.com/[Netflix] - The OpenConnect appliance that Netflix uses to stream movies to its customers is based on FreeBSD. "
+"Netflix has made extensive contributions to the codebase and works to maintain a zero delta from mainline FreeBSD. Netflix OpenConnect "
+"appliances are responsible for delivering more than 32% of all Internet traffic in North America."
+msgstr ""
+"link:http://www.netflix.com/[Netflix] - Netflix 用来向其客户传输电影的 OpenConnect 设备是基于 FreeBSD 的。Netflix 对代码库做出了广泛的贡献，并努"
+"力保持与主线 FreeBSD 的零差距。Netflix 的 OpenConnect 设备负责提供北美所有互联网流量的 32% 以上。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:133
+msgid ""
+"link:http://www.sandvine.com/[Sandvine] - Sandvine uses FreeBSD as the basis of their high performance real-time network processing platforms "
+"that make up their intelligent network policy control products."
+msgstr "link:http://www.sandvine.com/[Sandvine] - Sandvine 使用 FreeBSD 作为其高性能实时网络处理平台的基础，这些平台构成了其智能网络策略控制产品。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:134
+msgid ""
+"link:http://www.sony.com/[Sony] - The PlayStation 3, PlayStation Vita, PlayStation 4, and PlayStation 5 gaming console runs a modified version "
+"of FreeBSD."
+msgstr "link:http://www.sony.com/[Sony] - PlayStation 4 游戏机运行的是修改过的 FreeBSD 版本。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:135
+msgid ""
+"link:http://www.sophos.com/[Sophos] - The Sophos Email Appliance product is based on a hardened FreeBSD and scans inbound mail for spam and "
+"viruses, while also monitoring outbound mail for malware as well as the accidental loss of sensitive information."
+msgstr ""
+"link:http://www.sophos.com/[Sophos] - 产品基于经过加固的 FreeBSD，扫描入站邮件中的垃圾邮件和病毒，同时也监控出站邮件中的恶意软件以及敏感信息的意"
+"外丢失。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:136
+msgid "link:http://www.spectralogic.com/[Spectra Logic] - The nTier line of archive grade storage appliances run FreeBSD and OpenZFS."
+msgstr "link:http://www.spectralogic.com/[Spectra Logic] - nTier 系列档案级存储设备运行于 FreeBSD 和 OpenZFS。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:137
+msgid ""
+"link:https://www.stormshield.com[Stormshield] - Stormshield Network Security appliances are based on a hardened version of FreeBSD. The BSD "
+"license allows them to integrate their own intellectual property with the system while returning a great deal of interesting development to the "
+"community."
+msgstr ""
+"link:https://www.stormshield.com[Stormshield] - Stormshield 网络安全设备是基于一个加固的 FreeBSD 版本。BSD 许可证允许他们将自己的知识产权与系统集"
+"成，同时将大量有趣的开发成果返还给社区。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:138
+msgid ""
+"link:http://www.weather.com/[The Weather Channel] - The IntelliStar appliance that is installed at each local cable provider's headend and is "
+"responsible for injecting local weather forecasts into the cable TV network's programming runs FreeBSD."
+msgstr ""
+"link:http://www.weather.com/[The Weather Channel] - IntelliStar 设备安装在每个本地有线电视供应商的头端，负责将本地天气预报注入有线电视网络的节目"
+"中，该设备运行 FreeBSD。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:139
+msgid ""
+"link:http://www.verisign.com/[Verisign] - Verisign is responsible for operating the .com and .net root domain registries as well as the "
+"accompanying DNS infrastructure. They rely on a number of different network operating systems including FreeBSD to ensure there is no common "
+"point of failure in their infrastructure."
+msgstr ""
+"link:http://www.verisign.com/[威瑞信] - 威瑞信负责运营 .com 和 .net 根域名注册处，以及相应的 DNS 基础设施。他们依靠一些不同的网络操作系统，包括 "
+"FreeBSD，以确保在他们的基础设施中没有共同的故障点。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:140
+msgid ""
+"link:http://www.voxer.com/[Voxer] - Voxer powers their mobile voice messaging platform with ZFS on FreeBSD. Voxer switched from a Solaris "
+"derivative to FreeBSD because of its superior documentation, larger and more active community, and more developer friendly environment. In "
+"addition to critical features like ZFS and DTrace, FreeBSD also offers TRIM support for ZFS."
+msgstr ""
+"link:http://www.voxer.com/[Voxer] - Voxer 使用 FreeBSD 上的 ZFS 为其移动语音信息平台提供动力。Voxer 从 Solaris 的衍生系统转向 FreeBSD，因为 "
+"FreeBSD 有更好的文档，更大和更活跃的社区，以及更友好的开发者环境。除了像 ZFS 和 DTrace 这样的关键特性外，FreeBSD 还为 ZFS 提供了 TRIM 支持。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:141
+msgid ""
+"link:https://fudosecurity.com/en/[Fudo Security] - The FUDO security appliance allows enterprises to monitor, control, record, and audit "
+"contractors and administrators who work on their systems. Based on all of the best security features of FreeBSD including ZFS, GELI, Capsicum, "
+"HAST, and auditdistd."
+msgstr ""
+"link:https://fudosecurity.com/en/[Fudo Security] - FUDO 安全设备使企业能够监视、控制、记录和审计在其系统上工作的承包商和管理员。基于 FreeBSD 的所"
+"有最佳安全特性，包括 ZFS、GELI、Capsicum、HAST 和 auditdistd。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:143
+msgid "FreeBSD has also spawned a number of related open source projects:"
+msgstr "FreeBSD 还催生了一些相关的开源项目："
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:145
+msgid "link:http://bsdrp.net/[BSD Router] - A FreeBSD based replacement for large enterprise routers, designed to run on standard PC hardware."
+msgstr "link:http://bsdrp.net/[BSD Router] - 一个基于 FreeBSD 的大型企业路由器的替代品，旨在运行在标准 PC 硬件上。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:146
+msgid ""
+"link:https://www.truenas.com/[TrueNAS] is a Network Attached Storage (NAS) software that shares and protects data from modern-day threats like "
+"ransomware and malware. TrueNAS makes it easy for users and client devices to access shared data through virtually any sharing protocol."
+msgstr ""
+"link:https://www.truenas.com/[TrueNAS] 是一个网络附加存储（NAS）软件，可以共享和保护数据免受现代威胁，如勒索软件和恶意软件。TrueNAS 使用户和客户"
+"端设备可以通过几乎所有的共享协议轻松访问共享数据。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:147
+msgid ""
+"link:https://ghostbsd.org/[GhostBSD] is derived from FreeBSD, uses the GTK environment to provide a beautiful look and comfortable experience on "
+"the modern BSD platform offering a natural and native UNIX(R) work environment."
+msgstr ""
+"link:https://ghostbsd.org/[GhostBSD] - 源自 FreeBSD，使用 GTK 环境，在现代 BSD 平台上提供漂亮的外观和舒适的体验，提供一个自然和原生的 UNIX(R) 工"
+"作环境。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:148
+msgid "link:http://mfsbsd.vx.sk/[mfsBSD] - A toolkit for building a FreeBSD system image that runs entirely from memory."
+msgstr "link:http://mfsbsd.vx.sk/[mfsBSD] - 一个用于构建完全从内存中运行的 FreeBSD 系统镜像的工具包。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:149
+msgid "link:https://xigmanas.com/[XigmaNAS] - A file server distribution based on FreeBSD with a PHP powered web interface."
+msgstr "link:https://xigmanas.com/[XigmaNAS] - 一个基于 FreeBSD 的文件服务器发行版，带有 PHP 驱动的网络界面。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:150
+msgid ""
+"link:http://www.opnsense.org/[OPNSense] is an open source, easy-to-use and easy-to-build FreeBSD based firewall and routing platform. OPNsense "
+"includes most of the features available in expensive commercial firewalls, and more in many cases. It brings the rich feature set of commercial "
+"offerings with the benefits of open and verifiable sources."
+msgstr ""
+"link:http://www.opnsense.org/[OPNSense] - OPNsense 是一个开源的、易于使用的、易于构建的基于 FreeBSD 的防火墙和路由平台。OPNsense 包括了昂贵的商业"
+"防火墙的大部分功能，而且在许多情况下还包括更多的功能。它将商业产品的丰富功能与开放和可验证的来源的好处结合起来。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:151
+msgid ""
+"link:https://www.midnightbsd.org[MidnightBSD] is a FreeBSD derived operating system developed with desktop users in mind. It includes all the "
+"software you'd expect for your daily tasks: mail, web browsing, word processing, gaming, and much more."
+msgstr ""
+"link:https://www.midnightbsd.org[MidnightBSD] - 是一个以桌面用户为中心开发的 FreeBSD 衍生操作系统。它包括所有你所期望的日常工作的软件：邮件、网页"
+"浏览、文字处理、游戏等等。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:152
+msgid ""
+"link:https://www.nomadbsd.org[NomadBSD] is a persistent live system for USB flash drives, based on FreeBSD. Together with automatic hardware "
+"detection and setup, it is configured to be used as a desktop system that works out of the box, but can also be used for data recovery, for "
+"educational purposes, or to test FreeBSD's hardware compatibility."
+msgstr ""
+"link:https://www.nomadbsd.org[NomadBSD] - 是一个基于 FreeBSD 的 USB 闪存驱动器的持久性活系统。加上自动硬件检测和设置，它被配置为一个开箱即用的桌"
+"面系统，但也可以用于数据恢复，用于教育目的，或测试 FreeBSD 的硬件兼容性。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:153
+msgid "link:http://www.pfsense.org/[pfSense] - A firewall distribution based on FreeBSD with a huge array of features and extensive IPv6 support."
+msgstr "link:http://www.pfsense.org/[pfSense] - 一个基于 FreeBSD 的防火墙发行版，拥有大量的功能和广泛的 IPv6 支持。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:154
+msgid ""
+"link:http://zrouter.org/[ZRouter] - An open source alternative firmware for embedded devices based on FreeBSD. Designed to replace the "
+"proprietary firmware on off-the-shelf routers."
+msgstr "link:http://zrouter.org/[ZRouter] - 一个基于 FreeBSD 的嵌入式设备的开源替代固件。旨在取代现成的路由器上的专有固件。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:157
+msgid ""
+"A list of link:https://www.freebsdfoundation.org/about/testimonials/[testimonials from companies basing their products and services on FreeBSD] "
+"can be found at the FreeBSD Foundation website.  Wikipedia also maintains a link:https://en.wikipedia.org/wiki/"
+"List_of_products_based_on_FreeBSD[list of products based on FreeBSD]."
+msgstr "在 FreeBSD 基金会的网站上可以找到基于 FreeBSD 的产品和服务的公司的推荐信列表。维基百科也有一个基于 FreeBSD 的产品列表。"
+
+#. type: Title ==
+#: content/zh-cn/books/handbook/introduction/_index.adoc:159
+#, no-wrap
+msgid "About the FreeBSD Project"
+msgstr "关于 FreeBSD 项目"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:162
+msgid ""
+"The following section provides some background information on the project, including a brief history, project goals, and the development model "
+"of the project."
+msgstr "以下部分提供了一些关于项目的背景信息，包括简要的历史、项目目标和项目的发展模式。"
+
+#. type: Title ===
+#: content/zh-cn/books/handbook/introduction/_index.adoc:164
+#, no-wrap
+msgid "A Brief History of FreeBSD"
+msgstr "FreeBSD 简史"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:167
+msgid ""
+"The FreeBSD Project had its genesis in the early part of 1993, partially as the brainchild of the Unofficial 386BSDPatchkit's last 3 "
+"coordinators: Nate Williams, Rod Grimes and Jordan Hubbard."
+msgstr "FreeBSD 项目起源于 1993 年初，部分是来自官方 386BSDPatchkit 的最后三位协调人的创意：Nate Williams, Rod Grimes 和 Jordan Hubbard。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:170
+msgid ""
+"The original goal was to produce an intermediate snapshot of 386BSD in order to fix a number of problems that the patchkit mechanism was just "
+"not capable of solving.  The early working title for the project was 386BSD 0.5 or 386BSD Interim in reference of that fact."
+msgstr ""
+"他们最初的目标是制作一个 386BSD 的中间快照，以解决一些补丁包机制无法解决的问题。该项目早期的工作名称是 386BSD 0.5 或 386BSD Interim，就是为了参考"
+"这个事实。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:174
+msgid ""
+"386BSD was Bill Jolitz's operating system, which had been up to that point suffering rather severely from almost a year's worth of neglect.  As "
+"the patchkit swelled ever more uncomfortably with each passing day, they decided to assist Bill by providing this interim \"cleanup\" snapshot.  "
+"Those plans came to a rude halt when Bill Jolitz suddenly decided to withdraw his sanction from the project without any clear indication of what "
+"would be done instead."
+msgstr ""
+"386BSD 是 Bill Jolitz 的操作系统，到那时为止，它已经被忽视了一年之久，受到了相当严重的影响。随着补丁包的不断膨胀，他们决定通过提供这个临时的“清"
+"理”快照来帮助比尔。当 Bill Jolitz 突然决定从该项目中撤回他的批准时，这些计划戛然而止，而没有任何明确的迹象表明将做什么来代替。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:179
+msgid ""
+"The trio thought that the goal remained worthwhile, even without Bill's support, and so they adopted the name \"FreeBSD\" coined by David "
+"Greenman.  The initial objectives were set after consulting with the system's current users and, once it became clear that the project was on "
+"the road to perhaps even becoming a reality, Jordan contacted Walnut Creek CDROM with an eye toward improving FreeBSD's distribution channels "
+"for those many unfortunates without easy access to the Internet.  Walnut Creek CDROM not only supported the idea of distributing FreeBSD on CD "
+"but also went so far as to provide the project with a machine to work on and a fast Internet connection.  Without Walnut Creek CDROM's almost "
+"unprecedented degree of faith in what was, at the time, a completely unknown project, it is quite unlikely that FreeBSD would have gotten as "
+"far, as fast, as it has today."
+msgstr ""
+"三人认为，即使没有 Bill 的支持，这个项目也是值得的，因此他们采用了 David Greenman 创造的“FreeBSD”这个名字。最初的目标是在咨询了系统的现有用户之后"
+"确定的，而且，发现这个项目正在成为现实后，Jordan 就联系了 Walnut Creek CDROM，其目的是为了改善 FreeBSD 的发行渠道，让那些难以进入互联网的不幸者也"
+"能使用 FreeBSD。Walnut Creek CDROM 不仅支持在 CD 上发行 FreeBSD 的这个想法，而且还为该项目提供了一台机器和一个快速的互联网连接。如果没有 Walnut "
+"Creek CDROM 对这个在当时完全不为人知的项目的几乎前所未有的信任，FreeBSD 不可能像今天这样走得这么远，这么快。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:183
+msgid ""
+"The first CD-ROM (and general net-wide) distribution was FreeBSD 1.0, released in December of 1993.  This was based on the 4.3BSD-Lite "
+"(\"Net/2\") tape from U.C. Berkeley, with many components also provided by 386BSD and the Free Software Foundation.  It was a fairly reasonable "
+"success for a first offering, and they followed it with the highly successful FreeBSD 1.1 release in May of 1994."
+msgstr ""
+"第一个 CD-ROM（和一般网络）发行版是 FreeBSD 1.0，于 1993 年 12 月发布。它基于 U.C. Berkeley 的 4.3BSD-Lite（“Net/2”） 磁带，其中许多组件也由 "
+"386BSD 和自由软件基金会提供。对于第一次发布的产品来说，这相当的成功，随后他们在 1994 年 5 月非常成功的发布了 FreeBSD 1.1。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:189
+msgid ""
+"Around this time, some rather unexpected storm clouds formed on the horizon as Novell and U.C. Berkeley settled their long-running lawsuit over "
+"the legal status of the Berkeley Net/2 tape.  A condition of that settlement was U.C. Berkeley's concession that large parts of Net/2 were "
+"\"encumbered\" code and the property of Novell, who had in turn acquired it from AT&T some time previously.  What Berkeley got in return was "
+"Novell's \"blessing\" that the 4.4BSD-Lite release, when it was finally released, would be declared unencumbered and all existing Net/2 users "
+"would be strongly encouraged to switch.  This included FreeBSD, and the project was given until the end of July 1994 to stop shipping its own "
+"Net/2 based product.  Under the terms of that agreement, the project was allowed one last release before the deadline, that release being "
+"FreeBSD 1.1.5.1."
+msgstr ""
+"就在这个时候，一些出乎意料的风暴云在地平线上形成，因为 Novell 和 U.C. Berkeley 就 Berkeley Net/2 磁带的法律地位解决了他们长期的诉讼。和解的一个条"
+"件是 U.C. Berkeley 让步，即 Net/2 的大部分“担保”代码，是 Novell 的财产，而 Novell 又在前一段时间从 AT&T 那里收购了它。Berkeley 得到的回报是 "
+"Novell 的“祝福”，即在最终发布 4.4BSD-Lite 版本时，将被宣布为不受限代码，并强烈鼓励所有现有的 Net/2 用户使用。这包括 FreeBSD，允许该项目在 1994 "
+"年 7 月底之前继续发布它自己基于 Net/2 的产品。根据协议的条款，该项目被允许在截止日期前发布最后一个版本，这个版本就是 FreeBSD 1.1.5.1。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:194
+msgid ""
+"FreeBSD then set about the arduous task of literally re-inventing itself from a completely new and rather incomplete set of 4.4BSD-Lite bits.  "
+"The \"Lite\" releases were light in part because Berkeley's CSRG had removed large chunks of code required for actually constructing a bootable "
+"running system (due to various legal requirements) and the fact that the Intel port of 4.4 was highly incomplete.  It took the project until "
+"November of 1994 to make this transition, and in December it released FreeBSD 2.0 to the world.  Despite being still more than a little rough "
+"around the edges, the release was a significant success and was followed by the more robust and easier to install FreeBSD 2.0.5 release in June "
+"of 1995."
+msgstr ""
+"然后 FreeBSD 开始了艰巨的任务，即从一套全新的、相当不完整的 4.4BSD-Lite 代码中重新开发自己。这些“精简版”的发布，部分原因是 Berkeley 的 CSRG 已经"
+"删除了大部分的代码，这些代码是用来构建一个可启动的运行系统的(由于各种法律要求)，而且 Intel 对 4.4 的移植也非常不完整。这个项目直到 1994 年 11 月"
+"才完成这一转变，并在 12 月向世界发布了 FreeBSD 2.0。尽管还有些粗糙，但这次发布还是取得了巨大的成功，并在 1995 年 6 月发布了更加强大和易于安装的 "
+"FreeBSD 2.0.5。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:196
+msgid "Since that time, FreeBSD has made a series of releases each time improving the stability, speed, and feature set of the previous version."
+msgstr "从那时起，FreeBSD 就已经发布了一系列的版本，每一次都是在前一个版本的基础上改进稳定性、速度和功能设置。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:198
+msgid ""
+"For now, long-term development projects continue to take place in the {rel-head}-CURRENT (main) branch, and snapshot releases of {rel-head} are "
+"continually made available from link:https://download.freebsd.org/snapshots/[the snapshot server] as work progresses."
+msgstr "目前，长期的开发项目继续在 14.X-CURRENT（trunk）分支中进行，而 14.X 的快照版本会随着工作的进展不断在快照服务器中提供。"
+
+#. type: Title ===
+#: content/zh-cn/books/handbook/introduction/_index.adoc:200
+#, no-wrap
+msgid "FreeBSD Project Goals"
+msgstr "FreeBSD 项目目标"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:206
+msgid ""
+"The goals of the FreeBSD Project are to provide software that may be used for any purpose and without strings attached.  Many of us have a "
+"significant investment in the code (and project) and would certainly not mind a little financial compensation now and then, but we are "
+"definitely not prepared to insist on it.  We believe that our first and foremost \"mission\" is to provide code to any and all comers, and for "
+"whatever purpose, so that the code gets the widest possible use and provides the widest possible benefit.  This is, I believe, one of the most "
+"fundamental goals of Free Software and one that we enthusiastically support."
+msgstr ""
+"FreeBSD 项目的目标是提供可以用于任何目的的软件，并且不附带任何条件。我们中的许多人在代码（和项目）上有很大的投资，当然不介意偶尔有一点经济补偿，"
+"但我们绝对不准备坚持这样做。我们相信，我们首要的“任务”是向任意以及所有的来者提供代码，无论其出于何种目的，以便代码得到最广泛的使用，并提供最广泛"
+"的利益。我相信，这是自由软件最基本的目标之一，也是我们热情支持的目标。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:209
+msgid ""
+"That code in our source tree which falls under the GNU General Public License (GPL) or Library General Public License (LGPL) comes with slightly "
+"more strings attached, though at least on the side of enforced access rather than the usual opposite.  Due to the additional complexities that "
+"can evolve in the commercial use of GPL software we do, however, prefer software submitted under the more relaxed BSD license when it is a "
+"reasonable option to do so."
+msgstr ""
+"在我们的源代码树中，属于 GNU 通用公共许可证（GPL）或 GNU 较宽松公共许可证（LGPL）的代码会有更多的附加条件，尽管是在强制要求使用的一方，而不是其"
+"他。由于在 GPL 软件的商业使用中可能会出现额外的复杂性，因此在合适的情况下，我们更倾向于在更宽松的 BSD 许可证下提交软件。"
+
+#. type: Title ===
+#: content/zh-cn/books/handbook/introduction/_index.adoc:211
+#, no-wrap
+msgid "The FreeBSD Development Model"
+msgstr "FreeBSD 的开发模式"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:216
+msgid ""
+"The development of FreeBSD is a extref:{dev-model}[very open and flexible process], being literally built from the contributions of thousands of "
+"people around the world, as can be seen from our extref:{contributors}[list of contributors].  FreeBSD's development infrastructure allows these "
+"thousands of contributors to collaborate over the Internet.  We are constantly on the lookout for new volunteers, and those interested in "
+"becoming more closely involved should consult the article on extref:{contributing}[Contributing to FreeBSD]."
+msgstr ""
+"FreeBSD 开发过程extref:{dev-model}[非常的开放和灵活]，它实际上是由全世界成千上万的人贡献出来的，这一点可以从我们的extref:{contributors}[贡献者名"
+"单]中看出。FreeBSD 的开发基础结构允许这成千上万的贡献者通过互联网进行协作。我们一直在寻找新的志愿者，那些有兴趣更密切参与的人可以参考extref:"
+"{contributing}[关于为 FreeBSD 贡献的文章]"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:218
+msgid "Useful things to know about the FreeBSD Project and its development process, whether working independently or in close cooperation:"
+msgstr "无论是独立地工作或者封闭式的团队工作， 了解 FreeBSD 计划和它的开发过程都是有益的："
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/introduction/_index.adoc:219
+#, no-wrap
+msgid "The Git repositories[[development-cvs-repository]]"
+msgstr "site:github.com 代码库[[development-cvs-repository]]"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:226
+msgid ""
+"For several years, the central source tree for FreeBSD was maintained by link:http://www.nongnu.org/cvs/[CVS] (Concurrent Versions System), a "
+"freely available source code control tool.  In June 2008, the Project switched to using link:https://subversion.apache.org/[SVN] (Subversion).  "
+"The switch was deemed necessary, as the technical limitations imposed by CVS were becoming obvious due to the rapid expansion of the source tree "
+"and the amount of history already stored.  The Documentation Project and Ports Collection repositories also moved from CVS to SVN in May 2012 "
+"and July 2012, respectively.  In December 2020, the Project link:https://www.freebsd.org/status/report-2020-10-2020-12.html#Git-Migration-"
+"Working-Group[migrated Source and Documentation repositories] to link:https://git-scm.com/[Git], with link:https://www.freebsd.org/status/"
+"report-2021-04-2021-06/#_git_migration_working_group[Ports following suit] in April 2021.  Please refer to the crossref:cutting-edge[synching, "
+"Obtaining the Source] section for more information on obtaining the FreeBSD `src/` repository and crossref:ports[ports-using, Using the Ports "
+"Collection] for details on obtaining the FreeBSD Ports Collection."
+msgstr ""
+"几年来， FreeBSD 的核心源代码树是由 link:http://www.nongnu.org/cvs/[CVS]（Concurrent Versions System）维护的，它是一种免费的源代码控制工具。在 "
+"2008 年 6 月，该项目转而使用 link:https://subversion.apache.org/[SVN] (Subversion)。这一转换被认为是必要的，因为由于源代码树的快速扩展和已经存储"
+"的历史量，CVS 所带来的技术限制变得很明显。2012 年 5 月和 2012 年 7 月，文档项目和 ports 库也分别从 CVS 迁移到 SVN。在 2020 年 12 月，本项目将"
+"link:https://www.freebsd.org/status/report-2020-10-2020-12.html#Git-Migration-Working-Group[源代码和文档库]迁移到了link:https://git-scm.com/"
+"[site:github.com]，而 link:https://www.freebsd.org/status/report-2021-04-2021-06/#_git_migration_working_group[Ports] 也在 2021 年 4 月跟进。请参"
+"阅crossref:cutting-edge[获取源代码]一节以了解更多关于获取 FreeBSD `src/` 仓库的信息， 以及crossref:ports[使用 Ports Collection] 以了解获取 "
+"FreeBSD Ports Collection 的细节。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/introduction/_index.adoc:227
+#, no-wrap
+msgid "The committers list[[development-committers]]"
+msgstr "committer 名单[[development-committers]]"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:231
+msgid ""
+"The _committers_ are the people who have _push_ access to the Git repository, and are authorized to make modifications to the FreeBSD source "
+"(the term \"committer\" comes from `commit`, the source control command which is used to bring new changes into the repository).  Anyone can "
+"submit a bug to the link:https://bugs.FreeBSD.org/submit/[Bug Database].  Before submitting a bug report, the FreeBSD mailing lists, IRC "
+"channels, or forums can be used to help verify that an issue is actually a bug."
+msgstr ""
+"_committer_ 是指对 Subversion 树有_写入_权限的人，他们被授权对 FreeBSD 源代码进行修改（术语“committer”来自 commit，它是用来将新的修改带入仓库的源"
+"控制命令）。任何人都可以向link:https://bugs.FreeBSD.org/submit/[错误数据库]提交错误。在提交 bug 报告之前，可以通过 FreeBSD 邮件列表、IRC 频道或论"
+"坛来帮助验证某个问题是否真的是 bug。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/introduction/_index.adoc:232
+#, no-wrap
+msgid "The FreeBSD core team[[development-core]]"
+msgstr "FreeBSD 核心团队[[development-core]]"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:238
+msgid ""
+"The _FreeBSD core team_ would be equivalent to the board of directors if the FreeBSD Project were a company.  The primary task of the core team "
+"is to make sure the project, as a whole, is in good shape and is heading in the right directions.  Inviting dedicated and responsible developers "
+"to join our group of committers is one of the functions of the core team, as is the recruitment of new core team members as others move on.  The "
+"current core team was elected from a pool of committer candidates in June 2020.  Elections are held every 2 years."
+msgstr ""
+"如果 FreeBSD 项目是一家公司，那么 _FreeBSD 核心团队_就相当于董事会。核心团队的主要任务是确保项目作为一个整体处于良好的状态并朝着正确的方向发展。"
+"邀请有奉献精神和责任感的开发者加入我们的提交者群体是核心团队的职能之一，当其他人离开时招募新的核心团队成员也是如此。目前的核心团队是在 2020 年 6 "
+"月从提交者候选人库中选出的。每 2 年举行一次选举。"
+
+#. type: delimited block = 4
+#: content/zh-cn/books/handbook/introduction/_index.adoc:243
+msgid ""
+"Like most developers, most members of the core team are also volunteers when it comes to FreeBSD development and do not benefit from the project "
+"financially, so \"commitment\" should also not be misconstrued as meaning \"guaranteed support.\" The \"board of directors\" analogy above is "
+"not very accurate, and it may be more suitable to say that these are the people who gave up their lives in favor of FreeBSD against their better "
+"judgement!"
+msgstr ""
+"和大多数开发者一样，核心团队的大多数成员在涉及到 FreeBSD 开发时也是志愿者，并不从项目中获得经济利益，所以“承诺”也不应该被误解为“保证支持”。上面"
+"的“董事会”的比喻并不十分准确，或许更好的说法是，他们是一群愿意放弃他们自己的生活，投身于 FreeBSD 项目的人！"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/introduction/_index.adoc:245
+#, no-wrap
+msgid "The FreeBSD Foundation[[development-foundation]]"
+msgstr "FreeBSD 基金会[[development-foundation]]"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:252
+msgid ""
+"The link:https://freebsdfoundation.org[FreeBSD Foundation] is a 501(c)(3), US-based, non-profit organization dedicated to supporting and "
+"promoting the FreeBSD Project and community worldwide.  The Foundation funds software development via project grants and provides staff to "
+"immediately respond to urgent problems and implement new features and functionality.  The Foundation purchases hardware to improve and maintain "
+"FreeBSD infrastructure, and funds staffing to improve test coverage, continuous integration and automation.  The Foundation advocates for "
+"FreeBSD by promoting FreeBSD at technical conferences and events around the world.  The Foundation also provides workshops, educational "
+"material, and presentations to recruit more users and contributors to FreeBSD.  The Foundation also represents the FreeBSD Project in executing "
+"contracts, license agreements, and other legal arrangements that require a recognized legal entity."
+msgstr ""
+"The link:https://freebsdfoundation.org[FreeBSD 基金会]是一个基于美国的 501(c)(3)的非盈利组织，致力于支持和促进 FreeBSD 项目和全球社区。基金会通过"
+"项目资助来资助软件开发，并提供工作人员来立即应对紧急问题和实现新特性和功能。基金会购买硬件以改善和维护 FreeBSD 的基础设施，并为提高测试覆盖率、持"
+"续集成和自动化提供人员和经费。基金会通过在世界各地的技术会议和活动来宣传FreeBSD。基金会还提供研讨会、教育材料和演讲，以招募更多的用户和贡献者加"
+"入 FreeBSD。基金会还代表 FreeBSD 项目执行合同、许可协议和其他需要一个公认的法律实体的法律事务。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/introduction/_index.adoc:253
+#, no-wrap
+msgid "Outside contributors"
+msgstr "外围贡献者"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:259
+msgid ""
+"Last, but definitely not least, the largest group of developers are the users themselves who provide feedback and bug fixes to us on an almost "
+"constant basis.  The primary way of keeping in touch with development of FreeBSD base system is to subscribe to the {freebsd-hackers} where such "
+"things are discussed.  For porting third party applications, it would be the {freebsd-ports}.  For documentation - {freebsd-doc}.  See crossref:"
+"eresources[eresources, Resources on the Internet] for more information about the various FreeBSD mailing lists."
+msgstr ""
+"最后，但绝对不是最不重要的，最大的开发者群体是用户自己，他们几乎一直在向我们提供反馈和错误修正。保持与 FreeBSD 基本系统开发的联系的主要方式是订"
+"阅 {freebsd-hackers}，在那里讨论这些事情。对于移植第三方应用程序，应该是 {freebsd-ports}。对于文档——{freebsd-doc}。关于各种 FreeBSD 邮件列表的更"
+"多信息，请参见crossref:eresources[互联网上的资源]。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:262
+msgid ""
+"extref:{contributors}[The FreeBSD Contributors List] is a long and growing one, so why not join it by extref:{contributing}[contributing "
+"something back to FreeBSD] today? Providing code is not the only way!"
+msgstr ""
+"extref:{contributors}[FreeBSD 贡献者名单]是一个漫长而不断增长的名单，那么为什么不在今天通过extref:{contributing}[为 FreeBSD 贡献一点东西]来加入它"
+"呢？提供代码并不是唯一的方法！"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:266
+msgid ""
+"In summary, our development model is organized as a loose set of concentric circles.  The centralized model is designed for the convenience of "
+"the _users_ of FreeBSD, who are provided with an easy way of tracking one central code base, not to keep potential contributors out! Our desire "
+"is to present a stable operating system with a large set of coherent crossref:ports[ports,application programs] that the users can easily "
+"install and use - this model works very well in accomplishing that."
+msgstr ""
+"综上所述，我们的开发模式被组织成一个松散的同心圆。集中式的模式是为了方便 FreeBSD 的_用户_，为他们提供了跟踪一个中央代码库的简单方法，而不是为了把"
+"潜在的贡献者拒之门外！我们的愿望是提供一个稳定的操作系统和一大批连贯的crossref:ports[应用程序]，让用户可以轻松地安装和使用——这种模式可以很好地实"
+"现这一目标。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:268
+msgid ""
+"All we ask of those who would join us as FreeBSD developers is some of the same dedication its current people have to its continued success!"
+msgstr "我们对那些愿意加入我们的 FreeBSD 开发者的要求是，他们要像现在的人一样，为 FreeBSD 的不断成功做出奉献！"
+
+#. type: Title ===
+#: content/zh-cn/books/handbook/introduction/_index.adoc:270
+#, no-wrap
+msgid "Third Party Programs"
+msgstr "第三方程序"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:277
+msgid ""
+"In addition to the base distributions, FreeBSD offers a ported software collection with thousands of commonly sought-after programs.  The list "
+"of ports ranges from HTTP servers, to games, languages, editors, and almost everything in between.  There are about {numports} ports; the entire "
+"Ports Collection requires approximately {ports-size}.  To compile a port, you simply change to the directory of the program you wish to install, "
+"type `make install`, and let the system do the rest.  The full original distribution for each port you build is retrieved dynamically so you "
+"need only enough disk space to build the ports you want."
+msgstr ""
+"除了基本的发行版之外，FreeBSD 还提供了一个移植软件集，其中有成千上万的常用程序。port 列表的范围从 HTTP 服务器，到游戏，语言，编辑器，以及几乎所有"
+"介于两者之间的东西。大约有 {numports} 个 port；整个 Ports Collection 大约需要 {ports-size}。要编译一个 port，您只需切换到您希望安装的程序的目录，"
+"键入`make install`，然后让系统完成剩下的工作。您所编译的每个 port 的完整原始分布都是动态检索的， 因此您只需要足够的磁盘空间来编译您想要的 port。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:280
+msgid ""
+"Almost every port is also provided as a pre-compiled \"package\", which can be installed with a simple command (`pkg install`) by those who do "
+"not wish to compile their own ports from source.  More information on packages and ports can be found in crossref:ports[ports,Installing "
+"Applications: Packages and Ports]."
+msgstr ""
+"几乎每一个 port 都以预编译的“包”形式提供，那些不希望从源代码编译自己的 port 的人可以通过简单的命令（`pkg install`）来安装。关于包和 port 的更多信"
+"息可以在crossref:ports[ports,Installing Applications: Packages and Ports]中找到。"
+
+#. type: Title ===
+#: content/zh-cn/books/handbook/introduction/_index.adoc:281
+#, no-wrap
+msgid "Additional Documentation"
+msgstr "附加文档"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:285
+msgid ""
+"All supported FreeBSD versions provide an option in the installer to install additional documentation under [.filename]#/usr/local/share/doc/"
+"freebsd# during the initial system setup.  Documentation may also be installed later using packages:"
+msgstr ""
+"所有受支持的 FreeBSD 版本都在安装程序中提供了一个选项，即在最初的系统设置中在 [.filename]#/usr/local/share/doc/freebsd# 下安装额外的文档。文档也"
+"可以在以后使用软件包来安装："
+
+#. type: delimited block . 4
+#: content/zh-cn/books/handbook/introduction/_index.adoc:288
+#, no-wrap
+msgid "# pkg install en-freebsd-doc\n"
+msgstr "# pkg install en-freebsd-doc\n"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:293
+msgid ""
+"For localized versions replace the \"en\" with language prefix of choice.  Be aware that some of the localised versions might be out of date and "
+"might contain information that is no longer correct or relevant.  You may view the locally installed manuals with a web browser using the "
+"following URLs:"
+msgstr ""
+"对于本地化版本，将 “en” 替换为所选择的语言前缀。请注意，一些本地化的版本可能已经过期，可能包含不再正确或相关的信息。你可以通过以下网址用网络浏览"
+"器查看本地安装的手册："
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/introduction/_index.adoc:294
+#, no-wrap
+msgid "The FreeBSD Handbook"
+msgstr "FreeBSD 手册"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:296
+msgid "[.filename]#link:file:///usr/local/share/doc/freebsd/en/books/handbook/book.html[/usr/local/share/doc/freebsd/en/books/handbook/book.html]#"
+msgstr ""
+"[.filename]#link:file:///usr/local/share/doc/freebsd/en/books/handbook/book.html[/usr/local/share/doc/freebsd/en/books/handbook/book.html]#"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/introduction/_index.adoc:297
+#, no-wrap
+msgid "The FreeBSD FAQ"
+msgstr "FreeBSD FAQ"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:299
+msgid "[.filename]#link:file://localhost/usr/local/share/doc/freebsd/en/books/faq/book.html[/usr/local/share/doc/freebsd/en/books/faq/book.html]#"
+msgstr "[.filename]#link:file://localhost/usr/local/share/doc/freebsd/en/books/faq/book.html[/usr/local/share/doc/freebsd/en/books/faq/book.html]#"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/introduction/_index.adoc:300
+msgid "You can always find up to date documentation at link:https://docs.FreeBSD.org/[https://docs.FreeBSD.org/]."
+msgstr "您也可以在 link:https://docs.FreeBSD.org/[https://docs.FreeBSD.org/] 上查看最新文档。"
