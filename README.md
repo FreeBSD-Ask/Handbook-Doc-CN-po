@@ -18,12 +18,14 @@
 #git config --global http.proxy 'socks5://192.168.184.1:7890'
 #git config --global https.proxy 'socks5://192.168.184.1:7890'
 ```
+
+## 从英文提取 po 文档来翻译
+
 ```
 #cd freebsd-doc/documentation/
 #rm -rf content/zh-cn/books/handbook/*   #因为中文翻译已经整体过时，甚至目录结构都对不上了，必须删除从 0 开始
 #cp content/en/books/handbook/* content/zh-cn/books/handbook/
 ```
-## 从英文提取 po 文档来翻译
 ```
 po4a-gettextize \
    --format asciidoc \
