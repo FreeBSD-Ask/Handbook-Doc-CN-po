@@ -8,12 +8,15 @@
 >
 >**注意：编译出来有乱码和方块是正常的，不影响翻译。该问题是字体问题。**
 
+>以下内容是为了测试翻译效果而进行的编译验证，会生成对应文档的 PDF 文件。
+
 ## 安装软件
 ```
 #pkg install textproc/po4a poedit git docproj
 #git clone https://github.com/freebsd/freebsd-doc
 ```
-## git代理设置
+>git代理设置（可能会用到）
+
 ```
 #git config --global http.proxy 'socks5://192.168.184.1:7890'
 #git config --global https.proxy 'socks5://192.168.184.1:7890'
