@@ -1,6 +1,9 @@
 # Handbook-Doc-CN-po
 
->基本提取流程
+基本提取流程
+
+>
+>本项目旨在将我们的已有的[中文翻译](https://handbook.freebsdcn.org)提交到上游（FreeBSD 文档项目）。
 >
 >**注意:编译出来有乱码和方块是正常的，不影响翻译。**
 
