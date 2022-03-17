@@ -2769,7 +2769,7 @@ msgid ""
 "return to the console.  To review these messages once the system has been up for some time, type `less /var/run/dmesg.boot` from a command "
 "prompt.  Press kbd:[q] to return to the command line after viewing."
 msgstr ""
-"按kbd:[Scroll-Lock] 打开回卷缓冲器，就可以查看启动时出现的信息。可以用 kbd:[PgUp]、kbd:[PgDn] 和方向键来回滚信息。完成后，再按一次 kbd:[Scroll-"
+"按 kbd:[Scroll-Lock] 打开回卷缓冲器，就可以查看启动时出现的信息。可以用 kbd:[PgUp]、kbd:[PgDn] 和方向键来回滚信息。完成后，再按一次 kbd:[Scroll-"
 "Lock] 键，解除显示并返回到控制台。要在系统运行一段时间后查看这些信息，可以在命令提示符下输入`less /var/run/dmesg.boot`。查看后按 kbd:[q] 键返回到"
 "命令行。"
 
