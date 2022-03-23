@@ -2,32 +2,75 @@
 
 基本提取流程
 
-翻译方法，下载 `poedit`（全平台开源软件），`po`文件才是主要文件，`mo`文件是日志文件。
->
->本项目旨在将我们的已有的[中文翻译](https://handbook.freebsdcn.org)提交到上游（FreeBSD 文档项目）。
->
->**注意：编译出来有乱码和方块是正常的，不影响翻译。该问题是字体问题。**
+翻译方法：下载 `poedit`（全平台开源软件）<https://poedit.net/download>，`po` 文件才是主要文件，`mo` 文件是日志文件。
 
->以下内容是为了测试翻译效果而进行的编译验证，会生成对应文档的 PDF 文件。
+> 本项目旨在将我们的已有的[中文翻译](https://handbook.freebsdcn.org)提交到上游（FreeBSD 文档项目）。
+>
+> **注意：编译出来有乱码和方块是正常的，不影响翻译。该问题是字体问题。**
+
+## 进度
+
+- [x] 前言
+- [x] 1
+- [x] 2
+- [ ] 3
+- [ ] 4
+- [ ] 5
+- [ ] 6
+- [ ] 7
+- [ ] 8
+- [ ] 9
+- [ ] 10
+- [ ] 11
+- [ ] 12
+- [ ] 13
+- [ ] 14
+- [ ] 15
+- [ ] 16
+- [ ] 17
+- [ ] 18
+- [ ] 19
+- [ ] 20
+- [ ] 21
+- [ ] 22
+- [ ] 23
+- [ ] 24
+- [ ] 25
+- [ ] 26
+- [ ] 27
+- [ ] 28
+- [ ] 29
+- [ ] 30
+- [ ] 31
+- [ ] 32
+- [ ] 附录 A
+- [ ] 附录 B
+- [ ] 附录 C
+- [ ] 附录 D
+- [ ] 术语表
+
+---
+
+> 以下内容是为了测试翻译效果而进行的编译验证，会生成对应文档的 PDF 文件。
 
 ## 安装软件
 ```
-#pkg install textproc/po4a poedit git docproj
-#git clone https://github.com/freebsd/freebsd-doc
+# pkg install textproc/po4a poedit git docproj
+# git clone https://github.com/freebsd/freebsd-doc
 ```
->git代理设置（可能会用到）
+> git代理设置（可能会用到）
 
 ```
-#git config --global http.proxy 'socks5://192.168.184.1:7890'
-#git config --global https.proxy 'socks5://192.168.184.1:7890'
+# git config --global http.proxy 'socks5://192.168.184.1:7890'
+# git config --global https.proxy 'socks5://192.168.184.1:7890'
 ```
 
 ## 从英文提取 po 文档来翻译
 
 ```
-#cd freebsd-doc/documentation/
-#rm -rf content/zh-cn/books/handbook/*   #因为中文翻译已经整体过时，甚至目录结构都对不上了，必须删除从 0 开始
-#cp content/en/books/handbook/* content/zh-cn/books/handbook/
+# cd freebsd-doc/documentation/
+# rm -rf content/zh-cn/books/handbook/*   #因为中文翻译已经整体过时，甚至目录结构都对不上了，必须删除从 0 开始
+# cp content/en/books/handbook/* content/zh-cn/books/handbook/
 ```
 ```
 po4a-gettextize \
@@ -41,11 +84,13 @@ po4a-gettextize \
    --po "content/zh-cn/books/handbook/_index.po"
 ```
 ## 删除旧的翻译文件
+
 ```
-#rm content/zh-cn/books/handbook/_index.adoc
+# rm content/zh-cn/books/handbook/_index.adoc
 ```
 
 ## 还原翻译为 adoc 格式
+
 ```
 po4a-translate \
   --format asciidoc \
@@ -65,7 +110,7 @@ po4a-translate \
 make DOC_LANG="zh-cn" pdf-books
 ```
 
-# 前言
+## 前言
 ```
 po4a-gettextize \
    --format asciidoc \
@@ -90,7 +135,7 @@ po4a-gettextize \
   --keep 0
 ```
 
-# 第1章
+## 第1章
 ```
 po4a-gettextize \
    --format asciidoc \
@@ -116,7 +161,7 @@ po4a-gettextize \
   --keep 0
 ```
   
-# 第2章 
+## 第2章 
 
 ```
 po4a-gettextize \
@@ -142,8 +187,8 @@ po4a-translate \
   --keep 0
   
 ```
-# 第3章
 
+## 第3章
 
 ```
 po4a-gettextize \
@@ -173,8 +218,7 @@ po4a-translate \
 
 ```
 
-# 第4章
-
+## 第4章
 
 ```
 
@@ -205,8 +249,7 @@ po4a-translate \
 
 ```
 
-# 第5章 
-
+## 第5章 
 
 ```
 po4a-gettextize \
@@ -235,7 +278,8 @@ po4a-translate \
   --keep 0
 
 ```
-# 第6章 
+
+## 第6章 
 
 ```
 po4a-gettextize \
@@ -264,7 +308,7 @@ po4a-translate \
   --keep 0
   
 ```
-# 第7章
+## 第7章
 
 ```
 po4a-gettextize \
@@ -293,7 +337,7 @@ po4a-translate \
   --keep 0
 
 ```
-# 第8章
+## 第8章
 
 ```
 po4a-gettextize \
@@ -322,7 +366,7 @@ po4a-translate \
   --keep 0
 
 ```  
-# 第9章
+## 第9章
 
 ```
 po4a-gettextize \
@@ -351,7 +395,7 @@ po4a-translate \
   --keep 0
 
 ```  
-# 第10章
+## 第10章
 
 ```
 po4a-gettextize \
@@ -379,7 +423,7 @@ po4a-translate \
   --keep 0
 
 ```  
-# 第11章
+## 第11章
 
 ```
 po4a-gettextize \
@@ -408,7 +452,8 @@ po4a-translate \
   --keep 0
 
 ```  
-# 第12章
+
+## 第12章
 
 ```
 po4a-gettextize \
@@ -438,8 +483,7 @@ po4a-translate \
 
 ```  
    
-# 第13章
-
+## 第13章
 
 ```
 po4a-gettextize \
@@ -469,8 +513,7 @@ po4a-translate \
 
 ```  
   
-# 第14章
-
+## 第14章
 
 ```
 po4a-gettextize \
@@ -499,7 +542,8 @@ po4a-translate \
   --keep 0
 
 ```
-# 第15章
+
+## 第15章
 
 ```
 po4a-gettextize \
@@ -528,7 +572,9 @@ po4a-translate \
   --keep 0
   
 ```
-# 第16章
+
+## 第16章
+
 ``` 
 po4a-gettextize \
    --format asciidoc \
@@ -552,7 +598,9 @@ po4a-translate \
   --localized-charset "UTF-8" \
   --keep 0
 ``` 
-# 第17章
+
+## 第17章
+
 ``` 
 po4a-gettextize \
    --format asciidoc \
@@ -576,7 +624,9 @@ po4a-translate \
   --localized-charset "UTF-8" \
   --keep 0
 ``` 
-# 第18章
+
+## 第18章
+
 ``` 
 po4a-gettextize \
    --format asciidoc \
@@ -601,7 +651,7 @@ po4a-translate \
   --keep 0
 ``` 
 
-# 第19章
+## 第19章
 ``` 
 po4a-gettextize \
    --format asciidoc \
@@ -625,7 +675,7 @@ po4a-translate \
   --localized-charset "UTF-8" \
   --keep 0
 ``` 
-# 第20章
+## 第20章
 
 ``` 
 po4a-gettextize \
@@ -650,7 +700,7 @@ po4a-translate \
   --localized-charset "UTF-8" \
   --keep 0
   ``` 
-# 第21章
+## 第21章
 ``` 
 po4a-gettextize \
    --format asciidoc \
@@ -674,7 +724,7 @@ po4a-translate \
   --localized-charset "UTF-8" \
   --keep 0
 ``` 
-# 第22章
+## 第22章
 ``` 
 po4a-gettextize \
    --format asciidoc \
@@ -699,7 +749,7 @@ po4a-translate \
   --keep 0
 ``` 
 
-# 第23章
+## 第23章
 ``` 
 po4a-gettextize \
    --format asciidoc \
@@ -723,7 +773,7 @@ po4a-translate \
   --localized-charset "UTF-8" \
   --keep 0
 ```  
-# 第24章
+## 第24章
 ``` 
 po4a-gettextize \
    --format asciidoc \
@@ -747,7 +797,7 @@ po4a-translate \
   --localized-charset "UTF-8" \
   --keep 0
 ```   
-# 第25章
+## 第25章
 ``` 
 po4a-gettextize \
    --format asciidoc \
@@ -772,7 +822,7 @@ po4a-translate \
   --keep 0
   
 ```   
-# 第26章
+## 第26章
 ``` 
 po4a-gettextize \
    --format asciidoc \
@@ -796,7 +846,7 @@ po4a-translate \
   --localized-charset "UTF-8" \
   --keep 0
 ```   
-# 第27章
+## 第27章
 ``` 
 po4a-gettextize \
    --format asciidoc \
@@ -821,7 +871,7 @@ po4a-translate \
   --keep 0
 ```   
 
-# 第28章
+## 第28章
 
 ``` 
 po4a-gettextize \
@@ -847,7 +897,7 @@ po4a-translate \
   --keep 0
 ```   
   
-# 第29章
+## 第29章
 ``` 
 po4a-gettextize \
    --format asciidoc \
@@ -871,7 +921,7 @@ po4a-translate \
   --localized-charset "UTF-8" \
   --keep 0
 ```   
-# 第30章
+## 第30章
 ``` 
 po4a-gettextize \
    --format asciidoc \
@@ -895,7 +945,7 @@ po4a-translate \
   --localized-charset "UTF-8" \
   --keep 0
 ```   
-# 第31章
+## 第31章
 ``` 
 po4a-gettextize \
    --format asciidoc \
@@ -919,7 +969,7 @@ po4a-translate \
   --localized-charset "UTF-8" \
   --keep 0
 ```  
-# 第32章
+## 第32章
 ``` 
 po4a-gettextize \
    --format asciidoc \
@@ -943,7 +993,7 @@ po4a-translate \
   --localized-charset "UTF-8" \
   --keep 0
 ```  
-# 附录 A
+## 附录 A
 ``` 
 po4a-gettextize \
    --format asciidoc \
@@ -967,7 +1017,7 @@ po4a-translate \
   --localized-charset "UTF-8" \
   --keep 0
 ``` 
-# 附录 B
+## 附录 B
 ```
 po4a-gettextize \
    --format asciidoc \
@@ -991,7 +1041,7 @@ po4a-translate \
   --localized-charset "UTF-8" \
   --keep 0
 ``` 
-# 附录 C
+## 附录 C
 ```
 po4a-gettextize \
    --format asciidoc \
@@ -1015,7 +1065,7 @@ po4a-translate \
   --localized-charset "UTF-8" \
   --keep 0
 ```  
-# 附录D
+## 附录 D
 ```
 po4a-gettextize \
    --format asciidoc \
@@ -1039,7 +1089,7 @@ po4a-translate \
   --localized-charset "UTF-8" \
   --keep 0
 ```
-# 术语表
+## 术语表
 ```
 po4a-gettextize \
    --format asciidoc \
