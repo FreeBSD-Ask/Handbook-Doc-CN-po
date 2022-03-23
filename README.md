@@ -528,3 +528,539 @@ po4a-translate \
   --keep 0
   
 ```
+# 第16章
+``` 
+po4a-gettextize \
+   --format asciidoc \
+   --option compat=asciidoctor \
+   --option yfm_keys=title,part,description \
+   --master "content/zh-cn/books/handbook/mac/_index.adoc" \
+   --master-charset "UTF-8" \
+   --copyright-holder "The FreeBSD Project" \
+   --package-name "FreeBSD Documentation" \
+   --po "content/zh-cn/books/handbook/mac/_index.po"
+``` 
+``` 
+po4a-translate \
+  --format asciidoc \
+  --option compat=asciidoctor \
+  --option yfm_keys=title,part,description \
+  --master "content/en/books/handbook/mac/_index.adoc" \
+  --master-charset "UTF-8" \
+  --po "content/zh-cn/books/handbook/mac/_index.po" \
+  --localized "content/zh-cn/books/handbook/mac/_index.adoc" \
+  --localized-charset "UTF-8" \
+  --keep 0
+``` 
+# 第17章
+``` 
+po4a-gettextize \
+   --format asciidoc \
+   --option compat=asciidoctor \
+   --option yfm_keys=title,part,description \
+   --master "content/zh-cn/books/handbook/audit/_index.adoc" \
+   --master-charset "UTF-8" \
+   --copyright-holder "The FreeBSD Project" \
+   --package-name "FreeBSD Documentation" \
+   --po "content/zh-cn/books/handbook/audit/_index.po"
+``` 
+``` 
+po4a-translate \
+  --format asciidoc \
+  --option compat=asciidoctor \
+  --option yfm_keys=title,part,description \
+  --master "content/en/books/handbook/audit/_index.adoc" \
+  --master-charset "UTF-8" \
+  --po "content/zh-cn/books/handbook/audit/_index.po" \
+  --localized "content/zh-cn/books/handbook/audit/_index.adoc" \
+  --localized-charset "UTF-8" \
+  --keep 0
+``` 
+# 第18章
+``` 
+po4a-gettextize \
+   --format asciidoc \
+   --option compat=asciidoctor \
+   --option yfm_keys=title,part,description \
+   --master "content/zh-cn/books/handbook/disks/_index.adoc" \
+   --master-charset "UTF-8" \
+   --copyright-holder "The FreeBSD Project" \
+   --package-name "FreeBSD Documentation" \
+   --po "content/zh-cn/books/handbook/disks/_index.po"
+``` 
+``` 
+po4a-translate \
+  --format asciidoc \
+  --option compat=asciidoctor \
+  --option yfm_keys=title,part,description \
+  --master "content/en/books/handbook/disks/_index.adoc" \
+  --master-charset "UTF-8" \
+  --po "content/zh-cn/books/handbook/disks/_index.po" \
+  --localized "content/zh-cn/books/handbook/disks/_index.adoc" \
+  --localized-charset "UTF-8" \
+  --keep 0
+``` 
+
+# 第19章
+``` 
+po4a-gettextize \
+   --format asciidoc \
+   --option compat=asciidoctor \
+   --option yfm_keys=title,part,description \
+   --master "content/zh-cn/books/handbook/geom/_index.adoc" \
+   --master-charset "UTF-8" \
+   --copyright-holder "The FreeBSD Project" \
+   --package-name "FreeBSD Documentation" \
+   --po "content/zh-cn/books/handbook/geom/_index.po"
+``` 
+``` 
+po4a-translate \
+  --format asciidoc \
+  --option compat=asciidoctor \
+  --option yfm_keys=title,part,description \
+  --master "content/en/books/handbook/geom/_index.adoc" \
+  --master-charset "UTF-8" \
+  --po "content/zh-cn/books/handbook/geom/_index.po" \
+  --localized "content/zh-cn/books/handbook/geom/_index.adoc" \
+  --localized-charset "UTF-8" \
+  --keep 0
+``` 
+# 第20章
+
+``` 
+po4a-gettextize \
+   --format asciidoc \
+   --option compat=asciidoctor \
+   --option yfm_keys=title,part,description \
+   --master "content/zh-cn/books/handbook/zfs/_index.adoc" \
+   --master-charset "UTF-8" \
+   --copyright-holder "The FreeBSD Project" \
+   --package-name "FreeBSD Documentation" \
+   --po "content/zh-cn/books/handbook/zfs/_index.po"
+``` 
+``` 
+po4a-translate \
+  --format asciidoc \
+  --option compat=asciidoctor \
+  --option yfm_keys=title,part,description \
+  --master "content/en/books/handbook/zfs/_index.adoc" \
+  --master-charset "UTF-8" \
+  --po "content/zh-cn/books/handbook/zfs/_index.po" \
+  --localized "content/zh-cn/books/handbook/zfs/_index.adoc" \
+  --localized-charset "UTF-8" \
+  --keep 0
+  ``` 
+# 第21章
+``` 
+po4a-gettextize \
+   --format asciidoc \
+   --option compat=asciidoctor \
+   --option yfm_keys=title,part,description \
+   --master "content/zh-cn/books/handbook/filesystems/_index.adoc" \
+   --master-charset "UTF-8" \
+   --copyright-holder "The FreeBSD Project" \
+   --package-name "FreeBSD Documentation" \
+   --po "content/zh-cn/books/handbook/filesystems/_index.po"
+``` 
+``` 
+po4a-translate \
+  --format asciidoc \
+  --option compat=asciidoctor \
+  --option yfm_keys=title,part,description \
+  --master "content/en/books/handbook/filesystems/_index.adoc" \
+  --master-charset "UTF-8" \
+  --po "content/zh-cn/books/handbook/filesystems/_index.po" \
+  --localized "content/zh-cn/books/handbook/filesystems/_index.adoc" \
+  --localized-charset "UTF-8" \
+  --keep 0
+``` 
+# 第22章
+``` 
+po4a-gettextize \
+   --format asciidoc \
+   --option compat=asciidoctor \
+   --option yfm_keys=title,part,description \
+   --master "content/zh-cn/books/handbook/virtualization/_index.adoc" \
+   --master-charset "UTF-8" \
+   --copyright-holder "The FreeBSD Project" \
+   --package-name "FreeBSD Documentation" \
+   --po "content/zh-cn/books/handbook/virtualization/_index.po"
+```   
+```   
+po4a-translate \
+  --format asciidoc \
+  --option compat=asciidoctor \
+  --option yfm_keys=title,part,description \
+  --master "content/en/books/handbook/virtualization/_index.adoc" \
+  --master-charset "UTF-8" \
+  --po "content/zh-cn/books/handbook/virtualization/_index.po" \
+  --localized "content/zh-cn/books/handbook/virtualization/_index.adoc" \
+  --localized-charset "UTF-8" \
+  --keep 0
+``` 
+
+# 第23章
+``` 
+po4a-gettextize \
+   --format asciidoc \
+   --option compat=asciidoctor \
+   --option yfm_keys=title,part,description \
+   --master "content/zh-cn/books/handbook/l10n/_index.adoc" \
+   --master-charset "UTF-8" \
+   --copyright-holder "The FreeBSD Project" \
+   --package-name "FreeBSD Documentation" \
+   --po "content/zh-cn/books/handbook/l10n/_index.po"
+```    
+```   
+po4a-translate \
+  --format asciidoc \
+  --option compat=asciidoctor \
+  --option yfm_keys=title,part,description \
+  --master "content/en/books/handbook/l10n/_index.adoc" \
+  --master-charset "UTF-8" \
+  --po "content/zh-cn/books/handbook/l10n/_index.po" \
+  --localized "content/zh-cn/books/handbook/l10n/_index.adoc" \
+  --localized-charset "UTF-8" \
+  --keep 0
+```  
+# 第24章
+``` 
+po4a-gettextize \
+   --format asciidoc \
+   --option compat=asciidoctor \
+   --option yfm_keys=title,part,description \
+   --master "content/zh-cn/books/handbook/cutting-edge/_index.adoc" \
+   --master-charset "UTF-8" \
+   --copyright-holder "The FreeBSD Project" \
+   --package-name "FreeBSD Documentation" \
+   --po "content/zh-cn/books/handbook/cutting-edge/_index.po"
+```    
+```    
+po4a-translate \
+  --format asciidoc \
+  --option compat=asciidoctor \
+  --option yfm_keys=title,part,description \
+  --master "content/en/books/handbook/cutting-edge/_index.adoc" \
+  --master-charset "UTF-8" \
+  --po "content/zh-cn/books/handbook/cutting-edge/_index.po" \
+  --localized "content/zh-cn/books/handbook/cutting-edge/_index.adoc" \
+  --localized-charset "UTF-8" \
+  --keep 0
+```   
+# 第25章
+``` 
+po4a-gettextize \
+   --format asciidoc \
+   --option compat=asciidoctor \
+   --option yfm_keys=title,part,description \
+   --master "content/zh-cn/books/handbook/dtrace/_index.adoc" \
+   --master-charset "UTF-8" \
+   --copyright-holder "The FreeBSD Project" \
+   --package-name "FreeBSD Documentation" \
+   --po "content/zh-cn/books/handbook/dtrace/_index.po"
+```   
+```    
+po4a-translate \
+  --format asciidoc \
+  --option compat=asciidoctor \
+  --option yfm_keys=title,part,description \
+  --master "content/en/books/handbook/dtrace/_index.adoc" \
+  --master-charset "UTF-8" \
+  --po "content/zh-cn/books/handbook/dtrace/_index.po" \
+  --localized "content/zh-cn/books/handbook/dtrace/_index.adoc" \
+  --localized-charset "UTF-8" \
+  --keep 0
+  
+```   
+# 第26章
+``` 
+po4a-gettextize \
+   --format asciidoc \
+   --option compat=asciidoctor \
+   --option yfm_keys=title,part,description \
+   --master "content/zh-cn/books/handbook/usb-device-mode/_index.adoc" \
+   --master-charset "UTF-8" \
+   --copyright-holder "The FreeBSD Project" \
+   --package-name "FreeBSD Documentation" \
+   --po "content/zh-cn/books/handbook/usb-device-mode/_index.po"
+```    
+```    
+po4a-translate \
+  --format asciidoc \
+  --option compat=asciidoctor \
+  --option yfm_keys=title,part,description \
+  --master "content/en/books/handbook/usb-device-mode/_index.adoc" \
+  --master-charset "UTF-8" \
+  --po "content/zh-cn/books/handbook/usb-device-mode/_index.po" \
+  --localized "content/zh-cn/books/handbook/usb-device-mode/_index.adoc" \
+  --localized-charset "UTF-8" \
+  --keep 0
+```   
+# 第27章
+``` 
+po4a-gettextize \
+   --format asciidoc \
+   --option compat=asciidoctor \
+   --option yfm_keys=title,part,description \
+   --master "content/zh-cn/books/handbook/serialcomms/_index.adoc" \
+   --master-charset "UTF-8" \
+   --copyright-holder "The FreeBSD Project" \
+   --package-name "FreeBSD Documentation" \
+   --po "content/zh-cn/books/handbook/serialcomms/_index.po"
+```   
+```   
+po4a-translate \
+  --format asciidoc \
+  --option compat=asciidoctor \
+  --option yfm_keys=title,part,description \
+  --master "content/en/books/handbook/serialcomms/_index.adoc" \
+  --master-charset "UTF-8" \
+  --po "content/zh-cn/books/handbook/serialcomms/_index.po" \
+  --localized "content/zh-cn/books/handbook/serialcomms/_index.adoc" \
+  --localized-charset "UTF-8" \
+  --keep 0
+```   
+
+# 第28章
+
+``` 
+po4a-gettextize \
+   --format asciidoc \
+   --option compat=asciidoctor \
+   --option yfm_keys=title,part,description \
+   --master "content/zh-cn/books/handbook/ppp-and-slip/_index.adoc" \
+   --master-charset "UTF-8" \
+   --copyright-holder "The FreeBSD Project" \
+   --package-name "FreeBSD Documentation" \
+   --po "content/zh-cn/books/handbook/ppp-and-slip/_index.po"
+```    
+```    
+po4a-translate \
+  --format asciidoc \
+  --option compat=asciidoctor \
+  --option yfm_keys=title,part,description \
+  --master "content/en/books/handbook/ppp-and-slip/_index.adoc" \
+  --master-charset "UTF-8" \
+  --po "content/zh-cn/books/handbook/ppp-and-slip/_index.po" \
+  --localized "content/zh-cn/books/handbook/ppp-and-slip/_index.adoc" \
+  --localized-charset "UTF-8" \
+  --keep 0
+```   
+  
+# 第29章
+``` 
+po4a-gettextize \
+   --format asciidoc \
+   --option compat=asciidoctor \
+   --option yfm_keys=title,part,description \
+   --master "content/zh-cn/books/handbook/mail/_index.adoc" \
+   --master-charset "UTF-8" \
+   --copyright-holder "The FreeBSD Project" \
+   --package-name "FreeBSD Documentation" \
+   --po "content/zh-cn/books/handbook/mail/_index.po"
+```    
+ ```   
+po4a-translate \
+  --format asciidoc \
+  --option compat=asciidoctor \
+  --option yfm_keys=title,part,description \
+  --master "content/en/books/handbook/mail/_index.adoc" \
+  --master-charset "UTF-8" \
+  --po "content/zh-cn/books/handbook/mail/_index.po" \
+  --localized "content/zh-cn/books/handbook/mail/_index.adoc" \
+  --localized-charset "UTF-8" \
+  --keep 0
+```   
+# 第30章
+``` 
+po4a-gettextize \
+   --format asciidoc \
+   --option compat=asciidoctor \
+   --option yfm_keys=title,part,description \
+   --master "content/zh-cn/books/handbook/network-servers/_index.adoc" \
+   --master-charset "UTF-8" \
+   --copyright-holder "The FreeBSD Project" \
+   --package-name "FreeBSD Documentation" \
+   --po "content/zh-cn/books/handbook/network-servers/_index.po"
+```    
+```    
+po4a-translate \
+  --format asciidoc \
+  --option compat=asciidoctor \
+  --option yfm_keys=title,part,description \
+  --master "content/en/books/handbook/network-servers/_index.adoc" \
+  --master-charset "UTF-8" \
+  --po "content/zh-cn/books/handbook/network-servers/_index.po" \
+  --localized "content/zh-cn/books/handbook/network-servers/_index.adoc" \
+  --localized-charset "UTF-8" \
+  --keep 0
+```   
+# 第31章
+``` 
+po4a-gettextize \
+   --format asciidoc \
+   --option compat=asciidoctor \
+   --option yfm_keys=title,part,description \
+   --master "content/zh-cn/books/handbook/firewalls/_index.adoc" \
+   --master-charset "UTF-8" \
+   --copyright-holder "The FreeBSD Project" \
+   --package-name "FreeBSD Documentation" \
+   --po "content/zh-cn/books/handbook/firewalls/_index.po"
+```    
+```    
+po4a-translate \
+  --format asciidoc \
+  --option compat=asciidoctor \
+  --option yfm_keys=title,part,description \
+  --master "content/en/books/handbook/firewalls/_index.adoc" \
+  --master-charset "UTF-8" \
+  --po "content/zh-cn/books/handbook/firewalls/_index.po" \
+  --localized "content/zh-cn/books/handbook/firewalls/_index.adoc" \
+  --localized-charset "UTF-8" \
+  --keep 0
+```  
+# 第32章
+``` 
+po4a-gettextize \
+   --format asciidoc \
+   --option compat=asciidoctor \
+   --option yfm_keys=title,part,description \
+   --master "content/zh-cn/books/handbook/advanced-networking/_index.adoc" \
+   --master-charset "UTF-8" \
+   --copyright-holder "The FreeBSD Project" \
+   --package-name "FreeBSD Documentation" \
+   --po "content/zh-cn/books/handbook/advanced-networking/_index.po"
+```    
+```   
+po4a-translate \
+  --format asciidoc \
+  --option compat=asciidoctor \
+  --option yfm_keys=title,part,description \
+  --master "content/en/books/handbook/advanced-networking/_index.adoc" \
+  --master-charset "UTF-8" \
+  --po "content/zh-cn/books/handbook/advanced-networking/_index.po" \
+  --localized "content/zh-cn/books/handbook/advanced-networking/_index.adoc" \
+  --localized-charset "UTF-8" \
+  --keep 0
+```  
+# 附录 A
+``` 
+po4a-gettextize \
+   --format asciidoc \
+   --option compat=asciidoctor \
+   --option yfm_keys=title,part,description \
+   --master "content/zh-cn/books/handbook/mirrors/_index.adoc" \
+   --master-charset "UTF-8" \
+   --copyright-holder "The FreeBSD Project" \
+   --package-name "FreeBSD Documentation" \
+   --po "content/zh-cn/books/handbook/mirrors/_index.po"
+```    
+```    
+po4a-translate \
+  --format asciidoc \
+  --option compat=asciidoctor \
+  --option yfm_keys=title,part,description \
+  --master "content/en/books/handbook/mirrors/_index.adoc" \
+  --master-charset "UTF-8" \
+  --po "content/zh-cn/books/handbook/mirrors/_index.po" \
+  --localized "content/zh-cn/books/handbook/mirrors/_index.adoc" \
+  --localized-charset "UTF-8" \
+  --keep 0
+``` 
+# 附录 B
+```
+po4a-gettextize \
+   --format asciidoc \
+   --option compat=asciidoctor \
+   --option yfm_keys=title,part,description \
+   --master "content/zh-cn/books/handbook/bibliography/_index.adoc" \
+   --master-charset "UTF-8" \
+   --copyright-holder "The FreeBSD Project" \
+   --package-name "FreeBSD Documentation" \
+   --po "content/zh-cn/books/handbook/bibliography/_index.po"
+```   
+```   
+po4a-translate \
+  --format asciidoc \
+  --option compat=asciidoctor \
+  --option yfm_keys=title,part,description \
+  --master "content/en/books/handbook/bibliography/_index.adoc" \
+  --master-charset "UTF-8" \
+  --po "content/zh-cn/books/handbook/bibliography/_index.po" \
+  --localized "content/zh-cn/books/handbook/bibliography/_index.adoc" \
+  --localized-charset "UTF-8" \
+  --keep 0
+``` 
+# 附录 C
+```
+po4a-gettextize \
+   --format asciidoc \
+   --option compat=asciidoctor \
+   --option yfm_keys=title,part,description \
+   --master "content/zh-cn/books/handbook/eresources/_index.adoc" \
+   --master-charset "UTF-8" \
+   --copyright-holder "The FreeBSD Project" \
+   --package-name "FreeBSD Documentation" \
+   --po "content/zh-cn/books/handbook/eresources/_index.po"
+```  
+```   
+po4a-translate \
+  --format asciidoc \
+  --option compat=asciidoctor \
+  --option yfm_keys=title,part,description \
+  --master "content/en/books/handbook/eresources/_index.adoc" \
+  --master-charset "UTF-8" \
+  --po "content/zh-cn/books/handbook/eresources/_index.po" \
+  --localized "content/zh-cn/books/handbook/eresources/_index.adoc" \
+  --localized-charset "UTF-8" \
+  --keep 0
+```  
+# 附录D
+```
+po4a-gettextize \
+   --format asciidoc \
+   --option compat=asciidoctor \
+   --option yfm_keys=title,part,description \
+   --master "content/zh-cn/books/handbook/pgpkeys/_index.adoc" \
+   --master-charset "UTF-8" \
+   --copyright-holder "The FreeBSD Project" \
+   --package-name "FreeBSD Documentation" \
+   --po "content/zh-cn/books/handbook/pgpkeys/_index.po"
+```   
+```   
+po4a-translate \
+  --format asciidoc \
+  --option compat=asciidoctor \
+  --option yfm_keys=title,part,description \
+  --master "content/en/books/handbook/pgpkeys/_index.adoc" \
+  --master-charset "UTF-8" \
+  --po "content/zh-cn/books/handbook/pgpkeys/_index.po" \
+  --localized "content/zh-cn/books/handbook/pgpkeys/_index.adoc" \
+  --localized-charset "UTF-8" \
+  --keep 0
+```
+# 术语表
+```
+po4a-gettextize \
+   --format asciidoc \
+   --option compat=asciidoctor \
+   --option yfm_keys=title,part,description \
+   --master "content/zh-cn/books/handbook/glossary.adoc" \
+   --master-charset "UTF-8" \
+   --copyright-holder "The FreeBSD Project" \
+   --package-name "FreeBSD Documentation" \
+   --po "content/zh-cn/books/handbook/glossary.po"
+   
+```
+```
+po4a-translate \
+  --format asciidoc \
+  --option compat=asciidoctor \
+  --option yfm_keys=title,part,description \
+  --master "content/en/books/handbook/glossary.adoc" \
+  --master-charset "UTF-8" \
+  --po "content/zh-cn/books/handbook/glossary.po" \
+  --localized "content/zh-cn/books/handbook/glossary.adoc" \
+  --localized-charset "UTF-8" \
+  --keep 0
+```  
