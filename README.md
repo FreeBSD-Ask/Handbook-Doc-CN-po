@@ -90,7 +90,7 @@ po4a-gettextize \
   --keep 0
 ```
 
-# 第一章
+# 第1章
 ```
 po4a-gettextize \
    --format asciidoc \
@@ -116,7 +116,7 @@ po4a-gettextize \
   --keep 0
 ```
   
-# 第二章 
+# 第2章 
 
 ```
 po4a-gettextize \
@@ -142,7 +142,7 @@ po4a-translate \
   --keep 0
   
 ```
-# 第三章
+# 第3章
 
 
 ```
@@ -173,7 +173,7 @@ po4a-translate \
 
 ```
 
-# 第四章
+# 第4章
 
 
 ```
@@ -205,7 +205,7 @@ po4a-translate \
 
 ```
 
-# 第五章 
+# 第5章 
 
 
 ```
@@ -235,7 +235,7 @@ po4a-translate \
   --keep 0
 
 ```
-# 第六章 
+# 第6章 
 
 ```
 po4a-gettextize \
@@ -264,7 +264,7 @@ po4a-translate \
   --keep 0
   
 ```
-# 第七章
+# 第7章
 
 ```
 po4a-gettextize \
@@ -293,7 +293,7 @@ po4a-translate \
   --keep 0
 
 ```
-# 第八章
+# 第8章
 
 ```
 po4a-gettextize \
@@ -322,7 +322,7 @@ po4a-translate \
   --keep 0
 
 ```  
-# 第九章
+# 第9章
 
 ```
 po4a-gettextize \
@@ -351,7 +351,7 @@ po4a-translate \
   --keep 0
 
 ```  
-# 第十章
+# 第10章
 
 ```
 po4a-gettextize \
@@ -379,7 +379,7 @@ po4a-translate \
   --keep 0
 
 ```  
-# 第十一章
+# 第11章
 
 ```
 po4a-gettextize \
