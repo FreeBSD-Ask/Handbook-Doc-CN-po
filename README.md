@@ -86,7 +86,7 @@ po4a-gettextize \
 ## 删除旧的翻译文件
 
 ```
-# rm content/zh-cn/books/handbook/_index.adoc
+# rm content/zh-cn/books/handbook/_index.*
 ```
 
 ## 还原翻译为 adoc 格式
