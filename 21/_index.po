@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreeBSD Documentation VERSION\n"
 "POT-Creation-Date: 2022-03-11 21:45+0800\n"
-"PO-Revision-Date: 2022-03-23 19:08+0800\n"
+"PO-Revision-Date: 2022-03-25 04:49+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -21,31 +21,31 @@ msgstr ""
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:1
 #, no-wrap
 msgid "This chapter shows the other filesystems supported by FreeBSD"
-msgstr ""
+msgstr "本章介绍了 FreeBSD 支持的其他文件系统"
 
 #. type: YAML Front Matter: part
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:1
 #, no-wrap
 msgid "Part III. System Administration"
-msgstr ""
+msgstr "第三部分：系统管理"
 
 #. type: YAML Front Matter: title
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:1
 #, no-wrap
 msgid "Chapter 21. Other File Systems"
-msgstr ""
+msgstr "第 21 章 其他文件系统"
 
 #. type: Title =
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:14
 #, no-wrap
 msgid "Other File Systems"
-msgstr ""
+msgstr "其他文件系统"
 
 #. type: Title ==
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:52
 #, no-wrap
 msgid "Synopsis"
-msgstr ""
+msgstr "概述"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:60
@@ -58,6 +58,11 @@ msgid ""
 "available as a native file system.  See crossref:zfs[zfs,The Z File System "
 "(ZFS)] for more information."
 msgstr ""
+"任何操作系统都有文件系统作为其一部分的组成。它们允许用户上传和存储文件，提供对数"
+"据的访问，并使硬盘发挥作用。不同的操作系统在它们的本地文件系统上有所不同。传统"
+"上，FreeBSD 的本地文件系统是 Unix 文件系统 UFS ，它已被现代化为 UFS2 。从 "
+"FreeBSD 7.0 开始，Z 文件系统（ ZFS ）也可以作为一个本地文件系统使用。请参阅 "
+"crossref:zfs[zfs,Z 文件系统（ZFS）] 了解更多信息。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:63
@@ -67,6 +72,9 @@ msgid ""
 "such as data stored on locally attached USB storage devices, flash drives, and "
 "hard disks.  This includes support for the Linux(R) Extended File System (EXT)."
 msgstr ""
+"除了它的原生文件系统之外，FreeBSD 还支持大量的其他文件系统，这样就可以在本地访问"
+"来自其他操作系统的数据，例如存储在本地连接的 USB 存储设备、闪存驱动器和硬盘上的"
+"数据。这包括对 Linux(R) 扩展文件系统（ EXT ）的支持。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:67
@@ -76,48 +84,50 @@ msgid ""
 "be installed.  Some non-native file system support is full read-write while "
 "others are read-only."
 msgstr ""
+"FreeBSD 对各种文件系统有不同程度的支持。有些需要加载内核模块，有些可能需要安装工"
+"具集。一部分非原生文件系统的是支持完全读写的，而另一些是只读的。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:69
 msgid "After reading this chapter, you will know:"
-msgstr ""
+msgstr "读完本章后，你会了解到："
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:71
 msgid "The difference between native and supported file systems."
-msgstr ""
+msgstr "原生文件系统和支持的文件系统之间的区别。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:72
 msgid "Which file systems are supported by FreeBSD."
-msgstr ""
+msgstr "哪些文件系统被 FreeBSD 所支持。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:73
 msgid "How to enable, configure, access, and make use of non-native file systems."
-msgstr ""
+msgstr "如何启用、配置、访问和使用非本地文件系统。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:75
 msgid "Before reading this chapter, you should:"
-msgstr ""
+msgstr "在阅读本章之前，你应该："
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:77
 msgid "Understand UNIX(R) and crossref:basics[basics,FreeBSD basics]."
-msgstr ""
+msgstr "理解 UNIX(R) 和 crossref:basics[basics,FreeBSD 基础]。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:78
 msgid ""
 "Be familiar with the basics of crossref:kernelconfig[kernelconfig,kernel "
 "configuration and compilation]."
-msgstr ""
+msgstr "熟悉 crossref:kernelconfig[kernelconfig,内核配置和编译]的基础知识。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:79
 msgid "Feel comfortable crossref:ports[ports,installing software] in FreeBSD."
-msgstr ""
+msgstr "自如地在 FreeBSD 中crossref:ports[ports,安装软件]。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:80
@@ -125,12 +135,13 @@ msgid ""
 "Have some familiarity with crossref:disks[disks,disks], storage, and device "
 "names in FreeBSD."
 msgstr ""
+"对 FreeBSD 中的crossref:disks[disks,硬盘]、存储和设备名称有一定的熟悉程度。"
 
 #. type: Title ==
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:82
 #, no-wrap
 msgid "Linux(R) File Systems"
-msgstr ""
+msgstr "Linux(R) 文件系统"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:86
@@ -139,12 +150,14 @@ msgid ""
 "section demonstrates how to load support for and how to mount the supported "
 "Linux(R) file systems."
 msgstr ""
+"FreeBSD 提供了对几个 Linux(R) 文件系统的内置支持。这一节演示了如何加载对所支持"
+"的 Linux(R) 文件系统的支持以及如何挂载这些文件系统。"
 
 #. type: Title ===
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:87
 #, no-wrap
 msgid "ext2 / ext3 / ext4"
-msgstr ""
+msgstr "ext2 / ext3 / ext4"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:91
@@ -153,11 +166,13 @@ msgid ""
 "man:ext2fs[5] driver allows the FreeBSD kernel to both read and write to ext2, "
 "ext3, and ext4 file systems."
 msgstr ""
+"对 ext2 文件系统的内核级支持从 FreeBSD 2.2 起就开始了。man:ext2fs[5] 驱动程序允"
+"许 FreeBSD 内核读取和写入 ext2, ext3, 和 ext4 文件系统。"
 
 #. type: delimited block = 4
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:95
 msgid "Journalling and encryption are not supported yet."
-msgstr ""
+msgstr "目前还不支持日志和加密功能。"
 
 #. type: Plain text
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:99
@@ -166,9 +181,11 @@ msgid ""
 "partition name and an existing mount point.  This example mounts [.filename]#/"
 "dev/ad1s1# on [.filename]#/mnt#:"
 msgstr ""
+"要访问一个 ext 文件系统，通过指定其 FreeBSD 分区名称和现有的挂载点来挂载 ext "
+"卷。这个例子将 [.filename]#/dev/ad1s1# 挂载在 [.filename]#/mnt# 上："
 
 #. type: delimited block . 4
 #: content/zh-cn/books/handbook/filesystems/_index.adoc:103
 #, no-wrap
 msgid "# mount -t ext2fs /dev/ad1s1 /mnt\n"
-msgstr ""
+msgstr "# mount -t ext2fs /dev/ad1s1 /mnt\n"
