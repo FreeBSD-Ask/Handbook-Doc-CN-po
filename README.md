@@ -61,8 +61,8 @@
 > git代理设置（可能会用到）
 
 ```
-# git config --global http.proxy 'socks5://192.168.184.1:7890'
-# git config --global https.proxy 'socks5://192.168.184.1:7890'
+# git config --global http.proxy 'http://192.168.184.1:7890'
+# git config --global https.proxy 'http://192.168.184.1:7890'
 ```
 
 ## 从英文提取 po 文档来翻译
