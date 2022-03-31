@@ -1,6 +1,10 @@
 # Handbook 中文手册 PO 文档转换项目
 
-基本提取流程
+## 翻译指南
+
+<https://docs.qq.com/doc/DSUtxYmVwU29EdGVn>
+
+## 基本提取流程
 
 翻译方法：下载 `poedit`（全平台开源软件）<https://poedit.net/download>，`po` 文件才是主要文件，`mo` 文件是日志文件。
 
