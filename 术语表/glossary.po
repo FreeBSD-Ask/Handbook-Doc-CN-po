@@ -1,0 +1,3101 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR The FreeBSD Project
+# This file is distributed under the same license as the FreeBSD Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreeBSD Documentation VERSION\n"
+"POT-Creation-Date: 2022-03-11 22:25+0800\n"
+"PO-Revision-Date: 2022-03-25 15:53+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. type: YAML Front Matter: description
+#: content/zh-cn/books/handbook/glossary.adoc:1
+#, no-wrap
+msgid "FreeBSD Handbook Glossary"
+msgstr "术语表"
+
+#. type: Title =
+#: content/zh-cn/books/handbook/glossary.adoc:1
+#: content/zh-cn/books/handbook/glossary.adoc:13
+#, no-wrap
+msgid "FreeBSD Glossary"
+msgstr "术语表"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:49
+msgid ""
+"This glossary contains terms and acronyms used within the FreeBSD community "
+"and documentation."
+msgstr "这个术语表包含了在 FreeBSD 社区和文档中使用的术语和首字母缩写。"
+
+#. type: Title ==
+#: content/zh-cn/books/handbook/glossary.adoc:51
+#, no-wrap
+msgid "A"
+msgstr "A"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:53
+#, no-wrap
+msgid "ACL"
+msgstr "ACL"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:55
+msgid "See <<acl-glossary,Access Control List>>."
+msgstr "See <<acl-glossary,Access Control List>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:56
+#, no-wrap
+msgid "ACPI"
+msgstr "ACPI"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:58
+msgid "See <<acpi-glossary,Advanced Configuration and Power Interface>>."
+msgstr "See <<acpi-glossary,Advanced Configuration and Power Interface>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:59
+#, no-wrap
+msgid "AMD"
+msgstr "AMD"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:61
+msgid "See <<amd-glossary,Automatic Mount Daemon>>."
+msgstr "See <<amd-glossary,Automatic Mount Daemon>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:62
+#, no-wrap
+msgid "AML"
+msgstr "AML"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:64
+msgid "See <<aml-glossary,ACPI Machine Language>>."
+msgstr "See <<aml-glossary,ACPI Machine Language>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:65
+#, no-wrap
+msgid "API"
+msgstr "API"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:67
+msgid "See <<api-glossary,Application Programming Interface>>."
+msgstr "See <<api-glossary,Application Programming Interface>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:68
+#, no-wrap
+msgid "APIC"
+msgstr "APIC"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:70
+msgid "See <<apic-glossary,Advanced Programmable Interrupt Controller>>."
+msgstr "See <<apic-glossary,Advanced Programmable Interrupt Controller>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:71
+#, no-wrap
+msgid "APM"
+msgstr "APM"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:73
+msgid "See <<apm-glossary,Advanced Power Management>>."
+msgstr "See <<apm-glossary,Advanced Power Management>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:74
+#, no-wrap
+msgid "APOP"
+msgstr "APOP"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:76
+msgid "See <<apop-glossary,Authenticated Post Office Protocol>>."
+msgstr "See <<apop-glossary,Authenticated Post Office Protocol>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:77
+#, no-wrap
+msgid "ASL"
+msgstr "ASL"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:79
+msgid "See <<asl-glossary,ACPI Source Language>>."
+msgstr "See <<asl-glossary,ACPI Source Language>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:80
+#, no-wrap
+msgid "ATA"
+msgstr "ATA"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:82
+msgid "See <<ata-glossary,Advanced Technology Attachment>>."
+msgstr "See <<ata-glossary,Advanced Technology Attachment>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:83
+#, no-wrap
+msgid "ATM"
+msgstr "ATM"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:85
+msgid "See <<atm-glossary,Asynchronous Transfer Mode>>."
+msgstr "See <<atm-glossary,Asynchronous Transfer Mode>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:87
+#, no-wrap
+msgid "ACPI Machine Language"
+msgstr "ACPI Machine Language"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:89
+msgid ""
+"Pseudocode, interpreted by a virtual machine within an ACPI-compliant "
+"operating system, providing a layer between the underlying hardware and the "
+"documented interface presented to the OS."
+msgstr ""
+"伪代码，由符合 ACPI 标准的操作系统内的虚拟机解释，在底层硬件和呈现给操作系统"
+"的文件接口之间提供一个层次。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:91
+#, no-wrap
+msgid "ACPI Source Language"
+msgstr "ACPI Source Language"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:93
+msgid "The programming language AML is written in."
+msgstr "AML 采用的编程语言。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:95
+#, no-wrap
+msgid "Access Control List"
+msgstr "Access Control List"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:97
+msgid ""
+"A list of permissions attached to an object, usually either a file or a "
+"network device."
+msgstr "附加到一个对象的权限列表，通常是一个文件或一个网络设备。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:99
+#, no-wrap
+msgid "Advanced Configuration and Power Interface"
+msgstr "Advanced Configuration and Power Interface"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:102
+msgid ""
+"A specification which provides an abstraction of the interface the hardware "
+"presents to the operating system, so that the operating system should need "
+"to know nothing about the underlying hardware to make the most of it.  ACPI "
+"evolves and supersedes the functionality provided previously by APM, PNPBIOS "
+"and other technologies, and provides facilities for controlling power "
+"consumption, machine suspension, device enabling and disabling, etc."
+msgstr ""
+"一种规范，它提供了硬件呈现给操作系统的接口的抽象，因此，操作系统应该不需要了"
+"解底层硬件就可以充分利用它。ACPI 发展并取代了以前由 APM、PNPBIOS 和其他技术提"
+"供的功能，并提供了控制功耗、机器暂停、设备启用和禁用等设施。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:104
+#, no-wrap
+msgid "Application Programming Interface"
+msgstr "Application Programming Interface"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:107
+msgid ""
+"A set of procedures, protocols and tools that specify the canonical "
+"interaction of one or more program parts; how, when and why they do work "
+"together, and what data they share or operate on."
+msgstr ""
+"一套程序、协议和工具，规定了一个或多个程序部分的典型互动；它们如何、何时和为"
+"何一起工作，以及它们共享或操作什么数据。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:109
+#, no-wrap
+msgid "Advanced Power Management"
+msgstr "Advanced Power Management"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:112
+msgid ""
+"An API enabling the operating system to work in conjunction with the BIOS in "
+"order to achieve power management.  APM has been superseded by the much more "
+"generic and powerful ACPI specification for most applications."
+msgstr ""
+"一个 API，使操作系统能够与 BIOS 一起工作，以实现电源管理。在大多数应用中，"
+"APM 已经被更为通用和强大的 ACPI 规范所取代。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:114
+#, no-wrap
+msgid "Advanced Programmable Interrupt Controller"
+msgstr "Advanced Programmable Interrupt Controller"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:116
+#: content/zh-cn/books/handbook/glossary.adoc:120
+#: content/zh-cn/books/handbook/glossary.adoc:124
+#: content/zh-cn/books/handbook/glossary.adoc:128
+#: content/zh-cn/books/handbook/glossary.adoc:213
+#: content/zh-cn/books/handbook/glossary.adoc:223
+#: content/zh-cn/books/handbook/glossary.adoc:257
+#: content/zh-cn/books/handbook/glossary.adoc:283
+#: content/zh-cn/books/handbook/glossary.adoc:307
+#: content/zh-cn/books/handbook/glossary.adoc:311
+#: content/zh-cn/books/handbook/glossary.adoc:315
+#: content/zh-cn/books/handbook/glossary.adoc:334
+#: content/zh-cn/books/handbook/glossary.adoc:338
+#: content/zh-cn/books/handbook/glossary.adoc:346
+#: content/zh-cn/books/handbook/glossary.adoc:375
+#: content/zh-cn/books/handbook/glossary.adoc:413
+#: content/zh-cn/books/handbook/glossary.adoc:430
+#: content/zh-cn/books/handbook/glossary.adoc:444
+#: content/zh-cn/books/handbook/glossary.adoc:490
+#: content/zh-cn/books/handbook/glossary.adoc:494
+#: content/zh-cn/books/handbook/glossary.adoc:515
+#: content/zh-cn/books/handbook/glossary.adoc:578
+#: content/zh-cn/books/handbook/glossary.adoc:582
+#: content/zh-cn/books/handbook/glossary.adoc:603
+#: content/zh-cn/books/handbook/glossary.adoc:611
+#: content/zh-cn/books/handbook/glossary.adoc:615
+#: content/zh-cn/books/handbook/glossary.adoc:641
+#: content/zh-cn/books/handbook/glossary.adoc:665
+#: content/zh-cn/books/handbook/glossary.adoc:723
+#: content/zh-cn/books/handbook/glossary.adoc:727
+#: content/zh-cn/books/handbook/glossary.adoc:737
+#: content/zh-cn/books/handbook/glossary.adoc:741
+#: content/zh-cn/books/handbook/glossary.adoc:745
+#: content/zh-cn/books/handbook/glossary.adoc:753
+#: content/zh-cn/books/handbook/glossary.adoc:757
+#: content/zh-cn/books/handbook/glossary.adoc:767
+#: content/zh-cn/books/handbook/glossary.adoc:781
+#: content/zh-cn/books/handbook/glossary.adoc:785
+#: content/zh-cn/books/handbook/glossary.adoc:841
+#: content/zh-cn/books/handbook/glossary.adoc:870
+#: content/zh-cn/books/handbook/glossary.adoc:874
+#: content/zh-cn/books/handbook/glossary.adoc:891
+#: content/zh-cn/books/handbook/glossary.adoc:928
+#: content/zh-cn/books/handbook/glossary.adoc:932
+#: content/zh-cn/books/handbook/glossary.adoc:940
+#: content/zh-cn/books/handbook/glossary.adoc:944
+#: content/zh-cn/books/handbook/glossary.adoc:948
+#: content/zh-cn/books/handbook/glossary.adoc:956
+#: content/zh-cn/books/handbook/glossary.adoc:960
+#: content/zh-cn/books/handbook/glossary.adoc:964
+#: content/zh-cn/books/handbook/glossary.adoc:989
+#: content/zh-cn/books/handbook/glossary.adoc:1012
+msgid "{empty}"
+msgstr "{empty}"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:118
+#, no-wrap
+msgid "Advanced Technology Attachment"
+msgstr "Advanced Technology Attachment"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:122
+#, no-wrap
+msgid "Asynchronous Transfer Mode"
+msgstr "Asynchronous Transfer Mode"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:126
+#, no-wrap
+msgid "Authenticated Post Office Protocol"
+msgstr "Authenticated Post Office Protocol"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:130
+#, no-wrap
+msgid "Automatic Mount Daemon"
+msgstr "Automatic Mount Daemon"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:132
+msgid ""
+"A daemon that automatically mounts a filesystem when a file or directory "
+"within that filesystem is accessed."
+msgstr "一个当文件系统中的文件或目录被访问时自动挂载该文件系统的守护程序。"
+
+#. type: Title ==
+#: content/zh-cn/books/handbook/glossary.adoc:134
+#, no-wrap
+msgid "B"
+msgstr "B"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:136
+#, no-wrap
+msgid "BAR"
+msgstr "BAR"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:138
+msgid "See <<bar-glossary,Base Address Register>>."
+msgstr "See <<bar-glossary,Base Address Register>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:139
+#, no-wrap
+msgid "BIND"
+msgstr "BIND"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:141
+msgid "See <<bind-glossary,Berkeley Internet Name Domain>>."
+msgstr "See <<bind-glossary,Berkeley Internet Name Domain>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:142
+#, no-wrap
+msgid "BIOS"
+msgstr "BIOS"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:144
+msgid "See <<bios-glossary,Basic Input/Output System>>."
+msgstr "See <<bios-glossary,Basic Input/Output System>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:145
+#, no-wrap
+msgid "BSD"
+msgstr "BSD"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:147
+msgid "See <<bsd-glossary,Berkeley Software Distribution>>."
+msgstr "See <<bsd-glossary,Berkeley Software Distribution>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:149
+#, no-wrap
+msgid "Base Address Register"
+msgstr "Base Address Register"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:151
+msgid ""
+"The registers that determine which address range a PCI device will respond "
+"to."
+msgstr "决定 PCI 设备将响应哪个地址范围的寄存器。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:153
+#, no-wrap
+msgid "Basic Input/Output System"
+msgstr "Basic Input/Output System"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:159
+msgid ""
+"The definition of BIOS depends a bit on the context.  Some people refer to "
+"it as the ROM chip with a basic set of routines to provide an interface "
+"between software and hardware.  Others refer to it as the set of routines "
+"contained in the chip that help in bootstrapping the system.  Some might "
+"also refer to it as the screen used to configure the bootstrapping process.  "
+"The BIOS is PC-specific but other systems have something similar."
+msgstr ""
+"BIOS 的定义在一定程度上取决于上下文。有些人把它称为具有基本程序集的 ROM 芯"
+"片，以提供软件和硬件之间的接口。另一些人把它称为芯片中包含的帮助启动系统的一"
+"套程序。有些人可能还把它称为用于配置启动过程的屏幕。BIOS 是 PC 特有的，但其他"
+"系统也有类似的东西。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:161
+#, no-wrap
+msgid "Berkeley Internet Name Domain"
+msgstr "Berkeley Internet Name Domain"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:163
+msgid "An implementation of the DNS protocols."
+msgstr "一个 DNS 协议的实现。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:165
+#, no-wrap
+msgid "Berkeley Software Distribution"
+msgstr "Berkeley Software Distribution"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:168
+msgid ""
+"This is the name that the Computer Systems Research Group (CSRG) at link:"
+"http://www.berkeley.edu[The University of California at Berkeley] gave to "
+"their improvements and modifications to AT&T's 32V UNIX(R).  FreeBSD is a "
+"descendant of the CSRG work."
+msgstr ""
+"这是link:http://www.berkeley.edu[加州大学伯克利分校]的计算机系统研究小组"
+"（CSRG）为他们对 AT&T 的 32V UNIX(R) 的改进和修改所起的名字。FreeBSD 是 CSRG "
+"工作的后裔。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:170
+#, no-wrap
+msgid "Bikeshed Building"
+msgstr "Bikeshed Building"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:173
+msgid ""
+"A phenomenon whereby many people will give an opinion on an uncomplicated "
+"topic, whilst a complex topic receives little or no discussion.  See the "
+"extref:{faq}[FAQ, bikeshed-painting] for the origin of the term."
+msgstr ""
+"一种现象，即许多人对一个不复杂的话题发表意见，而对一个复杂的话题却很少或没有"
+"讨论。关于该术语的起源，请参见extref:{faq}[FAQ, bikeshed-painting]。"
+
+#. type: Title ==
+#: content/zh-cn/books/handbook/glossary.adoc:175
+#, no-wrap
+msgid "C"
+msgstr "C"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:177
+#, no-wrap
+msgid "CD"
+msgstr "CD"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:179
+msgid "See <<cd-glossary,Carrier Detect>>."
+msgstr "See <<cd-glossary,Carrier Detect>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:180
+#, no-wrap
+msgid "CHAP"
+msgstr "CHAP"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:182
+msgid "See <<chap-glossary,Challenge Handshake Authentication Protocol>>."
+msgstr "See <<chap-glossary,Challenge Handshake Authentication Protocol>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:183
+#, no-wrap
+msgid "CLIP"
+msgstr "CLIP"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:185
+msgid "See <<clip-glossary,Classical IP over ATM>>."
+msgstr "See <<clip-glossary,Classical IP over ATM>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:186
+#, no-wrap
+msgid "COFF"
+msgstr "COFF"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:188
+msgid "See <<coff-glossary,Common Object File Format>>."
+msgstr "See <<coff-glossary,Common Object File Format>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:189
+#, no-wrap
+msgid "CPU"
+msgstr "CPU"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:191
+msgid "See <<cpu-glossary,Central Processing Unit>>."
+msgstr "See <<cpu-glossary,Central Processing Unit>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:192
+#, no-wrap
+msgid "CTS"
+msgstr "CTS"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:194
+msgid "See <<cts-glossary,Clear To Send>>."
+msgstr "See <<cts-glossary,Clear To Send>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:196
+#, no-wrap
+msgid "Carrier Detect"
+msgstr "Carrier Detect"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:198
+msgid "An RS232C signal indicating that a carrier has been detected."
+msgstr "一个 RS232C 信号，表示已经检测到载波。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:200
+#, no-wrap
+msgid "Central Processing Unit"
+msgstr "Central Processing Unit"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:205
+msgid ""
+"Also known as the processor.  This is the brain of the computer where all "
+"calculations take place.  There are a number of different architectures with "
+"different instruction sets.  Among the more well-known are the Intel-x86 and "
+"derivatives, Arm, and PowerPC."
+msgstr ""
+"也被称为处理器。这是计算机的大脑，所有计算都在这里进行。有许多不同的架构，有"
+"不同的指令集。其中比较知名的是 intel-x86 及其衍生产品、Arm 和 PowerPC。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:207
+#, no-wrap
+msgid "Challenge Handshake Authentication Protocol"
+msgstr "Challenge Handshake Authentication Protocol"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:209
+msgid ""
+"A method of authenticating a user, based on a secret shared between client "
+"and server."
+msgstr "一种基于客户端和服务器之间共享的秘密来验证用户身份的方法。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:211
+#, no-wrap
+msgid "Classical IP over ATM"
+msgstr "Classical IP over ATM"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:215
+#, no-wrap
+msgid "Clear To Send"
+msgstr "Clear To Send"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:217
+msgid "An RS232C signal giving the remote system permission to send data."
+msgstr "一个 RS232C 信号，给予远程系统发送数据的许可。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:219
+msgid "See <<rts-glossary,Also Request To Send>>."
+msgstr "另见 <<rts-glossary,Also Request To Send>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:221
+#, no-wrap
+msgid "Common Object File Format"
+msgstr "Common Object File Format"
+
+#. type: Title ==
+#: content/zh-cn/books/handbook/glossary.adoc:225
+#, no-wrap
+msgid "D"
+msgstr "D"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:227
+#, no-wrap
+msgid "DAC"
+msgstr "DAC"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:229
+msgid "See <<dac-glossary,Discretionary Access Control>>."
+msgstr "See <<dac-glossary,Discretionary Access Control>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:230
+#, no-wrap
+msgid "DDB"
+msgstr "DDB"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:232
+msgid "See <<ddb-glossary,Debugger>>."
+msgstr "See <<ddb-glossary,Debugger>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:233
+#, no-wrap
+msgid "DES"
+msgstr "DES"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:235
+msgid "See <<des-glossary,Data Encryption Standard>>."
+msgstr "See <<des-glossary,Data Encryption Standard>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:236
+#, no-wrap
+msgid "DHCP"
+msgstr "DHCP"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:238
+msgid "See <<dhcp-glossary,Dynamic Host Configuration Protocol>>."
+msgstr "See <<dhcp-glossary,Dynamic Host Configuration Protocol>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:239
+#, no-wrap
+msgid "DNS"
+msgstr "DNS"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:241
+msgid "See <<dns-glossary,Domain Name System>>."
+msgstr "See <<dns-glossary,Domain Name System>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:242
+#, no-wrap
+msgid "DSDT"
+msgstr "DSDT"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:244
+msgid "See <<dsdt-glossary,Differentiated System Description Table>>."
+msgstr "See <<dsdt-glossary,Differentiated System Description Table>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:245
+#, no-wrap
+msgid "DSR"
+msgstr "DSR"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:247
+msgid "See <<dsr-glossary,Data Set Ready>>."
+msgstr "See <<dsr-glossary,Data Set Ready>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:248
+#, no-wrap
+msgid "DTR"
+msgstr "DTR"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:250
+msgid "See <<dtr-glossary,Data Terminal Ready>>."
+msgstr "See <<dtr-glossary,Data Terminal Ready>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:251
+#, no-wrap
+msgid "DVMRP"
+msgstr "DVMRP"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:253
+msgid "See <<dvmrp-glossary,Distance-Vector Multicast Routing Protocol>>."
+msgstr "See <<dvmrp-glossary,Distance-Vector Multicast Routing Protocol>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:255
+#, no-wrap
+msgid "Discretionary Access Control"
+msgstr "Discretionary Access Control"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:259
+#, no-wrap
+msgid "Data Encryption Standard"
+msgstr "Data Encryption Standard"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:261
+msgid ""
+"A method of encrypting information, traditionally used as the method of "
+"encryption for UNIX(R) passwords and the man:crypt[3] function."
+msgstr ""
+"一种加密信息的方法，传统上被用作 UNIX(R) 密码和 man:crypt[3] 函数的加密方法。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:263
+#, no-wrap
+msgid "Data Set Ready"
+msgstr "Data Set Ready"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:265
+msgid ""
+"An RS232C signal sent from the modem to the computer or terminal indicating "
+"a readiness to send and receive data."
+msgstr ""
+"An RS232C signal sent from the modem to the computer or terminal indicating "
+"a readiness to send and receive data."
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:267
+msgid "See <<dtr-glossary,Also Data Terminal Ready>>."
+msgstr "另见 <<dtr-glossary,Also Data Terminal Ready>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:269
+#, no-wrap
+msgid "Data Terminal Ready"
+msgstr "Data Terminal Ready"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:271
+msgid ""
+"An RS232C signal sent from the computer or terminal to the modem indicating "
+"a readiness to send and receive data."
+msgstr ""
+"从计算机或终端发送至调制解调器的 RS232C 信号，表示准备好发送和接收数据。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:273
+#, no-wrap
+msgid "Debugger"
+msgstr "Debugger"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:275
+msgid ""
+"An interactive in-kernel facility for examining the status of a system, "
+"often used after a system has crashed to establish the events surrounding "
+"the failure."
+msgstr ""
+"一种用于检查系统状态的交互式内核设施，通常在系统崩溃后使用，以确定围绕故障的"
+"事件。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:277
+#, no-wrap
+msgid "Differentiated System Description Table"
+msgstr "Differentiated System Description Table"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:279
+msgid ""
+"An ACPI table, supplying basic configuration information about the base "
+"system."
+msgstr ""
+"An ACPI table, supplying basic configuration information about the base "
+"system."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:281
+#, no-wrap
+msgid "Distance-Vector Multicast Routing Protocol"
+msgstr "Distance-Vector Multicast Routing Protocol"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:285
+#, no-wrap
+msgid "Domain Name System"
+msgstr "Domain Name System"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:287
+msgid ""
+"The system that converts humanly readable hostnames (i.e., mail.example.net) "
+"to Internet addresses and vice versa."
+msgstr ""
+"将人类可读的主机名（例如mail.example.net）转换为互联网地址的系统，反之亦然。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:289
+#, no-wrap
+msgid "Dynamic Host Configuration Protocol"
+msgstr "Dynamic Host Configuration Protocol"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:292
+msgid ""
+"A protocol that dynamically assigns IP addresses to a computer (host) when "
+"it requests one from the server.  The address assignment is called a “lease”."
+msgstr ""
+"当一台计算机（主机）向服务器请求 IP 地址时，该协议会动态地分配给它。该地址分"
+"配被称为“租赁”。"
+
+#. type: Title ==
+#: content/zh-cn/books/handbook/glossary.adoc:294
+#, no-wrap
+msgid "E"
+msgstr "E"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:296
+#, no-wrap
+msgid "ECOFF"
+msgstr "ECOFF"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:298
+msgid "See <<ecoff-glossary,Extended COFF>>."
+msgstr "See <<ecoff-glossary,Extended COFF>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:299
+#, no-wrap
+msgid "ELF"
+msgstr "ELF"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:301
+msgid "See <<elf-glossary,Executable and Linking Format>>."
+msgstr "See <<elf-glossary,Executable and Linking Format>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:302
+#, no-wrap
+msgid "ESP"
+msgstr "ESP"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:304
+msgid "See <<esp-glossary,Encapsulated Security Payload>>."
+msgstr "See <<esp-glossary,Encapsulated Security Payload>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:305
+#, no-wrap
+msgid "Encapsulated Security Payload"
+msgstr "Encapsulated Security Payload"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:309
+#, no-wrap
+msgid "Executable and Linking Format"
+msgstr "Executable and Linking Format"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:313
+#, no-wrap
+msgid "Extended COFF"
+msgstr "Extended COFF"
+
+#. type: Title ==
+#: content/zh-cn/books/handbook/glossary.adoc:317
+#, no-wrap
+msgid "F"
+msgstr "F"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:319
+#, no-wrap
+msgid "FADT"
+msgstr "FADT"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:321
+msgid "See <<fadt-glossary,Fixed ACPI Description Table>>."
+msgstr "See <<fadt-glossary,Fixed ACPI Description Table>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:322
+#, no-wrap
+msgid "FAT"
+msgstr "FAT"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:324
+msgid "See <<fat-glossary,File Allocation Table>>."
+msgstr "See <<fat-glossary,File Allocation Table>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:325
+#, no-wrap
+msgid "FAT16"
+msgstr "FAT16"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:327
+msgid "See <<fat16-glossary,File Allocation Table (16-bit)>>."
+msgstr "See <<fat16-glossary,File Allocation Table (16-bit)>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:328
+#, no-wrap
+msgid "FTP"
+msgstr "FTP"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:330
+msgid "See <<ftp-glossary,File Transfer Protocol>>."
+msgstr "See <<ftp-glossary,File Transfer Protocol>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:332
+#, no-wrap
+msgid "File Allocation Table"
+msgstr "File Allocation Table"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:336
+#, no-wrap
+msgid "File Allocation Table (16-bit)"
+msgstr "File Allocation Table (16-bit)"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:340
+#, no-wrap
+msgid "File Transfer Protocol"
+msgstr "File Transfer Protocol"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:342
+msgid ""
+"A member of the family of high-level protocols implemented on top of TCP "
+"which can be used to transfer files over a TCP/IP network."
+msgstr ""
+"在 TCP 基础上实现的高级协议系列的一个成员，可用于在 TCP/IP 网络上传输文件。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:344
+#, no-wrap
+msgid "Fixed ACPI Description Table"
+msgstr "Fixed ACPI Description Table"
+
+#. type: Title ==
+#: content/zh-cn/books/handbook/glossary.adoc:348
+#, no-wrap
+msgid "G"
+msgstr "G"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:350
+#, no-wrap
+msgid "GUI"
+msgstr "GUI"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:352
+msgid "See <<gui-glossary,Graphical User Interface>>."
+msgstr "See <<gui-glossary,Graphical User Interface>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:354
+#, no-wrap
+msgid "Giant"
+msgstr "Giant"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:358
+msgid ""
+"The name of a mutual exclusion mechanism (a sleep `mutex`) that protects a "
+"large set of kernel resources.  Although a simple locking mechanism was "
+"adequate in the days where a machine might have only a few dozen processes, "
+"one networking card, and certainly only one processor, in current times it "
+"is an unacceptable performance bottleneck.  FreeBSD developers are actively "
+"working to replace it with locks that protect individual resources, which "
+"will allow a much greater degree of parallelism for both single-processor "
+"and multi-processor machines."
+msgstr ""
+"一个保护大量内核资源的互斥机制（a sleep `mutex`）的名称。尽管在一台机器可能只"
+"有几十个进程，一块网卡，当然也只有一个处理器的时代，简单的锁机制已经足够了，"
+"但在现在，它是一个不可接受的性能瓶颈。FreeBSD 的开发者们正在积极努力用保护单"
+"个资源的锁来取代它，这将使单处理器和多处理器的机器都能有更大程度的并行性。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:360
+#, no-wrap
+msgid "Graphical User Interface"
+msgstr "Graphical User Interface"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:362
+msgid "A system where the user and computer interact with graphics."
+msgstr "一个用户和计算机与图形互动的系统。"
+
+#. type: Title ==
+#: content/zh-cn/books/handbook/glossary.adoc:364
+#, no-wrap
+msgid "H"
+msgstr "H"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:366
+#, no-wrap
+msgid "HTML"
+msgstr "HTML"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:368
+msgid "See <<html-glossary,HyperText Markup Language>>."
+msgstr "See <<html-glossary,HyperText Markup Language>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:369
+#, no-wrap
+msgid "HUP"
+msgstr "HUP"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:371
+msgid "See <<hup-glossary,HangUp>>."
+msgstr "See <<hup-glossary,HangUp>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:373
+#, no-wrap
+msgid "HangUp"
+msgstr "HangUp"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:377
+#, no-wrap
+msgid "HyperText Markup Language"
+msgstr "HyperText Markup Language"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:379
+msgid "The markup language used to create web pages."
+msgstr "用来创建网页的标记语言。"
+
+#. type: Title ==
+#: content/zh-cn/books/handbook/glossary.adoc:381
+#, no-wrap
+msgid "I"
+msgstr "I"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:383
+#, no-wrap
+msgid "I/O"
+msgstr "I/O"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:385
+msgid "See <<io-glossary,Input/Output>>."
+msgstr "See <<io-glossary,Input/Output>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:386
+#, no-wrap
+msgid "IASL"
+msgstr "IASL"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:388
+msgid "See <<iasl-glossary,Intel’s ASL compiler>>."
+msgstr "See <<iasl-glossary,Intel’s ASL compiler>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:389
+#, no-wrap
+msgid "IMAP"
+msgstr "IMAP"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:391
+msgid "See <<imap-glossary,Internet Message Access Protocol>>."
+msgstr "See <<imap-glossary,Internet Message Access Protocol>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:392
+#, no-wrap
+msgid "IP"
+msgstr "IP"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:394
+msgid "See <<ip-glossary,Internet Protocol>>."
+msgstr "See <<ip-glossary,Internet Protocol>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:395
+#, no-wrap
+msgid "IPFW"
+msgstr "IPFW"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:397
+msgid "See <<ipfw-glossary,IP Firewall>>."
+msgstr "See <<ipfw-glossary,IP Firewall>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:398
+#, no-wrap
+msgid "IPP"
+msgstr "IPP"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:400
+msgid "See <<ipp-glossary,Internet Printing Protocol>>."
+msgstr "See <<ipp-glossary,Internet Printing Protocol>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:401
+#, no-wrap
+msgid "IPv4"
+msgstr "IPv4"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:403
+msgid "See <<ipv4-glossary,IP Version 4>>."
+msgstr "See <<ipv4-glossary,IP Version 4>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:404
+#, no-wrap
+msgid "IPv6"
+msgstr "IPv6"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:406
+msgid "See <<ipv6-glossary,IP Version 6>>."
+msgstr "See <<ipv6-glossary,IP Version 6>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:407
+#, no-wrap
+msgid "ISP"
+msgstr "ISP"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:409
+msgid "See <<isp-glossary,Internet Service Provider>>."
+msgstr "See <<isp-glossary,Internet Service Provider>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:411
+#, no-wrap
+msgid "IP Firewall"
+msgstr "IP Firewall"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:415
+#, no-wrap
+msgid "IP Version 4"
+msgstr "IP Version 4"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:418
+msgid ""
+"The IP protocol version 4, which uses 32 bits for addressing.  This version "
+"is still the most widely used, but it is slowly being replaced with IPv6."
+msgstr ""
+"IP 协议版本 4，使用 32 位进行寻址。这个版本仍然是使用最广泛的，但它正慢慢被 "
+"IPv6 取代。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:420
+msgid "See <<ipv6-glossary,Also IP Version 6>>."
+msgstr "See <<ipv6-glossary,Also IP Version 6>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:422
+#, no-wrap
+msgid "IP Version 6"
+msgstr "IP Version 6"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:426
+msgid ""
+"The new IP protocol.  Invented because the address space in IPv4 is running "
+"out.  Uses 128 bits for addressing."
+msgstr ""
+"新的 IP 协议。发明的原因是 IPv4 的地址空间正在耗尽。使用 128 位进行寻址。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:428
+#, no-wrap
+msgid "Input/Output"
+msgstr "Input/Output"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:432
+#, no-wrap
+msgid "Intel’s ASL compiler"
+msgstr "Intel’s ASL compiler"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:434
+msgid "Intel’s compiler for converting ASL into AML."
+msgstr "英特尔用于将 ASL 转换为 AML 的编译器。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:436
+#, no-wrap
+msgid "Internet Message Access Protocol"
+msgstr "Internet Message Access Protocol"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:438
+msgid ""
+"A protocol for accessing email messages on a mail server, characterised by "
+"the messages usually being kept on the server as opposed to being downloaded "
+"to the mail reader client."
+msgstr ""
+"一种用于访问邮件服务器上的电子邮件信息的协议，其特点是信息通常保存在服务器"
+"上，而不是下载到邮件阅读器客户端。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:440
+#: content/zh-cn/books/handbook/glossary.adoc:771
+msgid "See Also Post Office Protocol Version 3."
+msgstr "See Also Post Office Protocol Version 3."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:442
+#, no-wrap
+msgid "Internet Printing Protocol"
+msgstr "Internet Printing Protocol"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:446
+#, no-wrap
+msgid "Internet Protocol"
+msgstr "Internet Protocol"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:451
+msgid ""
+"The packet transmitting protocol that is the basic protocol on the "
+"Internet.  Originally developed at the U.S. Department of Defense and an "
+"extremely important part of the TCP/IP stack.  Without the Internet "
+"Protocol, the Internet would not have become what it is today.  For more "
+"information, see link:ftp://ftp.rfc-editor.org/in-notes/rfc791.txt[RFC 791]."
+msgstr ""
+"数据包传输协议，是互联网上的基本协议。最初在美国国防部开发，是 TCP/IP 协议栈"
+"的一个极其重要的部分。没有互联网协议，互联网就不会成为今天的样子。更多信息，"
+"见 RFC 791。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:453
+#, no-wrap
+msgid "Internet Service Provider"
+msgstr "Internet Service Provider"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:455
+msgid "A company that provides access to the Internet."
+msgstr "提供互联网接入的公司。"
+
+#. type: Title ==
+#: content/zh-cn/books/handbook/glossary.adoc:457
+#, no-wrap
+msgid "K"
+msgstr "K"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:460
+#, no-wrap
+msgid "KAME"
+msgstr "KAME"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:462
+msgid ""
+"Japanese for “turtle”, the term KAME is used in computing circles to refer "
+"to the link:http://www.kame.net/[KAME Project], who work on an "
+"implementation of IPv6."
+msgstr ""
+"KAME 是日语“乌龟”的意思，在计算机界被用来指 KAME 项目，他们致力于 IPv6 的实"
+"施。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:463
+#, no-wrap
+msgid "KDC"
+msgstr "KDC"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:465
+msgid "See <<kdc-glossary,Key Distribution Center>>."
+msgstr "See <<kdc-glossary,Key Distribution Center>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:466
+#, no-wrap
+msgid "KLD"
+msgstr "KLD"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:468
+msgid "See <<kld-glossary,Kernel ld(1)>>."
+msgstr "See <<kld-glossary,Kernel ld(1)>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:469
+#, no-wrap
+msgid "KSE"
+msgstr "KSE"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:471
+msgid "See <<kse-glossary,Kernel Scheduler Entities>>."
+msgstr "See <<kse-glossary,Kernel Scheduler Entities>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:472
+#, no-wrap
+msgid "KVA"
+msgstr "KVA"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:474
+msgid "See <<kva-glossary,Kernel Virtual Address>>."
+msgstr "See <<kva-glossary,Kernel Virtual Address>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:475
+#, no-wrap
+msgid "Kbps"
+msgstr "Kbps"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:477
+msgid "See <<kbps-glossary,Kilo Bits Per Second>>."
+msgstr "See <<kbps-glossary,Kilo Bits Per Second>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:479
+#, no-wrap
+msgid "Kernel man:ld[1]"
+msgstr "Kernel man:ld[1]"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:481
+msgid ""
+"A method of dynamically loading functionality into a FreeBSD kernel without "
+"rebooting the system."
+msgstr "一种在不重启系统的情况下动态加载功能到 FreeBSD 内核的方法。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:483
+#, no-wrap
+msgid "Kernel Scheduler Entities"
+msgstr "Kernel Scheduler Entities"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:486
+msgid ""
+"A kernel-supported threading system.  See the link:http://www.freebsd.org/"
+"kse[project home page] for further details."
+msgstr "一个由内核支持的线程系统。更多细节请见项目主页。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:488
+#, no-wrap
+msgid "Kernel Virtual Address"
+msgstr "Kernel Virtual Address"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:492
+#, no-wrap
+msgid "Key Distribution Center"
+msgstr "Key Distribution Center"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:496
+#, no-wrap
+msgid "Kilo Bits Per Second"
+msgstr "Kilo Bits Per Second"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:499
+msgid ""
+"Used to measure bandwidth (how much data can pass a given point at a "
+"specified amount of time).  Alternates to the Kilo prefix include Mega, "
+"Giga, Tera, and so forth."
+msgstr ""
+"用于测量带宽（在指定的时间内有多少数据可以通过一个给定的点）。Kilo 前缀的替代"
+"品包括 Mega、Giga、Tera，等等。"
+
+#. type: Title ==
+#: content/zh-cn/books/handbook/glossary.adoc:501
+#, no-wrap
+msgid "L"
+msgstr "L"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:503
+#, no-wrap
+msgid "LAN"
+msgstr "LAN"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:505
+msgid "See <<lan-glossary,Local Area Network>>."
+msgstr "See <<lan-glossary,Local Area Network>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:506
+#, no-wrap
+msgid "LOR"
+msgstr "LOR"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:508
+msgid "See <<lor-glossary,Lock Order Reversal>>."
+msgstr "See <<lor-glossary,Lock Order Reversal>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:509
+#, no-wrap
+msgid "LPD"
+msgstr "LPD"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:511
+msgid "See <<lpd-glossary,Line Printer Daemon>>."
+msgstr "See <<lpd-glossary,Line Printer Daemon>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:513
+#, no-wrap
+msgid "Line Printer Daemon"
+msgstr "Line Printer Daemon"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:517
+#, no-wrap
+msgid "Local Area Network"
+msgstr "Local Area Network"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:519
+msgid "A network used on a local area, e.g. office, home, or so forth."
+msgstr "在局部地区使用的网络，如办公室、家庭等。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:521
+#, no-wrap
+msgid "Lock Order Reversal"
+msgstr "Lock Order Reversal"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:526
+msgid ""
+"The FreeBSD kernel uses a number of resource locks to arbitrate contention "
+"for those resources.  A run-time lock diagnostic system found in FreeBSD-"
+"CURRENT kernels (but removed for releases), called man:witness[4], detects "
+"the potential for deadlocks due to locking errors.  (man:witness[4] is "
+"actually slightly conservative, so it is possible to get false positives.)  "
+"A true positive report indicates that “if you were unlucky, a deadlock would "
+"have happened here”."
+msgstr ""
+"FreeBSD 内核使用大量的资源锁来仲裁对这些资源的争夺。在 FreeBSD-CURRENT 内核中"
+"发现的一个运行时锁诊断系统 (但在发行版中被移除)，称为 man:witness[4]，用于检"
+"测由于锁错误而导致的潜在死锁。(man:witness[4] 实际上是略微保守的，所以有可能"
+"得到假阳性结果）。一个真阳性报告表明“如果你不走运，死锁就会发生在这里”。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:528
+msgid ""
+"True positive LORs tend to get fixed quickly, so check https://lists.FreeBSD."
+"org/subscription/freebsd-current and the link:http://sources.zabbadoz.net/"
+"freebsd/lor.html[LORs Seen] page before posting to the mailing lists."
+msgstr ""
+"真正积极的 LOR 往往很快就会被修复，所以在发布到邮件列表之前，请检查 https://"
+"lists.FreeBSD.org/subscription/freebsd-current 和 https://lists.FreeBSD.org/"
+"subscription/freebsd-current and the link:http://sources.zabbadoz.net/"
+"freebsd/lor.html[LORs Seen] 页面。"
+
+#. type: Title ==
+#: content/zh-cn/books/handbook/glossary.adoc:530
+#, no-wrap
+msgid "M"
+msgstr "M"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:532
+#, no-wrap
+msgid "MAC"
+msgstr "MAC"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:534
+msgid "See <<mac-glossary,Mandatory Access Control>>."
+msgstr "See <<mac-glossary,Mandatory Access Control>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:535
+#, no-wrap
+msgid "MADT"
+msgstr "MADT"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:537
+msgid "See <<madt-glossary,Multiple APIC Description Table>>."
+msgstr "See <<madt-glossary,Multiple APIC Description Table>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:538
+#, no-wrap
+msgid "MFC"
+msgstr "MFC"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:540
+msgid "See <<mfc-glossary,Merge From Current>>."
+msgstr "See <<mfc-glossary,Merge From Current>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:541
+#, no-wrap
+msgid "MFH"
+msgstr "MFH"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:543
+msgid "See <<mfh-glossary,Merge From Head>>."
+msgstr "See <<mfh-glossary,Merge From Head>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:544
+#, no-wrap
+msgid "MFS"
+msgstr "MFS"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:546
+msgid "See <<mfs-glossary,Merge From Stable>>."
+msgstr "See <<mfs-glossary,Merge From Stable>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:547
+#, no-wrap
+msgid "MFV"
+msgstr "MFV"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:549
+msgid "See <<mfv-glossary,Merge From Vendor>>."
+msgstr "See <<mfv-glossary,Merge From Vendor>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:550
+#, no-wrap
+msgid "MIT"
+msgstr "MIT"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:552
+msgid "See <<mit-glossary,Massachusetts Institute of Technology>>."
+msgstr "See <<mit-glossary,Massachusetts Institute of Technology>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:553
+#, no-wrap
+msgid "MLS"
+msgstr "MLS"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:555
+msgid "See <<mls-glossary,Multi-Level Security>>."
+msgstr "See <<mls-glossary,Multi-Level Security>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:556
+#, no-wrap
+msgid "MOTD"
+msgstr "MOTD"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:558
+msgid "See <<motd-glossary,Message Of The Day>>."
+msgstr "See <<motd-glossary,Message Of The Day>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:559
+#, no-wrap
+msgid "MTA"
+msgstr "MTA"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:561
+msgid "See <<mta-glossary,Mail Transfer Agent>>."
+msgstr "See <<mta-glossary,Mail Transfer Agent>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:562
+#, no-wrap
+msgid "MUA"
+msgstr "MUA"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:564
+msgid "See <<mua-glossary,Mail User Agent>>."
+msgstr "See <<mua-glossary,Mail User Agent>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:566
+#, no-wrap
+msgid "Mail Transfer Agent"
+msgstr "Mail Transfer Agent"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:570
+msgid ""
+"An application used to transfer email.  An MTA has traditionally been part "
+"of the BSD base system.  Today Sendmail is included in the base system, but "
+"there are many other MTAs, such as postfix, qmail and Exim."
+msgstr ""
+"一个用于传输电子邮件的应用程序。传统上，MTA 是 BSD 基本系统的一部分。今天，"
+"Sendmail 被包含在基本系统中，但还有许多其他的 MTA，如 postfix、qmail 和 "
+"Exim。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:572
+#, no-wrap
+msgid "Mail User Agent"
+msgstr "Mail User Agent"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:574
+msgid "An application used by users to display and write email."
+msgstr "用户用于显示和书写电子邮件的应用程序。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:576
+#, no-wrap
+msgid "Mandatory Access Control"
+msgstr "Mandatory Access Control"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:580
+#, no-wrap
+msgid "Massachusetts Institute of Technology"
+msgstr "Massachusetts Institute of Technology"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:584
+#, no-wrap
+msgid "Merge From Current"
+msgstr "Merge From Current"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:586
+msgid ""
+"To merge functionality or a patch from the -CURRENT branch to another, most "
+"often -STABLE."
+msgstr "将功能或补丁从 -CURRENT 分支合并到另一个分支，通常是 -STABLE。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:588
+#, no-wrap
+msgid "Merge From Head"
+msgstr "Merge From Head"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:590
+msgid ""
+"To merge functionality or a patch from a repository HEAD to an earlier "
+"branch."
+msgstr "将版本库 HEAD 中的功能或补丁合并到一个较早的分支。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:592
+#, no-wrap
+msgid "Merge From Stable"
+msgstr "Merge From Stable"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:595
+msgid ""
+"In the normal course of FreeBSD development, a change will be committed to "
+"the -CURRENT branch for testing before being merged to -STABLE.  On rare "
+"occasions, a change will go into -STABLE first and then be merged to -"
+"CURRENT."
+msgstr ""
+"在正常的 FreeBSD 开发过程中，一个修改在被合并到 -STABLE 之前会被提交到 -"
+"CURRENT 分支进行测试。在极少数情况下，一个改动会先进入 -STABLE，然后被合并到 "
+"-CURRENT。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:597
+msgid ""
+"This term is also used when a patch is merged from -STABLE to a security "
+"branch."
+msgstr "当一个补丁从 -STABLE 合并到安全分支时也会用到这个术语。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:599
+msgid "See <<mfc-glossary,Also Merge From Current>>."
+msgstr "See <<mfc-glossary,Also Merge From Current>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:601
+#, no-wrap
+msgid "Merge From Vendor"
+msgstr "Merge From Vendor"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:605
+#, no-wrap
+msgid "Message Of The Day"
+msgstr "Message Of The Day"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:607
+msgid ""
+"A message, usually shown on login, often used to distribute information to "
+"users of the system."
+msgstr "一条信息，通常在登录时显示，通常用于向系统的用户分发信息。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:609
+#, no-wrap
+msgid "Multi-Level Security"
+msgstr "Multi-Level Security"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:613
+#, no-wrap
+msgid "Multiple APIC Description Table"
+msgstr "Multiple APIC Description Table"
+
+#. type: Title ==
+#: content/zh-cn/books/handbook/glossary.adoc:617
+#, no-wrap
+msgid "N"
+msgstr "N"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:619
+#, no-wrap
+msgid "NAT"
+msgstr "NAT"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:621
+msgid "See <<nat-glossary,Network Address Translation>>."
+msgstr "See <<nat-glossary,Network Address Translation>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:622
+#, no-wrap
+msgid "NDISulator"
+msgstr "NDISulator"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:624
+msgid "See <<projectevil-glossary,Project Evil>>."
+msgstr "See <<projectevil-glossary,Project Evil>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:625
+#, no-wrap
+msgid "NFS"
+msgstr "NFS"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:627
+msgid "See <<nfs-glossary,Network File System>>."
+msgstr "See <<nfs-glossary,Network File System>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:628
+#, no-wrap
+msgid "NTFS"
+msgstr "NTFS"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:630
+msgid "See <<ntfs-glossary,New Technology File System>>."
+msgstr "See <<ntfs-glossary,New Technology File System>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:631
+#, no-wrap
+msgid "NTP"
+msgstr "NTP"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:633
+msgid "See <<ntp-glossary,Network Time Protocol>>."
+msgstr "See <<ntp-glossary,Network Time Protocol>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:635
+#, no-wrap
+msgid "Network Address Translation"
+msgstr "Network Address Translation"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:637
+msgid ""
+"A technique where IP packets are rewritten on the way through a gateway, "
+"enabling many machines behind the gateway to effectively share a single IP "
+"address."
+msgstr ""
+"一种技术，IP 数据包在通过网关时被改写，使网关后面的许多机器能够有效地共享一"
+"个 IP 地址。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:639
+#, no-wrap
+msgid "Network File System"
+msgstr "Network File System"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:643
+#, no-wrap
+msgid "New Technology File System"
+msgstr "New Technology File System"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:645
+msgid ""
+"A filesystem developed by Microsoft and available in its “New Technology” "
+"operating systems, such as Windows(R) 2000, Windows NT(R) and Windows(R) XP."
+msgstr ""
+"一种由微软开发的文件系统，可用于其“新技术”操作系统，如 Windows(R) 2000、"
+"Windows NT(R) 和 Windows(R) XP。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:647
+#, no-wrap
+msgid "Network Time Protocol"
+msgstr "Network Time Protocol"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:649
+msgid "A means of synchronizing clocks over a network."
+msgstr "通过网络同步时钟的一种手段。"
+
+#. type: Title ==
+#: content/zh-cn/books/handbook/glossary.adoc:651
+#, no-wrap
+msgid "O"
+msgstr "O"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:653
+#, no-wrap
+msgid "OBE"
+msgstr "OBE"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:655
+msgid "See <<obe-glossary,Overtaken By Events>>."
+msgstr "See <<obe-glossary,Overtaken By Events>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:656
+#, no-wrap
+msgid "ODMR"
+msgstr "ODMR"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:658
+msgid "See <<odmr-glossary,On-Demand Mail Relay>>."
+msgstr "See <<odmr-glossary,On-Demand Mail Relay>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:659
+#, no-wrap
+msgid "OS"
+msgstr "OS"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:661
+msgid "See <<os-glossary,Operating System>>."
+msgstr "See <<os-glossary,Operating System>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:663
+#, no-wrap
+msgid "On-Demand Mail Relay"
+msgstr "On-Demand Mail Relay"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:667
+#, no-wrap
+msgid "Operating System"
+msgstr "Operating System"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:670
+msgid ""
+"A set of programs, libraries and tools that provide access to the hardware "
+"resources of a computer.  Operating systems range today from simplistic "
+"designs that support only one program running at a time, accessing only one "
+"device to fully multi-user, multi-tasking and multi-process systems that can "
+"serve thousands of users simultaneously, each of them running dozens of "
+"different applications."
+msgstr ""
+"一组程序、库和工具，提供对计算机硬件资源的访问。今天，操作系统的范围从支持一"
+"次只运行一个程序、只访问一个设备的简单设计到完全的多用户、多任务和多进程系"
+"统，这些系统可以同时为成千上万的用户服务，每个用户都运行几十个不同的应用程"
+"序。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:672
+#, no-wrap
+msgid "Overtaken By Events"
+msgstr "Overtaken By Events"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:674
+msgid ""
+"Indicates a suggested change (such as a Problem Report or a feature request) "
+"which is no longer relevant or applicable due to such things as later "
+"changes to FreeBSD, changes in networking standards, the affected hardware "
+"having since become obsolete, and so forth."
+msgstr ""
+"表示建议的修改（例如问题报告或功能请求），由于后来 FreeBSD 的变化、 网络标准"
+"的变化、 受影响的硬件已经过时等原因，已经不再相关或适用。"
+
+#. type: Title ==
+#: content/zh-cn/books/handbook/glossary.adoc:676
+#, no-wrap
+msgid "P"
+msgstr "P"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:678
+#, no-wrap
+msgid "PAE"
+msgstr "PAE"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:680
+msgid "See <<pae-glossary,Physical Address Extensions>>."
+msgstr "See <<pae-glossary,Physical Address Extensions>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:681
+#, no-wrap
+msgid "PAM"
+msgstr "PAM"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:683
+msgid "See <<pam-glossary,Pluggable Authentication Modules>>."
+msgstr "See <<pam-glossary,Pluggable Authentication Modules>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:684
+#, no-wrap
+msgid "PAP"
+msgstr "PAP"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:686
+msgid "See <<pap-glossary,Password Authentication Protocol>>."
+msgstr "See <<pap-glossary,Password Authentication Protocol>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:687
+#, no-wrap
+msgid "PC"
+msgstr "PC"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:689
+msgid "See <<pc-glossary,Personal Computer>>."
+msgstr "See <<pc-glossary,Personal Computer>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:690
+#, no-wrap
+msgid "PCNSFD"
+msgstr "PCNSFD"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:692
+msgid "See <<pcnfsd-glossary,Personal Computer Network File System Daemon>>."
+msgstr "See <<pcnfsd-glossary,Personal Computer Network File System Daemon>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:693
+#, no-wrap
+msgid "PDF"
+msgstr "PDF"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:695
+msgid "See <<pdf-glossary,Portable Document Format>>."
+msgstr "See <<pdf-glossary,Portable Document Format>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:696
+#, no-wrap
+msgid "PID"
+msgstr "PID"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:698
+msgid "See <<pid-glossary,Process ID>>."
+msgstr "See <<pid-glossary,Process ID>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:699
+#, no-wrap
+msgid "POLA"
+msgstr "POLA"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:701
+msgid "See <<pola-glossary,Principle Of Least Astonishment>>."
+msgstr "See <<pola-glossary,Principle Of Least Astonishment>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:702
+#, no-wrap
+msgid "POP"
+msgstr "POP"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:704
+msgid "See <<pop-glossary,Post Office Protocol>>."
+msgstr "See <<pop-glossary,Post Office Protocol>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:705
+#, no-wrap
+msgid "POP3"
+msgstr "POP3"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:707
+msgid "See <<pop3-glossary,Post Office Protocol Version 3>>."
+msgstr "See <<pop3-glossary,Post Office Protocol Version 3>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:708
+#, no-wrap
+msgid "PPD"
+msgstr "PPD"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:710
+msgid "See <<ppd-glossary,PostScript Printer Description>>."
+msgstr "See <<ppd-glossary,PostScript Printer Description>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:711
+#, no-wrap
+msgid "PPP"
+msgstr "PPP"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:713
+msgid "See <<ppp-glossary,Point-to-Point Protocol>>."
+msgstr "See <<ppp-glossary,Point-to-Point Protocol>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:714
+#, no-wrap
+msgid "PPPoA"
+msgstr "PPPoA"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:716
+msgid "See <<pppoa-glossary,PPP over ATM>>."
+msgstr "See <<pppoa-glossary,PPP over ATM>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:717
+#, no-wrap
+msgid "PPPoE"
+msgstr "PPPoE"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:719
+msgid "See <<pppoe-glossary,PPP over Ethernet>>."
+msgstr "See <<pppoe-glossary,PPP over Ethernet>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:721
+#, no-wrap
+msgid "PPP over ATM"
+msgstr "PPP over ATM"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:725
+#, no-wrap
+msgid "PPP over Ethernet"
+msgstr "PPP over Ethernet"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:728
+#, no-wrap
+msgid "PR"
+msgstr "PR"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:730
+msgid "See <<pr-glossary,Problem Report>>."
+msgstr "See <<pr-glossary,Problem Report>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:731
+#, no-wrap
+msgid "PXE"
+msgstr "PXE"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:733
+msgid "See <<pxe-glossary,Preboot eXecution Environment>>."
+msgstr "See <<pxe-glossary,Preboot eXecution Environment>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:735
+#, no-wrap
+msgid "Password Authentication Protocol"
+msgstr "Password Authentication Protocol"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:739
+#, no-wrap
+msgid "Personal Computer"
+msgstr "Personal Computer"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:743
+#, no-wrap
+msgid "Personal Computer Network File System Daemon"
+msgstr "Personal Computer Network File System Daemon"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:747
+#, no-wrap
+msgid "Physical Address Extensions"
+msgstr "Physical Address Extensions"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:749
+msgid ""
+"A method of enabling access to up to 64 GB of RAM on systems which only "
+"physically have a 32-bit wide address space (and would therefore be limited "
+"to 4 GB without PAE)."
+msgstr ""
+"一种使系统能够访问高达 64GB 的 RAM 的方法，这些系统只具有 32 位宽的地址空间"
+"（因此在没有 PAE 的情况下会被限制在 4GB）。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:751
+#, no-wrap
+msgid "Pluggable Authentication Modules"
+msgstr "Pluggable Authentication Modules"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:755
+#, no-wrap
+msgid "Point-to-Point Protocol"
+msgstr "Point-to-Point Protocol"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:759
+#, no-wrap
+msgid "Pointy Hat"
+msgstr "Pointy Hat"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:763
+msgid ""
+"A mythical piece of headgear, much like a dunce cap, awarded to any FreeBSD "
+"committer who breaks the build, makes revision numbers go backwards, or "
+"creates any other kind of havoc in the source base.  Any committer worth his "
+"or her salt will soon accumulate a large collection.  The usage is (almost "
+"always?) humorous."
+msgstr ""
+"一件神话般的头饰，很像一顶傻瓜帽，它被授予任何破坏构建、使修订号倒退或在源代"
+"码库中制造任何其他破坏的 FreeBSD committer。任何有价值的提交者都会很快积累起"
+"一个庞大的收藏。其用法是（几乎总是如此）幽默的。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:765
+#, no-wrap
+msgid "Portable Document Format"
+msgstr "Portable Document Format"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:769
+#, no-wrap
+msgid "Post Office Protocol"
+msgstr "Post Office Protocol"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:773
+#, no-wrap
+msgid "Post Office Protocol Version 3"
+msgstr "Post Office Protocol Version 3"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:775
+msgid ""
+"A protocol for accessing email messages on a mail server, characterised by "
+"the messages usually being downloaded from the server to the client, as "
+"opposed to remaining on the server."
+msgstr ""
+"A protocol for accessing email messages on a mail server, characterised by "
+"the messages usually being downloaded from the server to the client, as "
+"opposed to remaining on the server."
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:777
+msgid "See <<imap-glossary,Also Internet Message Access Protocol>>."
+msgstr "另见 <<imap-glossary,Also Internet Message Access Protocol>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:779
+#, no-wrap
+msgid "PostScript Printer Description"
+msgstr "PostScript Printer Description"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:783
+#, no-wrap
+msgid "Preboot eXecution Environment"
+msgstr "Preboot eXecution Environment"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:787
+#, no-wrap
+msgid "Principle Of Least Astonishment"
+msgstr "Principle Of Least Astonishment"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:791
+msgid ""
+"As FreeBSD evolves, changes visible to the user should be kept as "
+"unsurprising as possible.  For example, arbitrarily rearranging system "
+"startup variables in [.filename]#/etc/defaults/rc.conf# violates POLA.  "
+"Developers consider POLA when contemplating user-visible system changes."
+msgstr ""
+"随着 FreeBSD 的发展，用户可以看到的变化应该尽可能地保持不令人惊讶。例如，在 "
+"[.filename]#/etc/defaults/rc.conf# 中任意地重新安排系统启动变量就违反了 "
+"POLA。开发人员在考虑对用户可见的系统进行修改时应考虑 POLA。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:793
+#, no-wrap
+msgid "Problem Report"
+msgstr "Problem Report"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:796
+msgid ""
+"A description of some kind of problem that has been found in either the "
+"FreeBSD source or documentation.  See extref:{problem-reports}[Writing "
+"FreeBSD Problem Reports]."
+msgstr "对FreeBSD源代码或文档中发现的某种问题的描述。参见写FreeBSD问题报告。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:798
+#, no-wrap
+msgid "Process ID"
+msgstr "Process ID"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:800
+msgid ""
+"A number, unique to a particular process on a system, which identifies it "
+"and allows actions to be taken against it."
+msgstr ""
+"一个数字，对系统中的一个特定进程来说是唯一的，它可以识别它并允许对它采取行"
+"动。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:802
+#, no-wrap
+msgid "Project Evil"
+msgstr "Project Evil"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:807
+msgid ""
+"The working title for the NDISulator, written by Bill Paul, who named it "
+"referring to how awful it is (from a philosophical standpoint) to need to "
+"have something like this in the first place.  The NDISulator is a special "
+"compatibility module to allow Microsoft Windows(TM) NDIS miniport network "
+"drivers to be used with FreeBSD/i386.  This is usually the only way to use "
+"cards where the driver is closed-source.  See [.filename]#src/sys/compat/"
+"ndis/subr_ndis.c#."
+msgstr ""
+"NDISulator 的工作标题，由 Bill Paul 撰写，他的名字是指首先需要有这样的东西是"
+"多么的可怕 (从哲学的角度来看)。NDISulator 是一个特殊的兼容模块，允许 "
+"Microsoft Windows(TM) NDIS miniport 网络驱动程序在 FreeBSD/i386 上使用。这通"
+"常是使用驱动是闭源的卡的唯一方法。参见[.filename]#src/sys/compat/ndis/"
+"subr_ndis.c#。"
+
+#. type: Title ==
+#: content/zh-cn/books/handbook/glossary.adoc:809
+#, no-wrap
+msgid "R"
+msgstr "R"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:811
+#, no-wrap
+msgid "RA"
+msgstr "RA"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:813
+msgid "See <<ra-glossary,Router Advertisement>>."
+msgstr "See <<ra-glossary,Router Advertisement>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:814
+#, no-wrap
+msgid "RAID"
+msgstr "RAID"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:816
+msgid "See <<raid-glossary,Redundant Array of Inexpensive Disks>>."
+msgstr "See <<raid-glossary,Redundant Array of Inexpensive Disks>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:817
+#, no-wrap
+msgid "RAM"
+msgstr "RAM"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:819
+msgid "See <<ram-glossary,Random Access Memory>>."
+msgstr "See <<ram-glossary,Random Access Memory>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:820
+#, no-wrap
+msgid "RD"
+msgstr "RD"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:822
+msgid "See <<rd-glossary,Received Data>>."
+msgstr "See <<rd-glossary,Received Data>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:823
+#, no-wrap
+msgid "RFC"
+msgstr "RFC"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:825
+msgid "See <<rfc-glossary,Request For Comments>>."
+msgstr "See <<rfc-glossary,Request For Comments>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:826
+#, no-wrap
+msgid "RISC"
+msgstr "RISC"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:828
+msgid "See <<risc-glossary,Reduced Instruction Set Computer>>."
+msgstr "See <<risc-glossary,Reduced Instruction Set Computer>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:829
+#, no-wrap
+msgid "RPC"
+msgstr "RPC"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:831
+msgid "See <<rpc-glossary,Remote Procedure Call>>."
+msgstr "See <<rpc-glossary,Remote Procedure Call>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:832
+#, no-wrap
+msgid "RS232C"
+msgstr "RS232C"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:834
+msgid "See <<rs232c-glossary,Recommended Standard 232C>>."
+msgstr "See <<rs232c-glossary,Recommended Standard 232C>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:835
+#, no-wrap
+msgid "RTS"
+msgstr "RTS"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:837
+msgid "See <<rts-glossary,Request To Send>>."
+msgstr "See <<rts-glossary,Request To Send>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:839
+#, no-wrap
+msgid "Random Access Memory"
+msgstr "Random Access Memory"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:843
+#, no-wrap
+msgid "Revision Control System"
+msgstr "Revision Control System"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:848
+msgid ""
+"The _Revision Control System (RCS)_ is one of the oldest software suites "
+"that implement “revision control” for plain files.  It allows the storage, "
+"retrieval, archival, logging, identification and merging of multiple "
+"revisions for each file.  RCS consists of many small tools that work "
+"together.  It lacks some of the features found in more modern revision "
+"control systems, like Git, but it is very simple to install, configure, and "
+"start using for a small set of files."
+msgstr ""
+"_修订控制系统_（RCS）是对普通文件实施“修订控制”的最古老的软件套件之一。它允许"
+"对每个文件进行存储、检索、归档、记录、识别和合并多个修订版。RCS 由许多小工具"
+"组成，它们一起工作。它缺少一些在更现代的修订控制系统中发现的功能，如 Git，但"
+"它的安装、配置和开始用于一小部分文件非常简单。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:850
+msgid "See <<svn-glossary,Also Subversion>>."
+msgstr "另见 <<svn-glossary,Also Subversion>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:852
+#, no-wrap
+msgid "Received Data"
+msgstr "Received Data"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:854
+msgid "An RS232C pin or wire that data is received on."
+msgstr "接收数据的 RS232C 引脚或导线。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:856
+msgid "See <<td-glossary,Also Transmitted Data>>."
+msgstr "See <<td-glossary,Also Transmitted Data>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:858
+#, no-wrap
+msgid "Recommended Standard 232C"
+msgstr "Recommended Standard 232C"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:860
+msgid "A standard for communications between serial devices."
+msgstr "串行设备之间的通信标准。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:862
+#, no-wrap
+msgid "Reduced Instruction Set Computer"
+msgstr "Reduced Instruction Set Computer"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:866
+msgid ""
+"An approach to processor design where the operations the hardware can "
+"perform are simplified but made as general purpose as possible.  This can "
+"lead to lower power consumption, fewer transistors and in some cases, better "
+"performance and increased code density.  Examples of RISC processors include "
+"the Alpha, SPARC(R), ARM(R) and PowerPC(R)."
+msgstr ""
+"一种处理器的设计方法，硬件可以执行的操作被简化，但尽可能做到通用。这可以导致"
+"更低的功耗，更少的晶体管，在某些情况下，更好的性能和增加代码密度。RISC 处理器"
+"的例子包括 Alpha、SPARC(R)、ARM(R) 和 PowerPC(R)。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:868
+#, no-wrap
+msgid "Redundant Array of Inexpensive Disks"
+msgstr "Redundant Array of Inexpensive Disks"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:872
+#, no-wrap
+msgid "Remote Procedure Call"
+msgstr "Remote Procedure Call"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:876
+#, no-wrap
+msgid "Request For Comments"
+msgstr "Request For Comments"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:879
+msgid ""
+"A set of documents defining Internet standards, protocols, and so forth.  "
+"See www.rfc-editor.org."
+msgstr "一套定义互联网标准、协议等的文件。见 www.rfc-editor.org。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:881
+msgid ""
+"Also used as a general term when someone has a suggested change and wants "
+"feedback."
+msgstr "当有人提出修改建议并希望得到反馈时，也可作为一个一般术语使用。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:883
+#, no-wrap
+msgid "Request To Send"
+msgstr "Request To Send"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:885
+msgid ""
+"An RS232C signal requesting that the remote system commences transmission of "
+"data."
+msgstr ""
+"An RS232C signal requesting that the remote system commences transmission of "
+"data."
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:887
+msgid "See <<cts-glossary,Also Clear To Send>>."
+msgstr "另见 <<cts-glossary,Also Clear To Send>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:889
+#, no-wrap
+msgid "Router Advertisement"
+msgstr "Router Advertisement"
+
+#. type: Title ==
+#: content/zh-cn/books/handbook/glossary.adoc:893
+#, no-wrap
+msgid "S"
+msgstr "S"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:895
+#, no-wrap
+msgid "SCI"
+msgstr "SCI"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:897
+msgid "See <<sci-glossary,System Control Interrupt>>."
+msgstr "See <<sci-glossary,System Control Interrupt>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:898
+#, no-wrap
+msgid "SCSI"
+msgstr "SCSI"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:900
+msgid "See <<scsi-glossary,Small Computer System Interface>>."
+msgstr "See <<scsi-glossary,Small Computer System Interface>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:901
+#, no-wrap
+msgid "SG"
+msgstr "SG"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:903
+msgid "See <<sg-glossary,Signal Ground>>."
+msgstr "See <<sg-glossary,Signal Ground>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:904
+#, no-wrap
+msgid "SMB"
+msgstr "SMB"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:906
+msgid "See <<smb-glossary,Server Message Block>>."
+msgstr "See <<smb-glossary,Server Message Block>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:907
+#, no-wrap
+msgid "SMP"
+msgstr "SMP"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:909
+msgid "See <<smp-glossary,Symmetric MultiProcessor>>."
+msgstr "See <<smp-glossary,Symmetric MultiProcessor>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:910
+#, no-wrap
+msgid "SMTP"
+msgstr "SMTP"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:912
+msgid "See <<smtp-glossary,Simple Mail Transfer Protocol>>."
+msgstr "See <<smtp-glossary,Simple Mail Transfer Protocol>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:913
+#, no-wrap
+msgid "SMTP AUTH"
+msgstr "SMTP AUTH"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:915
+msgid "See <<smtpauth-glossary,SMTP Authentication>>."
+msgstr "See <<smtpauth-glossary,SMTP Authentication>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:916
+#, no-wrap
+msgid "SSH"
+msgstr "SSH"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:918
+msgid "See <<ssh-glossary,Secure Shell>>."
+msgstr "See <<ssh-glossary,Secure Shell>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:919
+#, no-wrap
+msgid "STR"
+msgstr "STR"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:921
+msgid "See <<str-glossary,Suspend To RAM>>."
+msgstr "See <<str-glossary,Suspend To RAM>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:922
+#, no-wrap
+msgid "SVN"
+msgstr "SVN"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:924
+msgid "See <<svn-glossary,Subversion>>."
+msgstr "See <<svn-glossary,Subversion>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:926
+#, no-wrap
+msgid "SMTP Authentication"
+msgstr "SMTP Authentication"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:930
+#, no-wrap
+msgid "Server Message Block"
+msgstr "Server Message Block"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:934
+#, no-wrap
+msgid "Signal Ground"
+msgstr "Signal Ground"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:936
+msgid "An RS232 pin or wire that is the ground reference for the signal."
+msgstr "一个 RS232 引脚或导线，是信号的接地参考。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:938
+#, no-wrap
+msgid "Simple Mail Transfer Protocol"
+msgstr "Simple Mail Transfer Protocol"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:942
+#, no-wrap
+msgid "Secure Shell"
+msgstr "Secure Shell"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:946
+#, no-wrap
+msgid "Small Computer System Interface"
+msgstr "Small Computer System Interface"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:950
+#, no-wrap
+msgid "Subversion"
+msgstr "Subversion"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:952
+msgid ""
+"Subversion is a version control system currently used by the FreeBSD project."
+msgstr "Subversion 是 FreeBSD 项目目前使用的一个版本控制系统。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:954
+#, no-wrap
+msgid "Suspend To RAM"
+msgstr "Suspend To RAM"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:958
+#, no-wrap
+msgid "Symmetric MultiProcessor"
+msgstr "Symmetric MultiProcessor"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:962
+#, no-wrap
+msgid "System Control Interrupt"
+msgstr "System Control Interrupt"
+
+#. type: Title ==
+#: content/zh-cn/books/handbook/glossary.adoc:966
+#, no-wrap
+msgid "T"
+msgstr "T"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:968
+#, no-wrap
+msgid "TCP"
+msgstr "TCP"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:970
+msgid "See <<tcp-glossary,Transmission Control Protocol>>."
+msgstr "See <<tcp-glossary,Transmission Control Protocol>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:971
+#, no-wrap
+msgid "TCP/IP"
+msgstr "TCP/IP"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:973
+msgid "See <<tcpip-glossary,Transmission Control Protocol/Internet Protocol>>."
+msgstr ""
+"See <<tcpip-glossary,Transmission Control Protocol/Internet Protocol>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:974
+#, no-wrap
+msgid "TD"
+msgstr "TD"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:976
+msgid "See <<td-glossary,Transmitted Data>>."
+msgstr "See <<td-glossary,Transmitted Data>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:977
+#, no-wrap
+msgid "TFTP"
+msgstr "TFTP"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:979
+msgid "See <<tftp-glossary,Trivial FTP>>."
+msgstr "See <<tftp-glossary,Trivial FTP>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:980
+#, no-wrap
+msgid "TGT"
+msgstr "TGT"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:982
+msgid "See <<tgt-glossary,Ticket-Granting Ticket>>."
+msgstr "See <<tgt-glossary,Ticket-Granting Ticket>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:983
+#, no-wrap
+msgid "TSC"
+msgstr "TSC"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:985
+msgid "See <<tsc-glossary,Time Stamp Counter>>."
+msgstr "See <<tsc-glossary,Time Stamp Counter>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:987
+#, no-wrap
+msgid "Ticket-Granting Ticket"
+msgstr "Ticket-Granting Ticket"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:991
+#, no-wrap
+msgid "Time Stamp Counter"
+msgstr "Time Stamp Counter"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:993
+msgid ""
+"A profiling counter internal to modern Pentium(R) processors that counts "
+"core frequency clock ticks."
+msgstr "现代 Pentium(R) 处理器内部的剖析计数器，计算核心频率的时钟刻度。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:995
+#, no-wrap
+msgid "Transmission Control Protocol"
+msgstr "Transmission Control Protocol"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:997
+msgid ""
+"A protocol that sits on top of (e.g.) the IP protocol and guarantees that "
+"packets are delivered in a reliable, ordered, fashion."
+msgstr "一种位于（例如）IP 协议之上的协议，保证数据包以可靠、有序的方式交付。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:999
+#, no-wrap
+msgid "Transmission Control Protocol/Internet Protocol"
+msgstr "Transmission Control Protocol/Internet Protocol"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:1002
+msgid ""
+"The term for the combination of the TCP protocol running over the IP "
+"protocol.  Much of the Internet runs over TCP/IP."
+msgstr ""
+"在IP协议上运行的 TCP 协议的组合术语。互联网的大部分内容都在 TCP/IP 上运行。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:1004
+#, no-wrap
+msgid "Transmitted Data"
+msgstr "Transmitted Data"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:1006
+msgid "An RS232C pin or wire that data is transmitted on."
+msgstr "一个 RS232C 针脚或电线，数据通过它传输。"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:1008
+msgid "See <<rd-glossary,Also Received Data>>."
+msgstr "另见 <<rd-glossary,Also Received Data>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:1010
+#, no-wrap
+msgid "Trivial FTP"
+msgstr "Trivial FTP"
+
+#. type: Title ==
+#: content/zh-cn/books/handbook/glossary.adoc:1014
+#, no-wrap
+msgid "U"
+msgstr "U"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:1016
+#, no-wrap
+msgid "UDP"
+msgstr "UDP"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:1018
+msgid "See <<udp-glossary,User Datagram Protocol>>."
+msgstr "See <<udp-glossary,User Datagram Protocol>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:1019
+#, no-wrap
+msgid "UFS1"
+msgstr "UFS1"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:1021
+msgid "See <<ufs1-glossary,Unix File System Version 1>>."
+msgstr "See <<ufs1-glossary,Unix File System Version 1>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:1022
+#, no-wrap
+msgid "UFS2"
+msgstr "UFS2"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:1024
+msgid "See <<ufs2-glossary,Unix File System Version 2>>."
+msgstr "See <<ufs2-glossary,Unix File System Version 2>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:1025
+#, no-wrap
+msgid "UID"
+msgstr "UID"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:1027
+msgid "See <<uid-glossary,User ID>>."
+msgstr "See <<uid-glossary,User ID>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:1028
+#, no-wrap
+msgid "URL"
+msgstr "URL"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:1030
+msgid "See <<url-glossary,Uniform Resource Locator>>."
+msgstr "See <<url-glossary,Uniform Resource Locator>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:1031
+#, no-wrap
+msgid "USB"
+msgstr "USB"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:1033
+msgid "See <<usb-glossary,Universal Serial Bus>>."
+msgstr "See <<usb-glossary,Universal Serial Bus>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:1035
+#, no-wrap
+msgid "Uniform Resource Locator"
+msgstr "Uniform Resource Locator"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:1037
+msgid ""
+"A method of locating a resource, such as a document on the Internet and a "
+"means to identify that resource."
+msgstr "一种定位资源的方法，如互联网上的文件和识别该资源的手段。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:1039
+#, no-wrap
+msgid "Unix File System Version 1"
+msgstr "Unix File System Version 1"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:1041
+msgid ""
+"The original UNIX(R) file system, sometimes called the Berkeley Fast File "
+"System."
+msgstr "最初的 UNIX(R) 文件系统，有时称为伯克利快速文件系统。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:1043
+#, no-wrap
+msgid "Unix File System Version 2"
+msgstr "Unix File System Version 2"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:1046
+msgid ""
+"An extension to UFS1, introduced in FreeBSD 5-CURRENT.  UFS2 adds 64 bit "
+"block pointers (breaking the 1T barrier), support for extended file storage "
+"and other features."
+msgstr ""
+"UFS1 的扩展，在 FreeBSD 5-CURRENT 中引入。UFS2 增加了 64 位块指针（打破了 1T "
+"的限制），支持扩展文件存储和其他功能。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:1048
+#, no-wrap
+msgid "Universal Serial Bus"
+msgstr "Universal Serial Bus"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:1050
+msgid ""
+"A hardware standard used to connect a wide variety of computer peripherals "
+"to a universal interface."
+msgstr "一种硬件标准，用于将各种计算机外围设备连接到一个通用接口。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:1052
+#, no-wrap
+msgid "User ID"
+msgstr "User ID"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:1054
+msgid ""
+"A unique number assigned to each user of a computer, by which the resources "
+"and permissions assigned to that user can be identified."
+msgstr ""
+"分配给计算机的每个用户的唯一号码，通过它可以识别分配给该用户的资源和权限。"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:1056
+#, no-wrap
+msgid "User Datagram Protocol"
+msgstr "User Datagram Protocol"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:1059
+msgid ""
+"A simple, unreliable datagram protocol which is used for exchanging data on "
+"a TCP/IP network.  UDP does not provide error checking and correction like "
+"TCP."
+msgstr ""
+"一种简单、不可靠的数据报协议，用于在 TCP/IP 网络上交换数据。UDP 不像 TCP 那样"
+"提供错误检查和纠正。"
+
+#. type: Title ==
+#: content/zh-cn/books/handbook/glossary.adoc:1061
+#, no-wrap
+msgid "V"
+msgstr "V"
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:1063
+#, no-wrap
+msgid "VPN"
+msgstr "VPN"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:1065
+msgid "See <<vpn-glossary,Virtual Private Network>>."
+msgstr "See <<vpn-glossary,Virtual Private Network>>."
+
+#. type: Labeled list
+#: content/zh-cn/books/handbook/glossary.adoc:1067
+#, no-wrap
+msgid "Virtual Private Network"
+msgstr "Virtual Private Network"
+
+#. type: Plain text
+#: content/zh-cn/books/handbook/glossary.adoc:1068
+msgid ""
+"A method of using a public telecommunication such as the Internet, to "
+"provide remote access to a localized network, such as a corporate LAN."
+msgstr ""
+"一种使用公共电信（如互联网）的方法，以提供对局部网络（如公司局域网）的远程访"
+"问。"
