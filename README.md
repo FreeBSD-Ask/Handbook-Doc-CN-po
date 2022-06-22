@@ -1,5 +1,7 @@
 # Handbook 中文手册 PO 文档转换项目
 
+> 由于需要校对，本项目暂停。
+
 ## 翻译指南
 
 <https://docs.qq.com/doc/DSUtxYmVwU29EdGVn>
